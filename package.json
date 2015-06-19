@@ -2,10 +2,10 @@
     "name": "comp-corner",
     "description": "Breezin' Thru Composing",
     "author": "Patrick Gostovic <patrick.gostovic@osaaru.com>",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "dependencies":
 	{
-        "phnq_widgets": "1.0.44",
+        "phnq_widgets": "1.0.45",
         "connect": "2.7.x",
 		"commander": "1.1.x",
         "zombie": "1.4.1",
