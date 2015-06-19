@@ -1,0 +1,86 @@
+.__CLASS__
+{
+  color: #8a8a8a;
+  font-size: 18px;
+  line-height: 28px;
+  overflow: auto;
+  
+  h1, h2
+  {
+    color: #e22f5b;
+    .text-shadow();
+  }
+  
+  h1
+  {
+    text-decoration: underline !important;
+  }
+  
+  h2
+  {
+    margin-top: 30px;
+  }
+  
+  p
+  {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .sheet > ol > li
+  {
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  li
+  {
+    line-height: 24px;
+  }
+  
+  strong
+  {
+    color: #888;
+  }
+  
+  ul, ol
+  {
+    margin-left: 50px;
+  }
+
+  .sheet
+  {
+  	background: #fff;
+    padding: 50px 150px !important;
+    height: auto !important;
+    min-height: 100%;
+
+    > ol > li > strong
+    {
+      cursor: pointer;
+    }
+    
+    > ol > li > div
+    {
+      height: 0;
+      overflow: hidden;
+      .animate(all, .5s);
+      padding: 0 20px;
+      background: #efefef;
+    	.box-shadow();
+    }
+
+    > ol > li > div.open
+    {
+      margin-top: 10px;
+    }
+  }
+  
+  em.small
+  {
+    font-size: 16px;
+  }
+}
+
+

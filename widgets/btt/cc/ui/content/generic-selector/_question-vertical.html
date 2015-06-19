@@ -1,0 +1,24 @@
+<p class="question-text">${text}</p>
+
+<div>
+	{each answer in answers}
+		<div class="question-vertical row-fluid">
+			<div class="offset1 span2 boxes ${this.smallAnswerBoxes ? 'small' : ''} ${this.extraSmallAnswerBoxes ? 'extra-small' : ''} ${this.wideAnswerBoxes ? 'wide' : ''}">
+				<div>
+					?
+				</div>
+				<br/>
+			</div>
+
+			{if answer.audio}
+				<div class="span1">
+					{{widget "btt.cc.audio-player", {size:"45px", audioFile:answer.audio}/}}
+				</div>
+			{/if}
+				
+			<div class="span7">
+				<img class="question-img" data-absolutize="false" src="${btt.cc.media.mediaFileUrl(images[index])}"/>
+			</div>
+		</div>
+	{/each}
+</div>

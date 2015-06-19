@@ -1,0 +1,23 @@
+<div>
+	<section class="title one-third">
+		<h1>${params.title}</h1>
+		<h2>${params.subtitle}</h2>
+	</section>
+	<div class="synopsis-container">
+		<section class="synopsis remainder">
+			<div class="row">
+				<p class="span6 offset2 synopsisText">${params.synopsis}</p>
+				<span class="span2 next">
+				</span>
+			</div>
+			<div class="row">
+				<div class="span8 offset2 hr"></div>
+			</div>
+			<div class="row">
+				<div class="span1 offset2 player">
+					{{widget "btt.cc.audio-player", {audioFile:params.audioFile, autoPlay:false}/}}
+				</div>
+			</div>
+		</section>
+	</div>
+</div>

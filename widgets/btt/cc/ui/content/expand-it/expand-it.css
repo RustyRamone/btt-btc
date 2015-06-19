@@ -1,0 +1,164 @@
+.__CLASS__
+{
+}
+
+.__CLASS__ .sheet
+{
+	position: relative;
+	background: #fff;
+}
+
+.__CLASS__ .sheet > em
+{
+	padding-top: 60px;
+	display: block;
+	text-align: center;
+	font-size: 28px;
+	color: #8a8a8a;
+}
+
+.__CLASS__ .sheet .box
+{
+	padding-top: 50px;
+	color: #8a8a8a;
+	font-size: 18px;
+}
+
+.__CLASS__ .sheet .box > div
+{
+	position: relative;
+	padding: 20px 0;
+	height: 380px;
+	.box-shadow(0, 0, 2px);
+}
+
+.__CLASS__ .sheet .box h2
+{
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+	color: #e22f5b;
+	margin: 0;
+}
+
+.__CLASS__ .sheet .box h3
+{
+	text-align: center;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+	margin-top: 10px;
+}
+
+.__CLASS__ table.steps
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 90%;
+	position: relative;
+	left: 5%;
+	color: #8a8a8a;
+	font-size: 17px;
+	line-height: 20px;
+}
+
+.__CLASS__ table.steps tr
+{
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.__CLASS__ table.steps tr:last-child
+{
+	border: none;
+}
+
+.__CLASS__ table.steps td
+{
+	vertical-align: top;
+	padding: 7px 10px;
+}
+
+.__CLASS__ table.steps td em
+{
+	color: #e22f5b;
+}
+
+.__CLASS__ table.steps .num
+{
+	color: #e22f5b;
+}
+
+.__CLASS__ table.steps .text
+{
+	
+}
+
+.__CLASS__ .tip-video-link, .__CLASS__ .tip-audio-link, .__CLASS__ .tip-image-link
+{
+	cursor: default;
+	text-decoration: none;
+	display: block;
+	color: #fff;
+	padding-left: 70px;
+	padding-right: 10px;
+	height: 70px;
+	font-size: 16px;
+	text-align: left;
+	line-height: 70px;
+	.box-shadow();
+	margin: 5px;
+}
+
+.__CLASS__ .tip-video-link
+{
+	background: #b7b7b7 url(static/camera.png) no-repeat 10px;
+	cursor: pointer;
+}
+
+.__CLASS__ .tip-image-link
+{
+	background: #b7b7b7 url(static/camera.png) no-repeat 10px;
+	cursor: pointer;
+}
+
+.__CLASS__ .tip-audio-link
+{
+	position: relative;
+	background: #b7b7b7;
+}
+
+.__CLASS__ .tip-audio-link > .audio-player
+{
+	position: absolute;
+	left: 10px;
+	top: 7px;
+}
+
+.__CLASS__ .notation-links, .__CLASS__ .seq-links
+{
+	text-align: center;
+
+	.msg
+	{
+		color: #fff;
+	}
+
+	.coming-soon
+	{
+		>div
+		{
+			opacity: 0.3;
+		}
+		.msg
+		{
+			opacity: 1;
+			font-size: 16px;
+			color: #8a8a8a;
+		}
+	}
+}
+
+.__CLASS__ .notation-links > *, .__CLASS__ .seq-links > *
+{
+	display: inline-block;
+}

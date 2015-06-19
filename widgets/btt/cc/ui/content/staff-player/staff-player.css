@@ -1,0 +1,350 @@
+.__CLASS__
+{
+	position: relative;
+}
+
+.csstransforms
+{
+	.__CLASS__
+	{
+		.animate(all, 0.3s);
+		.transform(translateY(-220px));
+	}
+
+	.__CLASS__.show-title
+	{
+		.transform(translateY(0));
+	}
+}
+
+.no-csstransforms
+{
+	.__CLASS__
+	{
+		.animate(top, 0.3s);
+		top: -220px;
+	}
+
+	.__CLASS__.show-title
+	{
+		top: 0px;
+	}
+}
+
+.__CLASS__ .title
+{
+	margin-bottom: 0 !important;
+}
+
+.__CLASS__ .sheet-container
+{
+	position: relative;
+	margin-top: 0;
+	padding-top: 10px;
+}
+
+.__CLASS__ .bulge
+{
+	top: 0px;
+	position: absolute;
+	height: 80px;
+	width: 100%;
+	.bulge-on-pink();
+	pointer-events: none;
+	opacity: 0;
+}
+
+.__CLASS__.show-title .bulge
+{
+	opacity: 1;
+}
+
+.__CLASS__ .title
+{
+	display: table;
+}
+
+.__CLASS__ .title > div
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.__CLASS__ h1, .__CLASS__ h2
+{
+	margin: 0;
+	text-align: center;
+	font-weight: normal;
+}
+
+.__CLASS__ h1
+{
+	color: #c8c7c7;
+	font-size: 40px;
+}
+
+.__CLASS__ h2
+{
+	color: #fff;
+	font-size: 26px;
+	padding: 0 100px;
+}
+
+.__CLASS__ .sheet
+{
+	position: relative;
+	background: #fff;
+  padding-bottom: 1000px;
+}
+
+.__CLASS__ .camera
+{
+	position: absolute;
+	top: 0px;
+	height: 200px;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.7) url(static/camera.png) no-repeat center;
+	display: none;
+	cursor: pointer;
+}
+
+.__CLASS__.loading-piano .camera
+{
+	opacity: 0.3;
+	pointer-events: none;
+}
+
+.__CLASS__.show-title .camera
+{
+	display: block;
+}
+
+.__CLASS__.show-title.fade-cards .card
+{
+	opacity: 0.15 !important;
+}
+
+.__CLASS__ .player
+{
+/*	.box-shadow-bottom();*/
+	height: 200px;
+	color: #ccc;
+	background: #f8f8f8;
+}
+
+.__CLASS__ .player.large, .__CLASS__ .camera.large
+{
+	height: 375px;
+}
+
+.__CLASS__ .player > tbody
+{
+	width: 100%;
+}
+
+.__CLASS__ .player .previous > span, .__CLASS__ .player .next > span
+{
+	.box-shadow();
+	.animate(opacity, 0.3s);
+	display: block;
+	width: 50px;
+	height: 80px;
+	margin-top: 50px;
+	border: solid 10px #fff;
+	background: #e66c4b;
+	cursor: pointer;
+}
+
+.__CLASS__ .player .previous > span
+{
+	border-left: none;
+	background: #e66c4b url(static/previous.png) no-repeat center;
+}
+
+.__CLASS__ .player .next > span
+{
+	border-right: none;
+	background: #e66c4b url(static/next.png) no-repeat center;
+}
+
+.__CLASS__ .player .previous > span.disabled, .__CLASS__ .player .next > span.disabled
+{
+	opacity: 0.3;
+}
+
+.__CLASS__ .player .staff, .__CLASS__ .player .static-image-audio, .__CLASS__ .player .video
+{
+	height: 100%;
+	text-align: center;
+}
+
+.__CLASS__ .player .video
+{
+  padding: 20px 0;
+}
+
+.__CLASS__ .player .staff
+{
+  position: relative;
+}
+
+.__CLASS__ .player .staff .score-title
+{
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 100%;
+	text-align: center;
+  color: #e22f5b;
+  font-size: 22px !important;
+}
+
+.__CLASS__ .player .static-image-audio
+{
+	position: relative;
+	line-height: 100%;
+	vertical-align: middle;
+}
+
+.__CLASS__ .player .static-image-audio > table
+{
+  height: 100%;
+  margin: auto;
+}
+
+.__CLASS__ .player .static-image-audio img.image
+{
+  width: 501px;
+  margin: 0 20px;
+}
+
+.__CLASS__ .player .static-image-audio .audio-player
+{
+	opacity: 1;
+	.animate(opacity, 1s);
+}
+
+.__CLASS__.show-title .player .static-image-audio .audio-player, .__CLASS__ .player .static-image-audio .audio-player.hideme
+{
+	opacity: 0;
+}
+
+.__CLASS__ .player .static-image-audio img.expand
+{
+  width: 60px;
+  height: 60px;
+	opacity: 1;
+	.animate(opacity, 1s);
+}
+
+.__CLASS__.show-title .player .static-image-audio img.expand, .__CLASS__.hide-tip .player .static-image-audio img.expand
+{
+	opacity: 0;
+}
+
+.__CLASS__ .cards-container
+{
+	.bulge();
+	overflow: hidden;
+}
+
+.__CLASS__ .cards
+{
+	position: relative;
+	margin: 0;
+	padding: 10px 30px;
+}
+
+.csstransforms
+{
+	.__CLASS__ .cards
+	{
+		.animate(transform, 0.3s);
+		.transform(translateY(-10px));
+	}
+}
+
+.no-csstransforms
+{
+	.__CLASS__ .cards
+	{
+		.animate(top, 0.3s);
+		top: -10px;
+	}
+}
+
+.__CLASS__ .card
+{
+	.animate(opacity, 0.3s);
+	.box-shadow(0, 0, 5px);
+	margin-bottom: 10px;
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	display: table;
+	opacity: 0.15;
+}
+
+.__CLASS__ .card.active
+{
+	opacity: 1;
+}
+
+.__CLASS__ .card > div
+{
+	display: table-cell;
+	vertical-align: middle;
+  padding: 30px 0;
+}
+
+.__CLASS__ .card label
+{
+	font-size: 42px;
+	line-height: 50px;
+	color: #e22f5b;
+}
+
+.__CLASS__ .card p
+{
+	font-size: 30px;
+	line-height: 40px;
+	font-style: italic;
+	color: #8a8a8a;
+	padding: 0 100px;
+}
+
+.staff-player-tips-pop
+{
+	width: 800px;
+	margin-left: -400px;
+	padding-bottom: 50px;
+	
+	.close
+	{
+		margin: 5px 10px 0 0;
+	}
+
+	h2
+	{
+		text-align: center;
+		font-size: 32px;
+		font-weight: normal;
+		color: #e22f5b;
+		margin: 0;
+	}
+
+	.tips
+	{
+		padding: 50px;
+	}
+
+	.tips > p
+	{
+		color: #a8a8a8;
+		text-align: center;
+		padding: 20px;
+		font-size: 24px;
+		border-bottom: solid 1px #dedede;
+    line-height: 36px;
+	}
+}

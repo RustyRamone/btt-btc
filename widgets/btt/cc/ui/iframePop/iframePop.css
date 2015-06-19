@@ -1,0 +1,29 @@
+.__CLASS__
+{
+	padding: 20px;
+	width: 750px;
+	margin-left: -375px;
+}
+
+.__CLASS__ > button
+{
+	position: absolute;
+	top: 0;
+	right: 5px;
+}
+
+.__CLASS__ > div
+{
+	overflow: auto !important;
+	-webkit-overflow-scrolling: touch !important;
+  max-height: 500px;
+}
+
+.__CLASS__ iframe
+{
+	background: #fff;
+	border: none;
+	display: block;
+	width: 100%;
+	min-height: 500px;
+}

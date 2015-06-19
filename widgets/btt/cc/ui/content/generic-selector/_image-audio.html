@@ -1,0 +1,12 @@
+<p class="question-text">
+	{if this.imageAudio.audio}
+		{{widget "btt.cc.audio-player", {size:"55px", audioFile:this.imageAudio.audio}/}}
+	{/if}
+	${text}
+</p>
+
+<div class="row-fluid">
+	<div class="offset2 span8">
+		<img data-absolutize="false" src="${btt.cc.media.mediaFileUrl(this.imageAudio.image)}"/>
+	</div>
+</div>

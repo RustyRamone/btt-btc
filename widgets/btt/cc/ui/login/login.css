@@ -1,0 +1,78 @@
+.__CLASS__
+{
+	width: 800px;
+	margin-left: -400px !important;
+	text-align: center;
+}
+
+.__CLASS__ > *
+{
+	display: block !important;
+	margin: auto;
+}
+
+.__CLASS__ > label
+{
+	margin-top: 100px;
+	margin-bottom: 40px;
+	color: #8a8a8a;
+	font-size: 28px;
+}
+
+.__CLASS__ > input
+{
+	margin-bottom: 20px;
+	width: 450px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 28px;
+	text-align: center;
+	font-family: inherit;
+	color: #a8a8a8;
+}
+
+.__CLASS__.iPad > input
+{
+	display: inline !important;
+  width: 150px;
+  margin-right:20px;
+}
+
+.__CLASS__.iPad > .next-button
+{
+	float: right;
+  position: relative;
+  top: -48px;
+  left: -70px;
+}
+
+.__CLASS__ > input::-webkit-input-placeholder
+{
+	color: #ddd;
+	font-style: italic;
+}
+
+.__CLASS__ > input:-moz-placeholder
+{
+	color: #ddd;
+	font-style: italic;
+}
+
+.__CLASS__ > input::-moz-placeholder
+{
+	color: #ddd;
+	font-style: italic;
+}
+
+.__CLASS__ > input:-ms-input-placeholder
+{
+	color: #ddd;
+	font-style: italic;
+}
+
+.__CLASS__ .next-button
+{
+	.box-shadow();
+	margin-top: 40px;
+	margin-bottom: 40px;
+}

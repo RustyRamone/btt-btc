@@ -1,0 +1,149 @@
+<div>
+	<section class="sheet remainder">
+		<div class="questions row">
+			<div class="previous span1 disabled">
+				<span></span>
+			</div>
+			<div class="question span10">
+				<div class="row">
+					<div class="span2 composer">
+						<div>
+							<img data-absolutize="false" src="${btt.cc.media.mediaFileUrl(params.composerImage)}"/>
+							<label class="name">${params.composerName}</label>
+							<label class="years">${params.composerYears}</label>
+						</div>
+						<div class="did-you-know">{i18n "did-you-know"/}</div>
+					</div>
+					<div class="span8 actual-question intro">
+						<div class="row">
+							{if params.score}
+								<div class="span8 score">
+									<img class="score-image" data-absolutize="false" src="${btt.cc.media.mediaFileUrl(params.score.image1)}"/>
+									<div class="overlay">
+									</div>
+									{if params.score.canExpand}
+										<img class="expand" src="static/expand.png"/>
+									{/if}
+								</div>
+								<div class="player span8">
+									{{widget "btt.cc.audio-player", {audioFile:params.score.audio}/}}
+								</div>
+							{/if}
+							{if params.audio}
+								<div class="span8 audio">
+									<table>
+										<tr>
+											{each audioItem in params.audio.items}
+												<td>
+													{{widget "btt.cc.audio-player", {audioFile:audioItem.file, autoPlay:(index==0)}/}}
+													<div>${audioItem.title}</div>
+												</td>
+											{/each}
+										</tr>
+									</table>
+								</div>
+							{/if}
+							{if params.video}
+								<div class="span8 video">
+									${params.video.code}
+								</div>
+							{/if}
+							<div class="offset1 span6 labels">
+								<label class="question intro active">
+									${params.questionIntro}
+								</label>
+								{each question in params.questions}
+									<label class="question q${index}"><span>Question ${index+1}:</span> ${question.question}</label>
+								{/each}
+							</div>
+						</div>
+						{if params.score}
+							<div class="score-title">
+								${params.score.title}
+							</div>
+						{/if}
+					</div>
+				</div>
+			</div>
+			<div class="next span1 disabled">
+				<span class="pull-right"></span>
+			</div>
+			<div class="selectX">
+				<label>Select One (1)</label>
+			</div>
+		</div>
+		<div class="cards-container">
+			<div class="cards">
+			</div>
+		</div>
+	</section>
+	<section class="did-you-know-underlay">
+		<div class="hide-underlay">
+			<div>
+				{i18n "hide"/}
+			</div>
+			<h2>${params.didYouKnow.title}</h1>
+		</div>
+		<div class="row">
+			<div class="offset1 span10">
+				<div class="facts">
+					{each fact in params.didYouKnow.facts}
+						<p class="fact">${fact}</p>
+					{/each}
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="offset1 span10 legend">
+				<table>
+					{each legendItem in (params.didYouKnow.legendItems || [])}
+                        {if !params.didYouKnow.legendItemsPerLine || ((index % params.didYouKnow.legendItemsPerLine) == 0)}
+                            <tr>
+                        {/if}
+                            <td class="key">
+                                {if legendItem.redDot}
+                                    <img class="dot" src="static/red-dot.png"/>
+                                {/if}
+                                {else}
+                                    {if legendItem.whiteDot}
+                                        <img class="dot" src="static/white-dot.png"/>
+                                    {/if}
+                                    {else}
+                                      {if legendItem.orangeDot}
+                                          <img class="dot" src="static/orange-dot.png"/>
+                                      {/if}
+                                      {else}
+	                                      {if legendItem.greenDot}
+	                                          <img class="dot" src="static/green-dot.png"/>
+	                                      {/if}
+	                                      {else}
+		                                      {if legendItem.whiteDotOrangeBorder}
+		                                          <img class="dot" src="static/whiteDotOrangeBorder.png"/>
+		                                      {/if}
+		                                      {else}
+		                                          <div style="background:${legendItem.color}">&nbsp;</div>
+		                                      {/else}
+	                                      {/else}
+                                      {/else}
+                                    {/else}
+                                {/else}
+                            </td>
+                            <td>
+                                ${legendItem.text}
+                            </td>
+                        {if !params.didYouKnow.legendItemsPerLine || ((index % params.didYouKnow.legendItemsPerLine) == (params.didYouKnow.legendItemsPerLine-1))}
+                            </tr>
+                        {/if}
+					{/each}
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="offset1 span10">
+				<div class="timeline">
+					<img data-absolutize="false" src="${btt.cc.media.mediaFileUrl(params.didYouKnow.timelineImage)}"/>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

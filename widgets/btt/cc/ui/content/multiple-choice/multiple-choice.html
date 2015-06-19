@@ -1,0 +1,60 @@
+<div>
+	<section class="sheet remainder">
+		<div class="questions row-fluid">
+			<div class="previous span1">
+				<span></span>
+			</div>
+			<div class="question span10">
+				<div>
+					<h3></h3>
+					<div class="staff-container">
+						{{widget "btt.cc.notation.staff", {tempo:params.tempo}/}}
+					</div>
+					<div class="image-container">
+						<img src="static/trans.png"/>
+					</div>
+					{if params.video}
+						<div class="video-container">
+							<div class="player">
+							</div>
+							<div class="poster">
+								<img src="static/camera.png"/>
+								<div></div>
+							</div>
+						</div>
+					{/if}
+					<div class="image-reveal-container">
+						<div>
+							{if params.imageReveal}
+								{{widget "btt.cc.image-reveal", params.imageReveal/}}
+								{if params.questions[0].imageRevealSideImage}
+									<table>
+										<tr>
+											<td style="height:${params.imageReveal.height}px">
+												<img class="sideImage" src="${btt.cc.media.mediaFileUrl(params.questions[0].imageRevealSideImage)}"/>
+											</td>
+										</tr>
+									</table>
+								{/if}
+							{/if}
+						</div>
+					</div>
+					<div class="audio-container">
+        				{{widget "btt.cc.audio-player", {size:"55px"}/}}
+         			</div>
+					<p></p>
+					<div class="select-prompt">
+						<label></label>
+					</div>
+				</div>
+			</div>
+			<div class="next span1">
+				<span class="pull-right disabled"></span>
+			</div>
+		</div>
+		<div class="cards-container">
+			<div class="cards">
+			</div>
+		</div>
+	</section>
+</div>

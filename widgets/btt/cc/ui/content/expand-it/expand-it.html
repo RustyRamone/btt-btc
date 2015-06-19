@@ -1,0 +1,93 @@
+<div>
+	<section class="sheet remainder">
+		<em>${params.instructions}</em>
+		<div class="row-fluid">
+			<div class="offset1 span5 box">
+				<div>
+					<h2>{i18n "continue-notation"/}</h2>
+					<h3>${params.notationSubtitle}</h3>
+					<table class="steps">
+						{each step in params.expandSteps.notation}
+							<tr>
+								<td class="num">${index+1}.</td>
+								<td class="text">${step}</td>
+							</tr>
+						{/each}
+					</table>
+					<div class="notation-links">
+						{each link in params.links.notation}
+							{if link.type=="audio"}
+								<div class="${link.comingSoon?'coming-soon':''}">
+									<div class="tip-audio-link">
+										{{widget "btt.cc.audio-player", {audioFile:link.audioFile, size:"55px"}/}}
+										${link.title}
+									</div>
+									<div class="msg">Coming Soon</div>
+								</div>
+							{/if}
+							{if link.type=="video"}
+								<div class="${link.comingSoon?'coming-soon':''}">
+									<div class="tip-video-link" data-link="note-${index}">
+										${link.title}
+									</div>
+									<div class="msg">Coming Soon</div>
+								</div>
+							{/if}
+							{if link.type=="image"}
+								<div class="${link.comingSoon?'coming-soon':''}">
+									<div class="tip-image-link" data-image-file="${link.imageFile}">
+										${link.title}
+									</div>
+									<div class="msg">Coming Soon</div>
+								</div>
+							{/if}
+						{/each}
+					</div>
+				</div>
+			</div>
+			<div class="span5 box">
+				<div>
+					<h2>{i18n "continue-sequencing"/}</h2>
+					<h3>${params.sequencingSubtitle}</h3>
+					<table class="steps">
+						{each step in params.expandSteps.sequencing}
+							<tr>
+								<td class="num">${index+1}.</td>
+								<td class="text">${step}</td>
+							</tr>
+						{/each}
+					</table>
+					<div class="seq-links">
+						{each link in params.links.sequencing}
+							{if link.type=="audio"}
+								<div class="${link.comingSoon?'coming-soon':''}">
+									<div class="tip-audio-link">
+										{{widget "btt.cc.audio-player", {audioFile:link.audioFile, size:"55px"}/}}
+										${link.title}
+									</div>
+									<div class="msg">Coming Soon</div>
+								</div>
+							{/if}
+							{if link.type=="video"}
+								<div class="${link.comingSoon?'coming-soon':''}">
+									<div class="tip-video-link" data-link="seq-${index}">
+										${link.title}
+									</div>
+									<div class="msg">Coming Soon</div>
+								</div>
+							{/if}
+							{if link.type=="image"}
+								<div class="${link.comingSoon?'coming-soon':''}">
+									<div class="tip-image-link" data-image-file="${link.imageFile}">
+										${link.title}
+									</div>
+									<div class="msg">Coming Soon</div>
+								</div>
+							{/if}
+						{/each}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

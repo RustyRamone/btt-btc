@@ -1,0 +1,432 @@
+.__CLASS__
+{
+}
+
+.__CLASS__ .title
+{
+	.animate(height, 0.3s);
+  margin-bottom: 0 !important;
+}
+
+.__CLASS__ .title > div
+{
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.__CLASS__ .title > div > div
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.__CLASS__.hide-intro-overlay .sheet-container
+{
+  padding-top: 0;
+}
+
+.__CLASS__ .sheet-container
+{
+	position: relative;
+	margin-top: 0;
+	padding-top: 10px;
+	height: 100%;
+}
+
+.__CLASS__ .bulge
+{
+	position: absolute;
+	top: 0px;
+	height: 80px;
+	width: 100%;
+	.bulge-on-pink();
+	pointer-events: none;
+	opacity: 1;
+}
+
+.__CLASS__.hide-intro-overlay .bulge
+{
+	opacity: 0;
+}
+
+.__CLASS__ h1, .__CLASS__ h2
+{
+	margin: 0;
+	text-align: center;
+	font-weight: normal;
+}
+
+.__CLASS__ h1
+{
+	color: #c8c7c7;
+	font-size: 42px;
+}
+
+.__CLASS__ h2
+{
+	color: #fff;
+	font-size: 26px;
+	padding: 0 50px;
+}
+
+.__CLASS__ .sheet
+{
+	position: relative;
+	background: #fff;
+	vertical-align: middle;
+	padding: 30px;
+}
+
+.__CLASS__ .selector
+{
+	position: absolute;
+  padding-top: 20px;
+	top: 30px;
+	left: 30px;
+	right: 30px;
+	bottom: 90px;
+	.box-shadow();
+  text-align: center;
+}
+
+.__CLASS__ .selector-table
+{
+    display: table;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.__CLASS__ .selector-cell
+{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.__CLASS__ .selector .question-text
+{
+	font-size: 30px;
+	line-height: 40px;
+	font-style: italic;
+	color: #d62953;
+	text-align: center;
+  padding: 0 120px 20px 120px;
+}
+
+.__CLASS__ .selector .question-text .audio-player
+{
+  position: relative;
+  top: 15px;
+  display: inline-block;
+}
+
+.__CLASS__ .selector img.question-img
+{
+  width: 800px;
+}
+
+.__CLASS__ .selector .boxes
+{
+  display: inline-block;
+}
+
+.__CLASS__ .selector .boxes > *
+{
+  display: inline-block;
+}
+
+.__CLASS__ .selector .boxes > span
+{
+	color: #a8a8a8;
+	height: 120px;
+	padding: 60px 0;
+	font-size: 30px;
+}
+
+.__CLASS__ .selector .boxes > div
+{
+	width: 120px;
+	height: 120px;
+	margin: 10px;
+	.box-shadow-inset(3px, 3px, 10px, 0, #999);
+	color: #d3d3d3;
+	text-align: center;
+	line-height: 110px;
+	font-size: 65px;
+  font-style: italic;
+  position: relative;
+}
+
+.__CLASS__ .selector .question-vertical .audio-player
+{
+  top: 10px;
+}
+
+/*.__CLASS__ .selector .boxes .audio-player
+{
+  background: none;
+  border: none !important;
+  top: -47px;
+  left: 70%;
+}
+*/
+.__CLASS__ .selector .boxes > div.answered
+{
+  color: #fff;
+}
+
+
+.__CLASS__ .question-vertical .boxes > div
+{
+  font-style: normal;
+}
+
+.__CLASS__ .selector .boxes.small > div
+{
+	.box-shadow-inset(1px, 1px, 5px, 0, #999);
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 26px;
+}
+
+.__CLASS__ .selector .boxes.small.wide > div
+{
+	font-size: 20px;
+}
+
+.__CLASS__ .selector .boxes.extra-small > div
+{
+	.box-shadow-inset(1px, 1px, 5px, 0, #999);
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	margin: 10px 5px;
+}
+
+.__CLASS__ .selector .boxes > div > div
+{
+	width: 108px;
+	height: 108px;
+	border: solid 6px #fff;
+}
+
+.__CLASS__ .selector .boxes.small > div > div
+{
+	border: solid 3px #fff;
+	width: 44px;
+	height: 44px;
+}
+
+.__CLASS__ .selector .boxes.extra-small > div > div
+{
+	border: solid 2px #fff;
+	width: 26px;
+	height: 26px;
+}
+
+.__CLASS__ .selector .boxes.wide > div
+{
+  width: 100%;
+}
+
+.__CLASS__ .selector .boxes.wide > div > div
+{
+  width: 95%;
+  margin: auto;
+}
+
+.__CLASS__ .selector .boxes > div.answered > div
+{
+	background-color: #e22f5b;
+}
+
+.__CLASS__ .selector .boxes > div.answered.img-embed > div
+{
+	opacity: 0.7;
+}
+
+.__CLASS__ .selector .boxes > div.img-embed
+{
+	text-align: right;
+	font-size: 30px;
+	line-height: 180px;
+}
+
+.__CLASS__ .selector .boxes > div.img-embed > div
+{
+	padding-right: 10px;
+}
+
+.__CLASS__ .selector .boxes > div.original, .__CLASS__ .selector .boxes > div.answered
+{
+	.box-shadow();
+}
+
+@media (min-width: 1200px)
+{
+  .__CLASS__ .question-vertical .boxes > div
+  {
+    margin-bottom: 30px;
+  }
+}
+
+.__CLASS__ .selector .choice-buttons
+{
+  display: inline-block;
+  margin-top: 10px;
+	height: 64px;
+}
+
+.__CLASS__ .selector .choice-buttons.small
+{
+	height: 50px;
+}
+
+.__CLASS__ .selector .choice-buttons > div
+{
+  display: inline-block;
+	color: #fff;
+	border: 1px solid #a8a8a8;
+	background: #a8a8a8;
+	margin: 0;
+	cursor: pointer;
+  font-style: italic;
+
+	width: 78px;
+	height: 63px;
+	line-height: 63px;
+  font-size: 30px;
+}
+
+.__CLASS__ .selector .choice-buttons.small > div
+{
+  height: 48px;
+	line-height: 48px;
+  font-size: 25px;
+  font-style: normal;
+}
+
+.__CLASS__ .selector .choice-buttons.wide > div
+{
+  width: 200px;
+}
+
+.__CLASS__ .selector .choice-buttons > div.unused:active
+{
+	border: 1px solid #8a8a8a;
+	.box-shadow-inset(0, 0, 10px, 0, #333);
+	background: #8a8a8a;
+}
+
+.__CLASS__ .selector .choice-buttons > div.used
+{
+	border: 1px solid #8a8a8a;
+	background: #8a8a8a;
+	.box-shadow-inset(0, 0, 10px, 0, #333);
+}
+
+.__CLASS__ .intro-overlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 0.9);
+	color: #8a8a8a;
+	cursor: pointer;
+}
+
+.__CLASS__ .intro-overlay > div
+{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.__CLASS__ .intro-overlay > div > div
+{
+	display: table-cell;
+	padding-top: 100px;
+	vertical-align: top;
+	text-align: center;
+	font-size: 26px;
+}
+
+.__CLASS__ .intro-overlay > div > div > img
+{
+	margin-bottom: 10px;
+}
+
+.__CLASS__ .intro-overlay
+{
+	.animate(opacity, 2s);
+}
+
+.__CLASS__.hide-intro-overlay .intro-overlay
+{
+	opacity: 0;
+	pointer-events: none;
+    background: none !important;
+}
+
+.isIE .__CLASS__.hide-intro-overlay .intro-overlay
+{
+  display: none;
+}
+
+.__CLASS__.hide-intro-overlay .title
+{
+	height: 0;
+	margin: 0;
+}
+
+.__CLASS__.hide-intro-overlay .sheet
+{
+	height: 100%;
+}
+
+.__CLASS__ .go-back
+{
+	.animate(top, 1s);
+	position: absolute;
+	width: 100%;
+	top: -50px;
+	text-align: center;
+}
+
+.__CLASS__ .go-back > div
+{
+	.box-shadow();
+	display: inline-block;
+	color: #fff;
+	background: #e22f5b;
+	border: solid 5px #fff;
+	border-top: none;
+	padding: 8px 30px;
+	cursor: pointer;
+}
+
+.__CLASS__.hide-intro-overlay .go-back
+{
+	top: 0;
+}
+
+.__CLASS__ .next-button
+{
+	position: absolute;
+	.box-shadow(0, 0, 3px);
+	bottom: 20px;
+	right: 20px;
+}
+
+.__CLASS__ .back-button
+{
+	position: absolute;
+	.box-shadow(0, 0, 3px);
+	bottom: 20px;
+	left: 20px;
+}

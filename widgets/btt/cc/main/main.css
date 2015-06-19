@@ -1,0 +1,124 @@
+html, body
+{
+	height: 100%;
+	overflow: hidden;
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+}
+
+.__CLASS__ > .skinny-message
+{
+	display: none;
+}
+
+.__CLASS__.skinny > *
+{
+	display: none !important;
+}
+
+.__CLASS__.skinny > .skinny-message
+{
+	display: block !important;
+	margin: auto;
+	width: 600px;
+	height: 300px;
+	background: #fff;
+	.box-shadow-dark();
+	min-height: inherit;
+	max-height: inherit;
+	margin-top: 200px;
+}
+
+.__CLASS__.skinny > .skinny-message > img
+{
+	margin: 20px;
+}
+
+.__CLASS__.skinny > .skinny-message > div
+{
+	text-align: center;
+	font-size: 30px;
+	color: #8a8a8a;
+	.text-shadow();
+}
+
+.__CLASS__ > div
+{
+	padding: 0;
+	min-height: 100%;
+	max-height: 100%;
+}
+
+.__CLASS__ .content-mode
+{
+	top: 0;
+	position: absolute;
+	width: 100%;
+	background: @cc_bg_pink;
+}
+
+.csstransforms
+{
+	.__CLASS__.page-loaded .content-mode
+	{
+		.animate(all, 0.6s);
+	}
+
+	.__CLASS__ .content-mode
+	{
+		.transform(translateY(100%));
+	}
+
+	.__CLASS__.show-content .content-mode
+	{
+		.transform(translateY(0));
+	}
+}
+
+.no-csstransforms
+{
+	.__CLASS__.page-loaded .content-mode
+	{
+		.animate(top, 0.6s);
+	}
+
+	.__CLASS__ .content-mode
+	{
+		top: 100%;
+	}
+
+	.__CLASS__.show-content .content-mode
+	{
+		top: 0;
+	}
+}
+
+.__CLASS__ > .splash
+{
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: @cc_bg_pink;
+}
+
+.__CLASS__.page-loaded > .splash
+{
+	.animate(opacity, 1s);
+}
+
+.__CLASS__ > .splash.dismissed
+{
+	opacity: 0;
+	pointer-events: none;
+    background: none !important;
+}
+
+.__CLASS__ .modals
+{
+	width: 0;
+	height: 0;
+}
+

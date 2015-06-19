@@ -1,0 +1,203 @@
+.__CLASS__
+{
+	height: 320px;
+	overflow: hidden;
+	.text-shadow();
+}
+
+.__CLASS__ .spacer
+{
+	display: inline-block;
+	width: 1000px;
+	height: 260px;
+}
+
+.page-loaded .__CLASS__.animate .chapter-items
+{
+	.animate(all, 0.4s);
+}
+
+.__CLASS__ .chapter-items > *
+{
+	.animate(opacity, 0.4s);
+	opacity: 0.3;
+}
+
+.page-loaded .__CLASS__ .chapter-items > *
+{
+}
+
+.__CLASS__ .chapter-items > .selected
+{
+	opacity: 1;
+}
+
+.__CLASS__ .chapter-item, .__CLASS__ .splash-item
+{
+	display: inline-block;
+	margin: 20px;
+	width: 580px;
+	height: 260px;
+	border: solid 6px #fff;
+	cursor: pointer;
+  overflow: hidden;
+}
+
+.__CLASS__ .splash-item
+{
+	border: none;
+  width: 592px;
+  height: 272px;
+}
+
+.__CLASS__ .splash-item
+{
+	color: #ea3562;
+	background: #fff;
+	position: relative;
+	font-size: 38px;
+	font-style: italic;
+  
+  > img
+  {
+    position: absolute;
+    top: -50px;
+  }
+
+	.breezin-thru
+	{
+		margin-top: 130px;
+		color: #e66c4b;
+		line-height: 40px;
+		padding-left: 70px;
+
+		span
+		{
+			font-size: 20px;
+			line-height: 40px;
+			vertical-align: top;
+		}
+	}
+
+	.composing
+	{
+		color: #e22f5b;
+		line-height: 30px;
+		padding-left: 70px;
+	}
+  
+  .copyright
+  {
+		position: absolute;
+    bottom: 10px;
+    right: 30px;
+    color: #a8a8a8;
+    font-size: 12px;
+    font-style: italic;
+    text-shadow: none;
+  }
+}
+
+@media (min-width: 1200px)
+{
+	.__CLASS__ .splash-item
+	{
+		font-size: 48px;
+
+		.breezin-thru
+		{
+			padding-left: 30px;
+
+			span
+			{
+				font-size: 20px;
+			}
+		}
+
+		.composing
+		{
+			padding-left: 30px;
+		}
+	}
+}
+
+
+
+/*.__CLASS__ .splash-item td
+{
+	padding: 0 0 30px 40px;
+}
+
+.__CLASS__ .splash-item tbody
+{
+	position: absolute;
+	bottom: 0;
+}
+
+.__CLASS__ .splash-item h1
+{
+	font-size: 28px;
+	font-weight: normal;
+}
+
+.__CLASS__ .splash-item p
+{
+	width: 224px;
+	font-size: 18px;
+	font-style: italic;
+}
+*/
+.__CLASS__ .chapter-item
+{
+	color: #fff;
+}
+
+.__CLASS__ .chapter-item tr.top-row
+{
+	height: 150px;
+}
+
+.__CLASS__ .chapter-item td
+{
+	width: 50%;
+}
+
+.__CLASS__ .chapter-item td.chapter-num
+{
+	vertical-align: bottom;
+}
+
+.__CLASS__ .chapter-item td.chapter-num > span
+{
+	width: 100px;
+	font-size: 130px;
+	border-bottom: solid 1px #ccc;
+}
+
+.__CLASS__ .chapter-item td.chapter-title
+{
+	font-size: 28px;
+	font-style: italic;
+	line-height: 32px;
+	vertical-align: top;
+}
+
+.__CLASS__ .chapter-item td.chapter-synopsis
+{
+	font-size: 18px;
+	vertical-align: top;
+}
+
+.__CLASS__ .chapter-item td.chapter-synopsis > label
+{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.__CLASS__ .chapter-item td.chapter-synopsis > p
+{
+	font-size: 18px;
+	font-weight: normal;
+	font-style: italic;
+	margin-bottom: 20px;
+}

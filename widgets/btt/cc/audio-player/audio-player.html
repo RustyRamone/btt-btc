@@ -1,0 +1,19 @@
+<%
+	params.size = params.size || "90px"
+	params.border = params.border || "6px";
+	var size = parseFloat(params.size);
+	var border = parseFloat(params.border);
+%>
+<div class="audio-player" style="width:${params.size}; height:${params.size}">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+		<defs>
+			<clipPath id="clip">
+				<circle cx="${size/2}" cy="${size/2}" r="${(size/2)-border}"/>
+			</clipPath>
+		</defs>
+		<rect x="${border}" y="${border}" width="${size-(2*border)}" height="${size-(2*border)}" fill="#e22f5b" clip-path="url(#clip)"/>
+		<rect class="prog" x="${border}" y="${size - border}" width="${size-(2*border)}" height="0" fill="#a8a8a8" clip-path="url(#clip)"/>
+	</svg>
+	<div class="button" style="background-size:${params.size} ${params.size}">
+	</div>
+</div>

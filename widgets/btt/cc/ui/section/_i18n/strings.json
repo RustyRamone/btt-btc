@@ -1,0 +1,9 @@
+{
+	"breadcrumb": "Chapter ${chapterLabel} / ${sectionLabel} / ${activityLabel}",
+	"breadcrumb-0": "Home / ${sectionLabel}",
+	"burger-title": "Show/Hide the current page",
+	"refresh-title": "Reset the current page",
+	"previous-title": "Go to the previous page",
+	"next-title": "Go to the next page",
+	"btt-logo": "breezin' thru <em>composing</em>"
+}

@@ -1,0 +1,71 @@
+<div>
+	<section class="sheet remainder">
+
+		<em>${params.instructions}</em>
+
+		<div class="row">
+			<div class="offset1 span10">
+				<div class="row-fluid">
+					{each reflection in params.reflections}
+						<div class="span4 reflection" data-index="${index}">
+							<label>${reflection}</label>
+						</div>
+					{/each}
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="offset1 span10 teaching-tools">
+				<div class="row-fluid">
+					<div class="span4 tools">
+						{i18n "teaching-tools"/}
+					</div>
+					<div class="span4 tips">
+						<div class="row-fluid">
+							<div class="span4 expand">
+								<img src="static/expand.png"/>
+							</div>
+							<div class="span8 tips-text">{i18n "view-coaching-tips"/}</div>
+						</div>
+					</div>
+					<div class="span4 rubric">
+						<div class="row-fluid">
+							<div class="span3">
+								<img src="static/pdf.png"/>
+							</div>
+							<div class="span9 rubric-text">
+								<a>{i18n "download-eval-rubric"/}</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="span1 next-page">
+                <div class="submit"><em>{i18n "submit"/}</em></div>
+				{{widget "btt.cc.ui.next-button", {width:60, height:70, nextPage:true, disabled:true}/}}
+			</div>
+		</div>
+	</section>
+	
+	<div class="coaching-tips-pop modal hide fade">
+	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<div class="tips">
+			<h2>{i18n "coaching-tips"/}</h2>
+			{each tip in params.coachingTips}
+				<div>${tip}</div>
+			{/each}
+		</div>
+	</div>
+
+	{each reflection in params.reflections}
+		<div class="reflection-pop modal hide fade" data-index="${index}">
+			<div>
+				<label class="reflection">${reflection}</label>
+				<textarea rows="5" maxlength="300"></textarea>
+				<label class="chars-left">300</label>
+				{{widget "btt.cc.ui.next-button", {width:70, height:70, disabled:true}/}}
+			</div>
+		</div>
+	{/each}
+</div>

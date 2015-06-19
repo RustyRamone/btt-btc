@@ -1,0 +1,77 @@
+.__CLASS__
+{
+}
+
+.__CLASS__ .title > *
+{
+	position: relative;
+	top: 40px;
+}
+
+.__CLASS__ h1, .__CLASS__ h2
+{
+	margin: 0;
+	text-align: center;
+	font-weight: normal;
+}
+
+.__CLASS__ h1
+{
+	color: #c8c7c7;
+	font-size: 60px;
+  line-height: 70px;
+}
+
+.__CLASS__ h2
+{
+	color: #fff;
+	font-style: italic;
+	font-size: 36px;
+}
+
+.__CLASS__ .title
+{
+	margin-bottom: 0 !important;
+}
+
+.__CLASS__ .synopsis-container
+{
+	margin-top: 0;
+	padding-top: 10px;
+	.bulge-on-pink();
+}
+.__CLASS__ .synopsis
+{
+	padding: 50px 0;
+	.text-shadow();
+}
+
+.__CLASS__ .synopsis p
+{
+	font-weight: lighter;
+	font-size: 26px;
+	line-height: 30px;
+}
+
+.__CLASS__ .synopsis .next
+{
+	height: 150px;
+	width: 150px;
+	border: solid 10px #fff;
+	background: #e66c4b url(static/start.png) no-repeat center;
+	cursor: pointer;
+}
+
+.__CLASS__ .synopsis .hr
+{
+	margin-top: 25px;
+	height: 1px;
+	background: #db4167;
+	border-top: 1px solid #d82a55;
+	border-bottom: 1px solid #e75a7c;
+}
+
+.__CLASS__ .synopsis .player
+{
+	margin-top: 20px;
+}

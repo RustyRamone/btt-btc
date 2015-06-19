@@ -1,0 +1,49 @@
+<div>
+	<section class="title one-third">
+		<div>
+			<div>
+				<h1>${params.title}</h1>
+				<h2>${params.subtitle}</h2>
+			</div>
+		</div>
+	</section>
+	<div class="sheet-container">
+		<section class="sheet remainder">
+			<div class="selector">
+				{{widget "btt.cc.ui.back-button", {width:60, height:60, disabled:true}/}}
+				<div class="selector-table">
+					<div class="selector-cell">
+						<div class="question">
+						</div>
+				
+						<br/>
+			
+						<div class="choice-buttons ${params.wideChoices ? 'wide' : ''} ${params.smallChoices ? 'small' : ''}">
+							<%
+								var choices = params.shuffleChoices ? phnq_core.shuffle(params.choices) : params.choices;
+							%>
+							{each choice in choices}
+								<div class="unused">${choice.text}</div>
+							{/each}
+						</div>
+
+					</div>
+				</div>
+				{{widget "btt.cc.ui.next-button", {width:60, height:60, disabled:true}/}}
+			</div>
+			<div class="intro-overlay">
+				<div>
+					<div>
+						<img src="static/play.png"/>
+						<div>${params.introOverlayText || i18n("intro-overlay-text")}</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="bulge">
+		</div>
+	</div>
+	<div class="go-back">
+		<div>{i18n "go-back"/}</div>
+	</div>
+</div>

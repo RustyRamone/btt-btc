@@ -1,0 +1,18 @@
+.__CLASS__
+{
+	border-spacing: 0;
+	td
+	{
+		padding: 0;
+		img
+		{
+			.animate(opacity, 1s);
+			opacity: 0;
+		}
+
+		img.covered
+		{
+			opacity: 1;
+		}
+	}
+}

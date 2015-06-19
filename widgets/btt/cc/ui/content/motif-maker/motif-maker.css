@@ -1,0 +1,339 @@
+.__CLASS__
+{
+}
+
+.__CLASS__ .title
+{
+	.animate(height, 0.3s);
+}
+
+.__CLASS__ .title > *
+{
+	position: relative;
+	top: 40px;
+}
+
+.__CLASS__ .title
+{
+	margin-bottom: 0 !important;
+}
+
+.__CLASS__.hide-intro-overlay .sheet-container
+{
+  padding-top: 0;
+}
+
+.__CLASS__ .sheet-container
+{
+	position: relative;
+	margin-top: 0;
+	padding-top: 10px;
+}
+
+.__CLASS__ .bulge
+{
+	top: 0px;
+	position: absolute;
+	height: 80px;
+	width: 100%;
+	.bulge-on-pink();
+	pointer-events: none;
+	opacity: 1;
+}
+
+.__CLASS__.hide-intro-overlay .bulge
+{
+	opacity: 0;
+}
+
+.__CLASS__ h1, .__CLASS__ h2
+{
+	margin: 0;
+	text-align: center;
+	font-weight: normal;
+}
+
+.__CLASS__ h1
+{
+	color: #c8c7c7;
+	font-size: 42px;
+}
+
+.__CLASS__ h2
+{
+	color: #fff;
+	font-size: 26px;
+}
+
+.__CLASS__ .sheet
+{
+	position: relative;
+	background: #fff;
+	vertical-align: middle;
+	padding: 30px;
+}
+
+.__CLASS__ .staff-pane
+{
+	position: relative;
+	.box-shadow();
+	height: 180px;
+	padding-top: 10px;
+	background: #f8f8f8;
+}
+
+.__CLASS__ .staff-pane > .my-motif
+{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	font-size: 22px;
+	font-style: italic;
+	color: #e22f5b;
+	cursor: pointer;
+}
+
+.__CLASS__ .staff-pane > .my-motif > div
+{
+	color: #a8a8a8;
+	font-size: 18px;
+	margin-top: 5px;
+	opacity: 0;
+	.animate(opacity, 1s);
+}
+
+.__CLASS__ .staff-pane > .my-motif.can-play > div
+{
+	opacity: 1;
+}
+
+.__CLASS__ .maker
+{
+	position: relative;
+	.box-shadow();
+	height: 340px;
+	padding-top: 10px;
+	margin-top: 20px;
+}
+
+.__CLASS__ .maker .motif-notes
+{
+	width: 400px;
+	line-height: 50px;
+	margin: 10px auto;
+}
+
+.__CLASS__ .maker .motif-notes > div
+{
+	cursor: default;
+	color: #e22f5b;
+	text-align: center;
+	font-size: 64px;
+	min-height: 70px;
+	padding: 10px;
+	.box-shadow(0, 0, 2px, 0, #999);
+	cursor: pointer;
+}
+
+.__CLASS__ .maker .cursor
+{
+	width: 400px;
+	margin: 10px auto;
+	margin-bottom: 20px;
+}
+
+.__CLASS__ .maker .cursor > div
+{
+	background: #eee;
+	height: 2px;
+	min-height: 6px;
+	border-top: solid 2px #fff;
+	border-bottom: solid 2px #fff;
+}
+
+.__CLASS__ .maker .cursor > div.active
+{
+	background: #e22f5b;
+	border-top: solid 2px #e22f5b;
+	border-bottom: solid 2px #e22f5b;
+}
+
+.__CLASS__ .maker .alphabet
+{
+	width: 490px;
+	margin: auto;
+	height: 210px;
+}
+
+.__CLASS__ .maker .alphabet > .notes
+{
+	.box-shadow();
+	width: 489px;
+	height: 50px;
+}
+
+.__CLASS__ .maker .alphabet span
+{
+	float: left;
+	font-size: 36px;
+	color: #a0a0a0;
+	width: 69px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-right: solid 1px #eee;
+	cursor: pointer;
+}
+
+.__CLASS__ .maker .alphabet > .notes > span
+{
+	color: #fff;
+	background: #e22f5b;
+	margin-bottom: 10px;
+	border-right: solid 1px #dc6e89;
+}
+
+.__CLASS__ .maker .alphabet span.row-end
+{
+	border: none;
+}
+
+.__CLASS__ .maker .alphabet > .notes > span:active
+{
+	.box-shadow-inset(0, 0, 10px, 0, #333);
+	background: #8a8a8a;
+}
+
+
+.__CLASS__ .intro-overlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 0.9);
+	color: #8a8a8a;
+	cursor: pointer;
+}
+
+.__CLASS__ .intro-overlay > div
+{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.__CLASS__ .intro-overlay > div > div
+{
+	display: table-cell;
+	padding-top: 100px;
+	vertical-align: top;
+	text-align: center;
+	font-size: 26px;
+}
+
+.__CLASS__ .intro-overlay > div > div > img
+{
+	margin-bottom: 10px;
+}
+
+.__CLASS__ .intro-overlay
+{
+	.animate(opacity, 2s);
+}
+
+.__CLASS__.hide-intro-overlay .intro-overlay
+{
+	opacity: 0;
+	pointer-events: none;
+    background: none !important;
+}
+
+.__CLASS__.hide-intro-overlay .title
+{
+	height: 0;
+	margin: 0;
+}
+
+.__CLASS__.hide-intro-overlay .sheet
+{
+	height: 100%;
+  padding-bottom: 1000px;
+}
+
+.__CLASS__ .maker
+{
+	.animate(margin-top, 0.3s);
+}
+
+.__CLASS__.hide-intro-overlay .maker
+{
+/*	margin-top: 100px;*/
+}
+
+.__CLASS__ .go-back
+{
+	.animate(top, 1s);
+	position: absolute;
+	width: 100%;
+	top: -50px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.__CLASS__ .go-back > div
+{
+	.box-shadow();
+	display: inline-block;
+	color: #fff;
+	background: #e22f5b;
+	border: solid 5px #fff;
+	border-top: none;
+	padding: 8px 30px;
+}
+
+.__CLASS__.hide-intro-overlay .go-back
+{
+	top: 0;
+}
+
+.__CLASS__ .next-button
+{
+	position: absolute;
+	.box-shadow(0, 0, 3px);
+	bottom: 20px;
+	right: 20px;
+}
+
+.__CLASS__ .pop-up
+{
+	opacity: 0;
+	position: absolute;
+	top: 250px;
+	left: -15px;
+	width: 160px;
+	height: 160px;
+	background: url(static/pop-bg.png);
+	padding: 70px 70px 50px 50px;
+	font-size: 22px;
+	line-height: 28px;
+}
+
+.__CLASS__ .pop-up p
+{
+	line-height: 22px;
+	font-size: 16px;
+}
+
+.__CLASS__.hide-intro-overlay .pop-up
+{
+	opacity: 0.9;
+	.animate(opacity, 0.5s);
+}
+
+.__CLASS__.hide-intro-overlay .pop-up.gone
+{
+	opacity: 0.3;
+}

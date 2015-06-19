@@ -1,0 +1,53 @@
+<div>
+	<section class="title one-third">
+		<div>
+			<div>
+				<h1>${params.title}</h1>
+				<h2>${params.subtitle}</h2>
+			</div>
+		</div>
+	</section>
+	<div class="sheet-container">
+		<section class="sheet remainder">
+			<div class="selector">
+				<p class="question">${params.question}</p>
+			
+				<div class="boxes">
+					<div class="original">?</div>
+					<span>=</span>
+					<div>?</div>
+					<span>=</span>
+					<div>?</div>
+					<span>=</span>
+					<div>?</div>
+					<span>=</span>
+					<div>?</div>
+				</div>
+			
+				<div class="choice-buttons">
+				</div>
+				
+				{if params.footerText}
+					<div class="footer">
+						${params.footerText}
+					</div>
+				{/if}
+				
+				{{widget "btt.cc.ui.next-button", {width:60, height:60, nextPage:true, disabled:true}/}}
+			</div>
+			<div class="intro-overlay">
+				<div>
+					<div>
+						<img src="static/play.png"/>
+						<div>{i18n "intro-overlay-text"/}</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="bulge">
+		</div>
+	</div>
+	<div class="go-back">
+		<div>{i18n "go-back"/}</div>
+	</div>
+</div>

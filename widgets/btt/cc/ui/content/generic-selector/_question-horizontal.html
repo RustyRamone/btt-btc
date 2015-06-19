@@ -1,0 +1,23 @@
+<p class="question-text">
+	{if this.audio}
+		{{widget "btt.cc.audio-player", {size:"55px", audioFile:this.audio}/}}
+	{/if}
+	${text}
+</p>
+
+{if this.image}
+	<div>
+		<img class="question-img" data-absolutize="false" src="${btt.cc.media.mediaFileUrl(image)}"/>
+	</div>
+{/if}
+
+<div class="boxes ${this.smallAnswerBoxes ? 'small' : ''} ${this.extraSmallAnswerBoxes ? 'extra-small' : ''}">
+	{each answer in answers}
+		{if this.images}
+			<div class="img-embed" style="left:${answer.offset||0}; background:url(${btt.cc.media.mediaFileUrl(images[index])}) no-repeat"><div>?</div></div>
+		{/if}
+		{else}
+			<div style="left:${answer.offset||0}">?</div>
+		{/else}
+	{/each}
+</div>

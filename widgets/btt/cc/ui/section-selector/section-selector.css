@@ -1,0 +1,117 @@
+.__CLASS__
+{
+	position: relative;
+	height: 260px;
+	text-align: center;
+	.text-shadow();
+}
+
+.__CLASS__ > div.hr
+{
+	position: absolute;
+	top: -5px;
+	width: 380px;
+	height: 0px;
+	border-bottom: 1px solid #fff;
+}
+
+.__CLASS__ > div.stem
+{
+	position: absolute;
+	top: -27px;
+	left: 500px;
+	width: 1px;
+	height: 24px;
+  background: #fff;
+}
+
+
+.__CLASS__ .section-item
+{
+	color: #fff;
+	position: relative;
+	text-decoration: none;
+	display: inline-block;
+	margin: 20px 10px;
+	width: 150px;
+	height: 190px;
+	background: #a0a0a0;
+	border: solid 6px #fff;
+	vertical-align: top;
+}
+
+.__CLASS__ .section-item.non-chapter-item
+{
+	height: 125px;
+	background: none;
+}
+
+.__CLASS__ .section-item .dog-ear
+{
+	position: absolute;
+	right: -9px;
+	top: -8px;
+	display: none;
+}
+
+.page-loaded .__CLASS__ .section-item
+{
+	.animate(opacity, 0.5s);
+}
+
+.__CLASS__ .section-item.active
+{
+	opacity: 1;
+}
+
+.__CLASS__ .section-item.current .dog-ear
+{
+	display: inherit;
+}
+
+.__CLASS__ .section-item > div.stem
+{
+	position: absolute;
+	top: -30px;
+	left: 75px;
+	width: 0px;
+	height: 24px;
+  border-left: 1px solid #fff;
+}
+
+.__CLASS__ .section-item > div.icon
+{
+	height: 110px;
+	line-height: 110px;
+}
+
+.__CLASS__ .section-item > div.icon > img
+{
+	vertical-align: bottom;
+	margin-bottom: 10px;
+}
+
+.__CLASS__ .section-item > div.hr
+{
+	height: 1px;
+	margin: 0 20px;
+	border-top: 1px solid #969696;
+	border-bottom: 1px solid #b5b5b5;
+}
+
+.__CLASS__ .section-item > h2
+{
+	height: 48px;
+	text-align: left;
+	font-weight: normal;
+	line-height: 22px;
+	font-size: 18px;
+	margin: 5px 25px;
+	padding: 0;
+}
+
+.__CLASS__ .section-item.non-chapter-item > h2
+{
+	margin-top: 40px;
+	font-size: 18px;
+}

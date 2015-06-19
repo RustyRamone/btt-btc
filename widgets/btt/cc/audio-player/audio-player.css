@@ -1,0 +1,30 @@
+.__CLASS__
+{
+	position: relative;
+	cursor: pointer;
+
+	svg
+	{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.__CLASS__ > div
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.__CLASS__ > .button
+{
+	background: url(static/play.png);
+}
+
+.__CLASS__.playing > .button
+{
+	background: url(static/pause.png);
+}

@@ -1,0 +1,24 @@
+{
+    "name": "comp-corner",
+    "description": "Breezin' Thru Composing",
+    "author": "Patrick Gostovic <patrick.gostovic@osaaru.com>",
+    "version": "1.0.3",
+    "dependencies":
+	{
+        "phnq_widgets": "1.0.44",
+        "connect": "2.7.x",
+		"commander": "1.1.x",
+        "zombie": "1.4.1",
+        "mocha": "1.6.x"
+    },
+    "scripts":
+	{
+        "test": "mocha -t 60000 -R spec",
+		"start": "node web"
+    },
+    "engines":
+	{
+      "node": "0.10.x",
+      "npm": "1.4.x"
+    }
+}

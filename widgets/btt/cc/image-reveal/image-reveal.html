@@ -1,0 +1,11 @@
+<table style="background-image:url(${btt.cc.media.mediaFileUrl(params.image)}); width:${params.width}px; height:${params.height}px">
+	<% for(var r=0; r&lt;params.rows; r++) { %>
+		<tr>
+			<% for(var c=0; c&lt;params.cols; c++) { %>
+				<td>
+					<img class="covered" src="static/trans.png"/>
+				</td>
+			<% } %>
+		</tr>
+	<% } %>
+</table>

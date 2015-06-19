@@ -1,0 +1,20 @@
+.bulge()
+{
+	.box-shadow-inset(0px, 5px, 5px, -5px);
+	background: url(static/bulge1170.png) 50% -145px no-repeat;
+
+	@media (min-width: 980px) and (max-width: 1200px)
+	{
+		background: url(static/bulge980.png) 50% -120px no-repeat;
+	}
+}
+
+.bulge-on-pink()
+{
+	background: url(static/bulge1170.png) 50% -140px no-repeat;
+
+	@media (min-width: 980px) and (max-width: 1200px)
+	{
+		background: url(static/bulge980.png) 50% -115px no-repeat;
+	}
+}

@@ -1,0 +1,176 @@
+.__CLASS__
+{
+	background: @cc_bg_grey;
+	height: 95px;
+	.text-shadow(#fff);
+}
+
+.__CLASS__ .account
+{
+  position: absolute;
+  top: 14px;
+  right: 30px;
+  margin: 0 0 0 5px;
+  display: inline-block;
+  color: #686868;
+  font-size: 13px;
+  opacity: 0;
+  text-align: center;
+  height: 45px;
+  
+  .logout
+  {
+    color: @cc_bg_pink;
+    font-size: 24px;
+  }
+  
+  em
+  {
+    display: none;
+  }
+}
+
+.__CLASS__ .account.logged-in
+{
+  opacity: 1;
+}
+
+.__CLASS__ .account.user-set
+{
+  top: 5px;
+
+  em
+  {
+    display: block;
+    
+    span
+    {
+      display: inline-block;
+      overflow: hidden;
+      max-width: 80px;
+      overflow: hidden;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+    }
+  }
+}
+
+.__CLASS__ .logo
+{
+	height: 95px;
+}
+
+.__CLASS__ .chapter-nav
+{
+  position: relative;
+	margin-top: 25px;
+
+  .btn-group
+  {
+    height: 51px;
+  }
+}
+
+.__CLASS__ .browser-warning
+{
+  display: none;
+  width: 350px;
+  margin-left: 130px;
+  height: 95px;
+  opacity: 0;
+  .animate(opacity, 1s);
+}
+
+.__CLASS__ .browser-warning.show-warning
+{
+  display: table;
+  opacity: 1;
+}
+
+.__CLASS__ .browser-warning > div
+{
+  vertical-align: middle;
+  display: table-cell;
+  color: @cc_text_dark_grey;
+}
+
+.__CLASS__ .browser-warning strong
+{
+  color: #e22f5b;
+}
+
+/* iPad override */
+@media (min-width: 980px) and (max-width: 1020px)
+{
+	.__CLASS__ .chapter-nav
+	{
+/*    padding-right: 20px;*/
+	}
+  
+}
+
+@media (max-width: 1200px)
+{
+  .__CLASS__ .browser-warning
+  {
+    width: 250px !important;
+    margin-left: 70px;
+  }
+}
+
+.__CLASS__ .chapter-nav > .btn-group > .btn
+{
+	border: none;
+	background: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	color: @cc_text_dark_grey;
+	font-size: 18px;
+}
+
+.__CLASS__ .chapter-nav .previous, .__CLASS__ .chapter-nav .next
+{
+	border: solid 6px #fff;
+	padding: 7px 10px;
+	margin: 0 7px;
+	background: #e56c4b;
+	cursor: pointer;
+}
+
+.__CLASS__ .chapter-nav .next
+{
+  margin-right: 130px;
+}
+
+.__CLASS__ .of
+{
+	font-style: italic;
+}
+
+.__CLASS__ .dropdown-toggle
+{
+  height: 100%;
+
+  span
+  {
+    line-height: 45px;
+  }
+
+  span.caret
+  {
+    margin-top: 20px;
+  }
+}
+
+.__CLASS__ .dropdown-menu
+{
+	background: #E22F5B;
+	border-color: #fff;
+	margin-left: 20px;
+	.text-shadow();
+}
+
+.__CLASS__ .dropdown-menu > li > a
+{
+	color: #fff;
+}

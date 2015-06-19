@@ -1,0 +1,52 @@
+<div>
+	<section class="title one-third">
+		<div>
+			<div>
+				<h1>${params.title}</h1>
+				<h2>${params.subtitle}</h2>
+			</div>
+		</div>
+	</section>
+	<div class="sheet-container">
+		<section class="sheet remainder">
+			<div class="line-connect">
+				<div class="definitions-cell">
+					<div>
+                        {if !btt.cc.main.isIE}
+                            <canvas class="lines"></canvas>
+                        {/if}
+						<div class="definitions">
+						</div>
+					</div>
+				</div>
+				{if btt.cc.main.isIPad}
+					<div class="pop">{i18n "pop-text-iPad"/}</div>
+				{/if}
+				{else}
+					<div class="pop">{i18n "pop-text"/}</div>
+				{/else}
+				{{widget "btt.cc.ui.next-button", {width:60, height:60, nextPage:true, disabled:true}/}}
+			</div>
+			<div class="intro-overlay">
+				<div>
+					<div>
+						<img src="static/play.png"/>
+						<div>
+							{if params.introOverlayText}
+								${params.introOverlayText}
+							{/if}
+							{else}
+								{i18n "intro-overlay-text"/}
+							{/else}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="bulge">
+		</div>
+	</div>
+	<div class="go-back">
+		<div>{i18n "go-back"/}</div>
+	</div>
+</div>

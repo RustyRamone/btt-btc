@@ -1,0 +1,41 @@
+<div class="modal hide fade">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3>{i18n "uh-oh"/}</h3>
+    </div>
+    <div class="modal-body">
+      <div class="os-specific windows">
+        <p>{i18n "browser-message"/}</p>
+        <table>
+          <tr>
+            <td><a href="https://www.google.com/intl/en/chrome/browser/" target="_blank"><img src="static/chrome.png"/></a></td>
+            <td><a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">{i18n "chrome-win"/}</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://www.microsoft.com/download/internet-explorer-10-details.aspx" target="_blank"><img src="static/internet-explorer-512.png"/></a></td>
+            <td><a href="http://www.microsoft.com/download/internet-explorer-10-details.aspx" target="_blank">{i18n "ie-win"/}</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="os-specific mac">
+        <p>{i18n "browser-message"/}</p>
+        <table>
+          <tr>
+            <td><a href="https://www.google.com/intl/en/chrome/browser/" target="_blank"><img src="static/chrome.png"/></a></td>
+            <td><a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">{i18n "chrome-mac"/}</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://support.apple.com/kb/HT6104" target="_blank"><img src="static/safari-240.png"/></a></td>
+            <td><a href="http://support.apple.com/kb/HT6104" target="_blank">{i18n "safari-mac"/}</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="os-specific other">
+        <p>{i18n "browser-message-other"/}</p>
+      </div>
+      <p>{i18n "more-info"/}</p>
+    </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">{i18n "close"/}</button>
+  </div>
+</div>

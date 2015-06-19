@@ -1,0 +1,592 @@
+.__CLASS__
+{
+	height: 100%;
+}
+
+.__CLASS__ .sheet
+{
+	position: relative;
+	background: #fff;
+	z-index: 10;
+}
+
+.csstransforms
+{
+	.__CLASS__ .sheet
+	{
+		.animate(transform);
+	}
+
+	.__CLASS__.reveal-did-you-know .sheet
+	{
+		.transform(translateY(-95%));
+	}
+}
+
+.no-csstransforms
+{
+	.__CLASS__ .sheet
+	{
+		.animate(top, 0.3s);
+	}
+
+	.__CLASS__.reveal-did-you-know .sheet
+	{
+		top: -95%;
+	}
+}
+
+.__CLASS__ .questions
+{
+	position: relative;
+	z-index: 10;
+	padding: 140px 0;
+	.animate(padding, 0.5s);
+	background: #f8f8f8;
+	margin-left: 0;
+}
+
+.__CLASS__ .questions .previous
+{
+	margin-left: 0;
+}
+
+.__CLASS__ .questions .previous > span, .__CLASS__ .questions .next > span
+{
+	.box-shadow();
+	.animate(opacity, 0.3s);
+	display: block;
+	width: 50px;
+	height: 80px;
+	margin-top: 100px;
+	border: solid 10px #fff;
+	background: #e66c4b;
+	cursor: pointer;
+}
+
+.__CLASS__ .questions .previous, .__CLASS__ .questions .next
+{
+	.animate(opacity, 0.5s);
+	opacity: 1;
+}
+
+.__CLASS__ .questions .previous.disabled, .__CLASS__ .questions .next.disabled
+{
+	pointer-events: none;
+	opacity: 0.3;
+}
+
+
+.__CLASS__ .questions .previous > span
+{
+	border-left: none;
+	background: #e66c4b url(static/previous.png) no-repeat center;
+}
+
+.__CLASS__ .questions .next > span
+{
+	border-right: none;
+	background: #e66c4b url(static/next.png) no-repeat center;
+}
+
+.__CLASS__ .questions .previous > span.disabled, .__CLASS__ .questions .next > span.disabled
+{
+	opacity: 0.3;
+}
+
+.__CLASS__ .questions .question
+{
+/*	margin-top: 40px;*/
+	height: 90%;
+}
+
+.__CLASS__ .questions .question > .row
+{
+	height: 100%;
+}
+
+.__CLASS__ .questions .question .composer
+{
+	position: relative;
+/*	height: 100%;*/
+}
+
+.__CLASS__ .questions .question .composer > *
+{
+	.box-shadow(0, 0, 3px);
+	border: solid 5px #fff;
+	background: #fff;
+/*	margin-left: 25px;*/
+}
+
+.__CLASS__ .questions .question .composer .name
+{
+	font-size: 16px;
+	color: #8a8a8a;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.__CLASS__ .questions .question .composer .years
+{
+	font-size: 16px;
+	color: #e22f5b;
+}
+
+.__CLASS__ .questions .question .composer .did-you-know
+{
+	margin-top: 10px;
+	padding: 5px;
+	color: #fff;
+	text-align: center;
+	background: #e22f5b;
+	cursor: pointer;
+}
+
+.__CLASS__ .questions .question .buttons
+{
+	position: relative;
+	height: 100%;
+	margin-left: 0;
+}
+
+.__CLASS__ .questions .question .buttons > div
+{
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 15px;
+}
+
+.__CLASS__ .questions .question .buttons > div > img
+{
+	padding-bottom: 5px;
+}
+
+.__CLASS__ .questions .question .actual-question
+{
+	position: relative;
+	.box-shadow(0, 0, 3px);
+/*  padding-top: 40px;*/
+	text-align: center;
+	overflow: hidden;
+	background: #fff;
+  min-height: 320px;
+}
+
+.__CLASS__ .questions .question .actual-question .score
+{
+	position: relative;
+}
+
+.__CLASS__ .questions .question .actual-question.with-title .score
+{
+  margin-top: 40px !important;
+}
+
+.__CLASS__ .questions .question .actual-question .score img.score-image
+{
+	width: 400px;
+  max-height: 200px;
+	margin-top: 10px;
+}
+
+.__CLASS__ .questions .question .actual-question .score img.expand
+{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+	.animate(opacity);
+}
+
+.__CLASS__ .questions .question .actual-question.intro .score img.expand
+{
+  opacity: 0;
+}
+
+.__CLASS__ .questions .question .actual-question .score > div.overlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	opacity: 0;
+	.animate(opacity);
+}
+
+.__CLASS__ .questions .question .actual-question.intro .score > div.overlay
+{
+	opacity: 0.9;
+}
+
+
+.__CLASS__ .questions .question .actual-question.intro .audio
+{
+  padding: 30px 0;
+}
+
+.__CLASS__ .questions .question .actual-question.intro .audio > table
+{
+  margin: auto;
+  color: #8a8a8a;
+  font-size: 26px;
+}
+
+.__CLASS__ .questions .question .actual-question.intro .audio > table td
+{
+  text-align: center;
+  width: 180px;
+}
+
+.__CLASS__ .questions .question .actual-question.intro .audio > table td .audio-player
+{
+  display: inline-block;
+}
+
+
+
+
+.__CLASS__ .questions .question .actual-question div.player
+{
+	position: relative;
+}
+
+.__CLASS__ .questions .question .actual-question div.player > div
+{
+	position: absolute;
+	right: 5px;
+	top: -145px;
+	.animate(right);
+	.animate(top);
+}
+
+.__CLASS__ .questions .question .actual-question.with-title div.player > div
+{
+	top: -185px;
+}
+
+.__CLASS__ .questions .question .actual-question.intro div.player > div
+{
+	right: 275px;
+	top: -120px;
+}
+
+@media (min-width: 1200px)
+{
+	.__CLASS__ .questions .question .actual-question.intro div.player > div
+	{
+		right: 350px;
+	}
+}
+
+.__CLASS__ .questions .question .actual-question .labels
+{
+	position: relative;
+}
+
+.__CLASS__ .questions .question .actual-question label
+{
+	position: absolute;
+	padding-top: 10px;
+	color: #e22f5b;
+	font-size: 26px;
+	line-height: 36px;
+	opacity: 0;
+	.animate(opacity, 1s);
+	margin-left: -40px;
+	margin-right: -40px;
+}
+
+.__CLASS__ .questions .question .actual-question label.active
+{
+	opacity: 1;
+}
+
+@media (min-width: 1200px)
+{
+	.__CLASS__ .questions .question .actual-question label
+	{
+	}
+}
+
+.__CLASS__ .questions .question .actual-question label.question > span
+{
+	color: #a8a8a8;
+}
+
+.__CLASS__ .questions .question .actual-question > p
+{
+	color: #8a8a8a;
+	font-size: 20px;
+	padding: 5px 15px 10px 0;
+	line-height: 26px;
+}
+
+
+
+
+
+
+.__CLASS__ .questions .score-title
+{
+	position: absolute;
+	color: #a3a3a3;
+	font-size: 26px;
+	font-style: italic;
+	top: 20px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	.animate(opacity, 1s);
+}
+
+.__CLASS__ .questions .score-title.show-this
+{
+	opacity: 1;
+}
+
+
+
+
+.__CLASS__ .questions .selectX
+{
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	.animate(opacity, 1s);
+}
+
+.__CLASS__ .questions .selectX.show-this
+{
+	opacity: 1;
+}
+
+.__CLASS__ .questions .selectX > label
+{
+	padding: 10px 30px;
+	display: inline;
+	margin: auto;
+	color: #a3a3a3;
+	font-size: 16px;
+	font-style: italic;
+	border: solid 1px #eee;
+	border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.__CLASS__ .big-music-pop
+{
+	margin-left: -450px;
+	width: 900px;
+}
+
+.__CLASS__ .big-music-pop > div
+{
+	padding: 30px 0;
+}
+
+.__CLASS__ .cards-container
+{
+	min-height: 200px;
+	.bulge();
+	overflow: hidden;
+}
+
+.__CLASS__ .cards
+{
+	text-align: center;
+}
+
+.__CLASS__ .card
+{
+	display: inline-block;
+	padding: 5px;
+  padding-top: 0;
+	margin: 0 10px 10px 10px;
+	width: 180px;
+	height: 160px;
+	color: #a8a8a8;
+	font-size: 19px;
+	font-style: italic;
+	.box-shadow(0, 0, 3px);
+	cursor: pointer;
+}
+
+.__CLASS__ .card .answer
+{
+  line-height: 24px;
+  padding: 10px;
+}
+
+
+.__CLASS__ .cards.small .card
+{
+  width: 100px;
+}
+
+.__CLASS__ .card > div
+{
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.__CLASS__ .card > div > div
+{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-bottom: 20%;
+}
+
+.__CLASS__ .card.correct > div
+{
+	color: #fff;
+	background: #e22f5b url(static/checkmark.png) no-repeat bottom right;
+}
+
+.__CLASS__ .card.incorrect > div
+{
+	color: #fff;
+	background: #8a8a8a url(static/ex.png) no-repeat bottom right;
+}
+
+.__CLASS__ .did-you-know-underlay
+{
+	background: #d7d7d7;
+	position: relative;
+	top: -100%;
+	height: 800px;
+}
+
+.__CLASS__ .did-you-know-underlay .hide-underlay
+{
+	text-align: center;
+	padding-top: 25px;
+}
+
+.__CLASS__ .did-you-know-underlay .hide-underlay > div
+{
+	position: relative;
+	top: -40px;
+	.animate(top, 1s);
+	cursor: pointer;
+}
+
+.__CLASS__.reveal-did-you-know .did-you-know-underlay .hide-underlay > div
+{
+	top: -10px;
+}
+
+.__CLASS__ .did-you-know-underlay .hide-underlay > div
+{
+	display: inline-block;
+	color: #fff;
+	background: #e22f5b;
+	border: solid 5px #fff;
+	padding: 10px 20px;
+}
+
+.__CLASS__ .did-you-know-underlay h2
+{
+	padding-top: 30px;
+	color: #e22f5b;
+	font-size: 42px;
+	font-weight: normal;
+}
+
+.__CLASS__ .did-you-know-underlay .facts
+{
+	margin-top: 20px;
+	.columnize(3);
+	.text-shadow(#fff);
+}
+
+.__CLASS__ .did-you-know-underlay .fact
+{
+	color: #3f3e3e;
+	font-size: 15px;
+}
+
+@media (min-width: 1200px)
+{
+	.__CLASS__ .did-you-know-underlay .fact
+	{
+		font-size: 17px;
+	}
+}
+
+.__CLASS__ .did-you-know-underlay .timeline
+{
+	text-align: center;
+}
+
+.__CLASS__ .did-you-know-underlay .timeline img
+{
+	.box-shadow(0, 0, 5px, 0, #999);
+	width: 650px;
+}
+
+.__CLASS__ .did-you-know-underlay .legend
+{
+	position: relative;
+	color: #505050;
+	.text-shadow(#fff);
+}
+
+.__CLASS__ .did-you-know-underlay .legend table
+{
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.__CLASS__ .did-you-know-underlay .legend td
+{
+	padding: 5px;
+	font-size: 16px;
+}
+
+.__CLASS__ .did-you-know-underlay .legend .key
+{
+  text-align: center;
+}
+
+.__CLASS__ .did-you-know-underlay .legend .key > div
+{
+	width: 50px;
+	height: 20px;
+	border: 2px solid #fff;
+}
+
+.__CLASS__ .did-you-know-underlay .legend .key > img
+{
+	min-width: 25px;
+}
+
+.__CLASS__ .did-you-know-underlay .legend img.dot
+{
+  width: 25px;
+  height: 25px;
+}

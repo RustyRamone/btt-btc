@@ -1,0 +1,12 @@
+{
+	"uh-oh": "Uh oh!",
+	"chrome-win": "Chrome for Windows",
+	"chrome-mac": "Chrome for Mac",
+	"safari-win": "Safari for Windows",
+	"safari-mac": "Safari for Mac",
+	"ie-win": "IE 10 for Windows",
+	"browser-message": "Unfortunately, we don't support support this browser. For best results, please try a recent version of one of the following:",
+	"browser-message-other": "Unfortunately, we don't support support this browser.",
+	"more-info": "For more information, please refer to the technical requirements in the <a class='faq-link' href='#/0/faq'>FAQ section</a>.",
+	"close": "Close"
+}

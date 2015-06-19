@@ -1,0 +1,237 @@
+.__CLASS__
+{
+	.image-container
+	{
+		img
+		{
+			max-height: 250px;
+		}
+	}
+
+	.video-container
+	{
+		position: relative;
+
+		.player
+		{
+			.box-shadow(0px, 0px, 10px, 0px, #666);
+			opacity: 0.3;
+		}
+
+		.poster
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			padding-top: 50px;
+		}
+
+		&.activated
+		{
+			.player
+			{
+				opacity: 1;
+			}
+
+			.poster
+			{
+				display: none;
+			}
+		}
+	}
+}
+
+.__CLASS__ .sheet
+{
+	position: relative;
+	background: #fff;
+}
+
+.__CLASS__ .questions
+{
+	height: 400px;
+	background: #f8f8f8;
+}
+
+.__CLASS__ .captions
+{
+	background: #fff;
+}
+
+.__CLASS__ .questions .previous > span, .__CLASS__ .questions .next > span
+{
+	.box-shadow();
+	.animate(opacity, 0.3s);
+	display: block;
+	width: 50px;
+	height: 80px;
+	margin-top: 150px;
+	border: solid 10px #fff;
+	background: #e66c4b;
+	cursor: pointer;
+}
+
+.__CLASS__ .questions .previous > span
+{
+	border-left: none;
+	background: #e66c4b url(static/previous.png) no-repeat center;
+}
+
+.__CLASS__ .questions .next > span
+{
+	border-right: none;
+	background: #e66c4b url(static/next.png) no-repeat center;
+}
+
+.__CLASS__ .questions .previous > span.disabled, .__CLASS__ .questions .next > span.disabled
+{
+	opacity: 0.3;
+	pointer-events: none;
+}
+
+.__CLASS__ .questions .question
+{
+	vertical-align: middle;
+	text-align: center;
+	padding: 0 60px;
+	display: table;
+	height: 100%;
+}
+
+.__CLASS__ .questions .question > div
+{
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	padding-bottom: 30px;
+}
+
+.__CLASS__ .questions .question h3
+{
+	color: #e22f5b;
+	font-size: 42px;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+
+.__CLASS__ .questions .question p
+{
+	color: #a8a8a8;
+	font-size: 28px;
+	line-height: 36px;
+}
+
+.__CLASS__ .questions .question .staff-container
+{
+  width: 500px;
+  height: 150px;
+  margin: auto;
+}
+
+.__CLASS__ .questions .question .audio-container
+{
+  position: relative;
+}
+
+.__CLASS__ .questions .question .image-reveal-container > div
+{
+	display: inline-block;
+}
+
+.__CLASS__ .questions .question .image-reveal-container > div > *
+{
+	display: inline-block;
+}
+
+.__CLASS__ .questions .question .image-reveal-container .sideImage
+{
+	max-width: 330px;
+}
+
+.__CLASS__ .questions .question .audio-container .audio-player
+{
+  position: absolute;
+  right: 20%;
+}
+
+.__CLASS__ .questions .question > div > div.select-prompt
+{
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+	text-align: center;
+}
+
+.__CLASS__ .questions .question label
+{
+	padding: 15px 30px;
+	display: inline;
+	margin: auto;
+	color: #a3a3a3;
+	font-size: 18px;
+	font-style: italic;
+	border: solid 1px #eee;
+	border-bottom: none;
+}
+
+.__CLASS__ .cards-container
+{
+	min-height: 200px;
+	overflow: hidden;
+	.bulge();
+}
+
+.__CLASS__ .cards
+{
+	text-align: center;
+}
+
+.__CLASS__ .cards.small .card
+{
+  width: 100px;
+}
+
+.__CLASS__ .card
+{
+	display: inline-block;
+	padding: 5px;
+	padding-top: 0;
+	margin: 0 10px 10px 10px;
+	width: 180px;
+	height: 160px;
+	color: #a8a8a8;
+	font-size: 19px;
+	font-style: italic;
+	.box-shadow(0, 0, 3px);
+	cursor: pointer;
+}
+
+.__CLASS__ .card > div
+{
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.__CLASS__ .card > div > div
+{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-bottom: 20%;
+}
+
+.__CLASS__ .card.correct > div
+{
+	color: #fff;
+	background: #e22f5b url(static/checkmark.png) no-repeat bottom right;
+}
+
+.__CLASS__ .card.incorrect > div
+{
+	color: #fff;
+	background: #8a8a8a url(static/ex.png) no-repeat bottom right;
+}

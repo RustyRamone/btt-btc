@@ -1,0 +1,101 @@
+.__CLASS__
+{
+	position: relative;
+	background: url(static/BreezinThru-Background.jpg) -100px 0px;
+	height: 100%;
+	.box-shadow();
+	
+	.next-button
+	{
+		margin-top: 190px;
+		margin-left: -40px;
+		.box-shadow();
+	}
+
+	.logobox-row
+	{
+		position: relative;
+		top: -340px;
+		pointer-events: none;
+		
+		.logobox
+		{
+  		position: relative;
+			margin-top: 100px;
+			height: 300px;
+			background: #fff;
+			.box-shadow();
+			font-style: italic;
+			font-size: 34px;
+			
+			.breezin-thru
+			{
+				margin-top: 180px;
+				color: #e66c4b;
+				line-height: 40px;
+				padding-left: 80px;
+			
+				span
+				{
+					font-size: 20px;
+					line-height: 40px;
+					vertical-align: top;
+				}
+			}
+
+			.composing
+			{
+				color: #e22f5b;
+				line-height: 30px;
+				padding-left: 80px;
+			}
+      
+      .copyright
+      {
+    		position: absolute;
+        bottom: 20px;
+        right: 20px;
+        color: #a8a8a8;
+        font-size: 12px;
+        font-style: italic;
+        text-shadow: none;
+      }
+      
+      .beta
+      {
+    		position: absolute;
+        font-family: sans-serif;
+        top: 20px;
+        right: 20px;
+        color: #ccc;
+        font-size: 20px;
+        font-style: normal;
+      }
+		}
+	}
+}
+
+@media (min-width: 1200px)
+{
+	.__CLASS__ .logobox-row
+	{
+		top: -360px;
+  }
+  
+	.__CLASS__ .logobox
+	{
+		margin-top: 80px !important;
+		height: 388px !important;
+		font-size: 44px !important;
+		
+		.breezin-thru
+		{
+			margin-top: 200px !important;
+		}
+		
+		.breezin-thru, .composing
+		{
+			padding-left: 60px !important;
+		}
+	}
+}

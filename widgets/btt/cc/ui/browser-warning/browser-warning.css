@@ -1,0 +1,40 @@
+.__CLASS__
+{
+  color: #8a8a8a;
+  font-size: 20px;
+  line-height: 28px;
+
+  h3
+  {
+    color: #e22f5b;
+  }
+
+  .os-specific
+  {
+    a
+    {
+      font-weight: bold;
+    }
+  }
+
+  .os-specific > table
+  {
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .os-specific > table td
+  {
+    padding: 5px;
+  }
+
+  .os-specific img
+  {
+    width: 64px;
+    height: 64  px;
+  }
+}
+
+
+

@@ -1,0 +1,114 @@
+@cc_bg_grey: #e3e3e3;
+@cc_bg_pink: #e22f5b;
+@cc_text_dark_grey: #686868;
+
+.rotate(@angle:0)
+{
+	-webkit-transform: rotate(@angle);
+	-moz-transform: rotate(@angle);
+	-ms-transform: rotate(@angle);
+	-o-transform: rotate(@angle);
+}
+
+.text-shadow(@color: rgba(0, 0, 0, 0.3))
+{
+	text-shadow: 1px 1px 2px @color;
+}
+
+.box-shadow (@x: 0; @y: 0; @blur: 5px; @spread: 0; @color: #ccc)
+{
+	box-shadow: @arguments;
+	-moz-box-shadow: @arguments;
+	-webkit-box-shadow: @arguments;
+	-ms-box-shadow: @arguments;	
+}
+
+.box-shadow-dark (@x: 0; @y: 0; @blur: 8px; @spread: 0)
+{
+	.box-shadow(@x, @y, @blur, @spread, rgba(50, 50, 50, 0.3));
+}
+
+.box-shadow-none()
+{
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.box-shadow-bottom (@amount: 5px; @color: #333)
+{
+	.box-shadow(0, @amount, @amount, -@amount, @color);
+}
+
+.box-shadow-inset (@x: 0; @y: 0; @blur: 5px; @spread: 0px; @color: #999)
+{
+	box-shadow: @arguments inset;
+	-moz-box-shadow: @arguments inset;
+	-webkit-box-shadow: @arguments inset;
+}
+
+.columnize (@count: 1, @gap: 20px)
+{
+    column-count: @count;
+    -moz-column-count: @count;
+    -webkit-column-count: @count;
+    column-gap: @gap;
+    -moz-column-gap: @gap;
+    -webkit-column-gap: @gap;
+}
+
+.animate(@property, @duration: 0.5s, @easing: ease)
+{
+	-webkit-transition-property: @property @easing;
+	-moz-transition-property: @property @easing;
+	-ms-transition-property: @property @easing;
+	-o-transition-property: @property @easing;
+	transition-property: @property @easing;
+
+	-webkit-transition-duration: @duration;
+	-moz-transition-duration: @duration;
+	-ms-transition-duration: @duration;
+	-o-transition-duration: @duration;
+	transition-duration: @duration;
+
+	-webkit-animation-timing-function: @easing;
+	-moz-animation-timing-function: @easing;
+	-ms-animation-timing-function: @easing;
+	-o-animation-timing-function: @easing;
+	animation-timing-function: @easing;
+}
+
+.animate-opacity(@duration:0.5s)
+{
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
+	-ms-transition-property: opacity;
+	-o-transition-property: opacity;
+	transition-property: opacity;
+
+	-webkit-transition-duration: @duration;
+	-moz-transition-duration: @duration;
+	-ms-transition-duration: @duration;
+	-o-transition-duration: @duration;
+	transition-duration: @duration;
+}
+
+.transform(@transform)
+{
+	-webkit-transform: @transform;
+	-moz-transform: @transform;
+	-ms-transform: @transform;
+	-o-transform: @transform;
+	-webkit-transform: @transform;
+}
+
+body
+{
+	background: @cc_bg_pink !important;
+	font-family: Times !important;
+}
+
+label
+{
+	cursor: auto !important;
+}
