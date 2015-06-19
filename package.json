@@ -3,6 +3,11 @@
     "description": "Breezin' Thru Composing",
     "author": "Patrick Gostovic <patrick.gostovic@osaaru.com>",
     "version": "1.0.4",
+    "repository":
+    {
+        "type": "git",
+        "url": "git://github.com/pgostovic/btt-btc.git"
+    },
     "dependencies":
 	{
         "phnq_widgets": "1.0.45",
