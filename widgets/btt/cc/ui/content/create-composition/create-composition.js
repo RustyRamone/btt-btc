@@ -8,7 +8,7 @@ var widget =
 		var _this = this;
 		
 		this.view = 0;
-        
+
 		btt.cc.model.student.getCurrent(function(student)
 		{
 			if(student.motif)
@@ -224,7 +224,7 @@ var widget =
 			$$(".instruction label").text(!!this.params.playPad ? "Overview & Play Pad" : "Overview");
 			$$(".instruction p").text(this.params.subtitle);
 
-			var kbType = this.params.playPad.keyboardType || "piano";
+			var kbType = this.params.playPad ? (this.params.playPad.keyboardType || "piano") : "piano";
 			$$(".play-pad-keyboard").addClass("keyboard-type-"+kbType);
 			
 			if(this.params.smallText)

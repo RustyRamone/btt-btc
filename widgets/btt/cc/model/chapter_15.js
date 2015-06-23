@@ -25,14 +25,194 @@ btt.cc.model.chapter.chapters.push(
 					subtitle:"Be A Songwriter",
 					synopsis:"In this lesson, you’ll be writing a song. Songs are like stories and you’ll be learning how to tell a story through song using five key ingredients. You’ll discover how to get inspired, how to get your lyric ideas on paper, how to get a melody going and what chords to use; all within one of the tried and true structures that have served memorable songs so well over time. So let’s get going on this exciting journey. Review the lessons, view the composition model video and have fun coming up with your own song.",
 					audioFile: "Ch15_Introv2 2"
-				}
+				},
+				{
+					type: "btt.cc.ui.content.create-composition",
+					id: "five-key-ingredients-to-a-song",
+					titleMain: "Five Key Ingredients to a Song",
+					breadcrumb: "Five Key Ingredients to a Song",
+					title: "Five (5) Key Ingredients to a Song",
+					subtitle: "These five (5) ingredients all play an important role in the process of songwriting.",
+					smallText: true,
+                    showMotif: false,
+                    scoreImage: "Ch15Ingredients.png",
+					downloadSteps:
+					[
+					]
+				},
+				{
+					type: "btt.cc.ui.content.staff-player",
+					id: "inspiration",
+					title: "Inspiration",
+					subtitle: "",
+					cards:
+					[
+						{
+							title: "Inspiration",
+							text: "Writing a song is about self-expression; it’s your voice. You have a blank canvas on which to write your message.",
+							scoreImage: "Ch15Inspiration.png",
+							audioFile: "Ch15_Inspiration",
+							largePlayer: true
+						}
+					]
+				},
+				{
+					type: "btt.cc.ui.content.composition-model",
+					id: "inspirational-example",
+					title: "Inspirational Example",
+					videos:
+					[
+						{
+							title: "Inspirational Example",
+							posterText: "",
+							text: "Meghan Trainor was inspired to write It’s All About That Bass with the message of self-love and acceptance of one’s body.",
+							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/ofxGAXSope8?rel=0" frameborder="0" allowfullscreen></iframe>'
+						}
+					]
+				},
+				{
+					type: "btt.cc.ui.content.staff-player",
+					id: "song-structure",
+					title: "Song Structure",
+					subtitle: "",
+					cards:
+					[
+						{
+							title: "",
+							text: "",
+							scoreImage: "Ch15_SongStructureParts.png",
+							isIntroCard: true,
+							largePlayer: true
+						},
+						{
+							title: "Song Structure",
+							text: "A song tells a story as it progresses through different identifiable sections of music.",
+							scoreImage: "Ch15_SongStructureParts.png",
+							audioFile: "Ch15_SongStructure",
+							largePlayer: true
+						}
+					]
+				},
+				{
+					type: "btt.cc.ui.content.composition-model",
+					id: "structure-example",
+					title: "Structure Example",
+					videos:
+					[
+						{
+							title: "Structure Example",
+							posterText: "",
+							text: "See if you can identify the various parts of ‘Happy’: Verse, Chorus, Bridge",
+							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/ZbZSe6N_BXs?rel=0" frameborder="0" allowfullscreen></iframe>'
+						}
+					]
+				},
+				{
+					type: "btt.cc.ui.content.staff-player",
+					id: "song-structure-forms",
+					title: "Structure – Three (3) Popular Song Forms",
+					subtitle: "",
+					cards:
+					[
+						{
+							title: "",
+							text: "",
+							scoreImage: "Ch15_SongStructureForm.png",
+							isIntroCard: true,
+							largePlayer: true
+						},
+						{
+							title: "Structure – Three (3) Popular Song Forms",
+							text: "Songs can follow different paths. These are the three basic forms that you’ll discover when you listen to songs.",
+							scoreImage: "Ch15_SongStructureForm.png",
+							audioFile: "Ch15_SongStructureForm",
+							largePlayer: true
+						}
+					]
+				},
+				{
+					type: "btt.cc.ui.content.line-connect",
+					id: "definitions-quiz",
+					title: "Definitions Quiz",
+					subtitle: "Test your knowledge about the parts of a song.",
+					srcThingName: "term",
+					destThingName: "definition",
+					wideExpressions: true,
+					definitions:
+					[
+						{
+							expression:
+							{
+								text: "Verse"
+							},
+							meaning:
+							{
+								text: "Lays out the events of the story"
+							}
+						},
+						{
+							expression:
+							{
+								text: "Chorus"
+							},
+							meaning:
+							{
+								text: "The stand-out section of the song"
+							}
+						},
+						{
+							expression:
+							{
+								text: "Bridge"
+							},
+							meaning:
+							{
+								text: "Gives listener a break from other sections"
+							}
+						},
+						{
+							expression:
+							{
+								text: "‘Yesterday’"
+							},
+							meaning:
+							{
+								text: "Has no chorus"
+							}
+						},
+						{
+							expression:
+							{
+								text: "‘All About That Bass’"
+							},
+							meaning:
+							{
+								text: "Begins with the chorus"
+							}
+						}
+					]
+				},
+				{
+					type: "btt.cc.ui.content.composition-model",
+					id: "lyrics",
+					title: "Lyrics",
+					videos:
+					[
+						{
+							title: "Lyrics",
+							posterText: "",
+							text: "The third ingredient is your lyrics. View this to learn about the different lyric essentials.",
+							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/gm9U3mUEXEE?rel=0" frameborder="0" allowfullscreen></iframe>'
+						}
+					]
+				},
 
 
 
 
 
 
-				
+
 			]
 		},
 		{
