@@ -342,6 +342,93 @@ btt.cc.model.chapter.chapters.push(
 						}
 					]
 				},
+				{
+					type: "btt.cc.ui.content.generic-selector",
+					id: "theory-link",
+					title: "Theory Link",
+					subtitle: "Name the three(3) primary chords in each key.",
+					introOverlayText: "Select the I-IV-V chords.",
+					questions:
+					[
+						{
+							text: "Key: E Major<br/><span style='color:#8a8a8a; font-style:normal'>Chords</span>",
+							smallAnswerBoxes: true,
+							audioPrize: "Ch15Quzi_EMaj",
+							answers:
+							[
+								{
+									text: "E"
+								},
+								{
+									text: "A"
+								},
+								{
+									text: "B"
+								}
+							]
+						},
+						{
+							text: "Key: D Major<br/><span style='color:#8a8a8a; font-style:normal'>Chords</span>",
+							smallAnswerBoxes: true,
+							audioPrize: "Ch15Quiz_DMaj",
+							answers:
+							[
+								{
+									text: "D"
+								},
+								{
+									text: "G"
+								},
+								{
+									text: "A"
+								}
+							]
+						},
+						{
+							text: "Key: G Major<br/><span style='color:#8a8a8a; font-style:normal'>Chords</span>",
+							smallAnswerBoxes: true,
+							audioPrize: "Ch15Quiz_GMaj",
+							answers:
+							[
+								{
+									text: "G"
+								},
+								{
+									text: "C"
+								},
+								{
+									text: "D"
+								}
+							]
+						}
+					],
+					shuffleChoices: false,
+					reuseChoices: true,
+					choices:
+					[
+						{
+							text: "A"
+						},
+						{
+							text: "B"
+						},
+						{
+							text: "C"
+						},
+						{
+							text: "D"
+						},
+						{
+							text: "E"
+						},
+						{
+							text: "F"
+						},
+						{
+							text: "G"
+						}
+					]
+				}
 
 
 
