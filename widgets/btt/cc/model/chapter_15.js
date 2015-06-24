@@ -206,6 +206,47 @@ btt.cc.model.chapter.chapters.push(
 						}
 					]
 				},
+				{
+					type: "btt.cc.ui.content.multiple-choice",
+					id: "roll-over-beethoven",
+					title: "Roll Over Beethoven",
+					video:
+					{
+						width: 444,
+						height: 250,
+						id: "EOrMg3pY7hw"
+					},
+					questions:
+					[
+						{
+							id: "question",
+							title: "",
+							text: "What is the message in this song?",
+							correctAnswers: ["The singer wants to hear Rock ‘n Roll music"],
+							incorrectAnswers: ["The singer wants to dance", "The singer wants to hear Beethoven"]
+						},
+						{
+							id: "question",
+							title: "",
+							text: "What is the hook in this song?",
+							correctAnswers: ["Roll Over Beethoven"],
+							incorrectAnswers: ["Juke Box Blowin’ a Fuse", "Dig These Rhythm ‘n Blues"]
+						},
+						{
+							id: "question",
+							text: "Who is writing the letter to the DJ",
+							correctAnswers: ["The singer"],
+							incorrectAnswers: ["Beethoven", "The singer’s girlfriend"]
+						},
+						{
+							id: "question",
+							title: "",
+							text: "What is the structure of this song",
+							correctAnswers: ["Verses & Bridge"],
+							incorrectAnswers: ["Verses, Chorus & Bridge", "Verse & Chorus"]
+						}
+					]
+				},
 
 
 
