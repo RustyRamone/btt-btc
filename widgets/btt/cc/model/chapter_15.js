@@ -247,6 +247,87 @@ btt.cc.model.chapter.chapters.push(
 						}
 					]
 				},
+				{
+					type: "btt.cc.ui.content.composition-model",
+					id: "melody",
+					title: "Melody",
+					videos:
+					[
+						{
+							title: "Melody",
+							posterText: "",
+							text: "View this video to learn about the process of creating your melody.",
+							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/yBbLqS1uEhg?rel=0" frameborder="0" allowfullscreen></iframe>'
+						}
+					]
+				},
+				{
+					type: "btt.cc.ui.content.composer-music",
+					id: "lennon-mccartney",
+					title: "Lennon-McCartney",
+					composerName: "Lennon-McCartney",
+					composerYears: "",
+					composerImage: "Guitar2.png",
+					video:
+					{
+						code: '<iframe style="margin-top:10px" id="jaws_clip" width="80%" height="220" src="//www.youtube.com/embed/ipADNlW7yBM?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+					},
+					questionIntro: "<span>Listen:</span> I Want to Hold Your Hand",
+					questions:
+					[
+						{
+							id: "question1",
+							question: "The Beatles performed and recorded during the 1960s.",
+							answers: ["True", "False"],
+							smallCards: false,
+							numCorrect: 1
+						},
+						{
+							id: "question2",
+							question: "I Want to Hold Your Hand has 3 verses and a bridge that repeats",
+							answers: ["True", "False"],
+							smallCards: false,
+							numCorrect: 1
+						},
+						{
+							id: "question3",
+							question: "I Want to Hold Your Hand has a chorus.",
+							answers: ["False", "True"],
+							smallCards: false,
+							numCorrect: 1
+						},
+						{
+							id: "question4",
+							question: "The Beatles had 20 number one hits on the Billboard 100.",
+							answers: ["True", "False"],
+							smallCards: false,
+							numCorrect: 1
+						}
+					],
+					didYouKnow:
+					{
+						title: "Lennon-McCartney",
+						facts:
+						[
+							"Lennon & McCartney, one of the greatest songwriting duos of all time, were two of four members of the Beatles rock & roll band of the 1960s.",
+							"Recording and performing over a span of 10 years between 1960 and 1970, the Beatles ignited a new era in popular music and the rock & roll band was born.",
+							"<em>I Want to Hold Your Hand</em>, a simple love song, one of their earliest hits.",
+							"Over the span of their career together, they had 20 number-one hits on the Billboard Hot 100.",
+							"Their American debut on the Ed Sullivan Show in 1964 sparked Beatlemania around the world.",
+							"The phrase “British Invasion” was coined as the Beatles led the way for other British rock and pop groups to become popular in North America."
+						],
+						legendItems:
+						[
+							{redDot:true, text:"Lennon/McCartney Meet as teenagers 1957"},
+							{color:"#535353", text:"The Beatles record & perform"},
+							{whiteDotOrangeBorder:true, text:"The Beatles perform on Ed Sullivan 1964"},
+							{color:"#e3335d", text:"British Invasion – Music & Fashion Cross the Atlantic"},
+							{orangeDot:true, text:"MIDI Technology changes the sound of music"}
+						],
+						legendItemsPerLine: 2,
+						timelineImage: "Timeline_ch15.jpg"
+					}
+				},
 
 
 
