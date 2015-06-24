@@ -328,6 +328,20 @@ btt.cc.model.chapter.chapters.push(
 						timelineImage: "Timeline_ch15.jpg"
 					}
 				},
+				{
+					type: "btt.cc.ui.content.composition-model",
+					id: "chords",
+					title: "Chords",
+					videos:
+					[
+						{
+							title: "Chords",
+							posterText: "",
+							text: "Chords provide the background harmony for songs.",
+							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/VBiXXlor4nk?rel=0" frameborder="0" allowfullscreen></iframe>'
+						}
+					]
+				},
 
 
 
