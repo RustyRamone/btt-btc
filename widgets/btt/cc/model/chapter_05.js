@@ -182,7 +182,7 @@ btt.cc.model.chapter.chapters.push(
 					type: "btt.cc.ui.content.generic-selector",
 					id: "elements-of-music-expression",
 					title: "Elements of Music - Expression",
-					subtitle: "You will be substituting some of your quarter notes with 8th note<br/>and 8th rest pairings in your new composition.",
+					subtitle: "Expression markings can tell us how loud or soft to play music.",
 					introOverlayText: "Test your knowledge about dynamics.",
 					questions:
 					[
