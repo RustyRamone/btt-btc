@@ -316,7 +316,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Major & Minor",
 							text: "Major and minor melodies have a very distinct sound. One sounds brighter and the other sounds darker.",
 							poster: "MajMinVideoPosterImage.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/4LDm-TmcSBc?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/4Bqafak3NMg?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -445,7 +445,7 @@ btt.cc.model.chapter.chapters.push(
 						{
 							title: "Composition Model",
 							text: "View this movie to see how you come up with a musical theme like Chopin's in a minor key.",
-							poster: "Ch11_Poster_CompModel.jpg",
+							poster: "Ch10CompPoster.jpg",
 							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/S4bSu4Ud3a4?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
@@ -479,11 +479,11 @@ btt.cc.model.chapter.chapters.push(
                         "Expand melody to 12 measures by repeating 2 phrases. <em style=\"color:#e22f5b\">(Expand Form)</em>",
                         "Add expression & tempo markings. <em style=\"color:#e22f5b\">(Add Expression & Tempo)</em>"
 					],
-					finaleTemplateFile: "Chapter11_CompTemplate.mus",
-					sibeliusTemplateFile: "Chapter11_CompTemplate.sib",
-					compModelFile: "pdf/Chapt11_My Minor Theme[2]",
-					finaleTipsFile: "pdf/Ch11FinaleTips",
-					sibeliusTipsFile: "pdf/Ch11SibelusTips",
+					finaleTemplateFile: "Chapter10_CompTemplate.mus",
+					sibeliusTemplateFile: "Chapter10_CompTemplate.sib",
+					compModelFile: "pdf/Chapt10_My Minor Theme[2]",
+					finaleTipsFile: "pdf/Ch10FinaleTips",
+					sibeliusTipsFile: "pdf/Ch10SibelusTips",
 					playPad:
 					{
 						description: "<em style='color:#e22f5b'>Melodic Shape:</em> Experiment creating / playing different melodic shapes as indicated below. Use notes of <em><u>D MINOR</u></em>. Try both steps and skips.",
@@ -519,7 +519,7 @@ btt.cc.model.chapter.chapters.push(
 					type: "btt.cc.ui.content.reflect-discuss",
 					id: "reflect-discuss",
 					instructions: "Fill in your reflections below:",
-					evaluationRubricFile: "pdf/CCMobileCh11_Rubric",
+					evaluationRubricFile: "pdf/CCMobileCh10_Rubric",
 					reflections:
 					[
 						"Which melodic shapes did you use to construct your phrases?",
@@ -580,7 +580,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "video",
 								title: "See How",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/ARjOxnfEc5k?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/r-AWe0rJtoM?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
 								type: "audio",
