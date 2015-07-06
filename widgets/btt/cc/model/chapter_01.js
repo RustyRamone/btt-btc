@@ -268,7 +268,32 @@ btt.cc.model.chapter.chapters.push(
 					sibeliusTemplateFile: "Ch_1_CompositionTemplate.sib",
 					compModelFile: "pdf/CC_Ch1_Print_Model[4]",
 					finaleTipsFile: "pdf/Ch1FinaleTips",
-					sibeliusTipsFile: "pdf/Ch1SibeliusTips"
+					sibeliusTipsFile: "pdf/Ch1SibeliusTips",
+					playPad:
+					{
+						description: "<em style='color:#e22f5b'>Introduction to the Piano:</em> Learn the piano note names. Enter your motif and practise playing it forward, backward and up a step in quarter notes.",
+						// image: "Ch-11-PlayPadImage.png",
+						labels:
+						{
+							style: "flat",
+							white: {
+								"0": "C" , "1": "D", "2": "E", "3": "F", "4": "G", "5": "A", "6": "B", "7": "C", "8": "D",
+								"8": "D", "9": "E", "10": "F", "11": "G", "12": "A", "13":"B", "14": "C", "15": "D",
+								"16":"E","17":"F","18":"G","19":"A","20":"B","21":"C",
+							},
+							black:{}
+						},
+						fields:
+						[
+							{
+								placeholder: "Your Name Motif"
+							}
+						]
+					},
+					css:
+					{
+						// ".play-pad-reveal div": {position:"relative", top:"-60px"}
+					}
 				}
 			]
 		},
