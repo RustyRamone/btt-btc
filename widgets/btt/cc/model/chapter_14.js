@@ -23,7 +23,7 @@ btt.cc.model.chapter.chapters.push(
 					breadcrumb:"Introduction",
 					title: "Chapter 14:",
 					subtitle:"Jingles That Sell",
-					synopsis:"This chapter focuses on advertising jingles. We’ll take a look at how with a memorable melody and some catchy words, a good jingle can portray a brand in a way that sticks in the mind of the consumer and helps them better understand the value of the product. Then you’ll use your newly learned techniques to create a jingle for a product or service of your choice, whether imagined or real. So check out the lessons and then view the video on how to get going and create your own jingle.",
+					synopsis:"This chapter focuses on advertising jingles and shows you how, with a memorable melody and some catchy words, you can portray a brand in a way that sticks in the mind of the consumer. You’ll learn about the techniques you can use to create a jingle for a product or service of your choice, whether imagined or real.",
 					audioFile: "Ch14_Intro"
 				},
 				{

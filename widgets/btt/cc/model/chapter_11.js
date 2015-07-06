@@ -13,9 +13,7 @@ btt.cc.model.chapter.chapters.push(
 			{
 				title: "Lesson",
 				synopsis: "Lesson Activities",
-
-				// TODO -- replace the id's in the menu
-				synopsisExtra: "<ol><li data-target='intro'>Introduction</li><li data-target='working-with-motifs'>Working with Motifs</li><li data-target='melodic-shape'>Working with Instrumentation</li><li data-target='melodic-movement'>Creating a Scene</li><li data-target='chopin'>Prokofiev  - Peter & the Wolf</li><li data-target='major-and-minor'>Theory Link</li></ol>"
+				synopsisExtra: "<ol><li data-target='intro'>Introduction</li><li data-target='working-with-motifs'>Working with Motifs</li><li data-target='instrumentation'>Working with Instrumentation</li><li data-target='creating-a-scene'>Creating a Scene</li><li data-target='sergei-prokofiev'>Prokofiev  - Peter & the Wolf</li><li data-target='minor-keys-scales'>Theory Link</li></ol>"
 			},
 			pages:
 			[
@@ -194,7 +192,7 @@ btt.cc.model.chapter.chapters.push(
 				{
 					type: "btt.cc.ui.content.staff-player",
 					id: "instrumentation",
-					title: "Instrumentation",
+					title: "Working with Instrumentation",
 					subtitle: "The range and tonal color of a musical instrument can help to paint images in a story.",
 					cards:
 					[
@@ -318,11 +316,9 @@ btt.cc.model.chapter.chapters.push(
 					composerName: "Sergei Prokofiev",
 					composerYears: "1891-1953",
 					composerImage: "SergeiProkofiev.jpg",
-					score:
+					video:
 					{
-						image1: "FuneralMarchFull.png",
-						audio: "Ch11_ Funeral",
-						canExpand: true
+						code: '<iframe style="margin-top:10px" width="340" height="220" src="//www.youtube.com/embed/iuLFdGvIuVg?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 					},
 					questionIntro: "<span>Listen:</span> to how Prokofiev depicts the characters and action in Peter & the Wolf.",
 					questions:
@@ -412,8 +408,8 @@ btt.cc.model.chapter.chapters.push(
 						{
 							title: "Composition Model",
 							text: "View this movie to see how you can create and match music to prose or poetry.",
-							poster: "Ch11N_PosterCompModel.jpg", /* NEED */
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/S4bSu4Ud3a4?rel=0" frameborder="0" allowfullscreen></iframe>' /* NEED */
+							//poster: "Ch11N_PosterCompModel.jpg", /* NEED */
+							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/1KpNi4-CuAw?rel=0" frameborder="0" allowfullscreen></iframe>' /* NEED */
 						}
 					]
 				},

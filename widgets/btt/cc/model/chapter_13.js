@@ -23,7 +23,7 @@ btt.cc.model.chapter.chapters.push(
 					breadcrumb:"Introduction",
 					title: "Chapter 13:",
 					subtitle:"Off to the Movies!",
-					synopsis:"We're looking at movie music in this chapter, and how important its role is in helping to tell a story. There are different ways music can be used in film, but we’ll focus on film scoring. You’ll remember that in Chapter 11, you created your own music to paint a scene to go with narrated prose, which is a very similar process to film scoring. Now you’ll create a short cinematic score using percussion instruments to punctuate some high-energy piano music and emphasize the action. So be sure to check out the lessons and view the video on how to create an interesting and fun cartoon film score.",
+					synopsis:"We’ll look at movie music in this lesson and how it helps to tell a story. There are different ways music can be used in film, but we’ll focus on film scoring. In Chapter 11, you created music to go with narrated prose, a very similar process. Now, you’ll learn how to add a percussion part to complete a cinematic score that punctuates the action in a fun cartoon movie clip.",
 					audioFile: "Ch13Intro 1"
 				},
 				{
@@ -105,20 +105,20 @@ btt.cc.model.chapter.chapters.push(
 						{
 							title: "",
 							text: "Look at three (3) different ways music is used in movies.",
-							scoreImage: "Ch13_Types_FilmScoring.png",
+							scoreImage: "Ch13_Types_FilmScoring.jpg",
 							isIntroCard: true,
 							largePlayer: true
 						},
 						{
 							title: "Film Scoring",
 							text: "This music is scored to synchronize with specific events/action in a movie. A good example would be Pirates of the Caribbean.",
-							scoreImage: "Ch13_Types_FilmScoring.png",
+							scoreImage: "Ch13_Types_FilmScoring.jpg",
 							audioFile: "Ch13TypesofMusicFilmScoring",
 							largePlayer: true
 						},
 						{
 							title: "Songs",
-							text: "This music is normally used to portray the theme of the story such as the love song in the Titanic.",
+							text: "Songs are used to portray the theme of the story such as Hakuna Matata in the Lion King. Listen to this one and imagine the theme.",
 							scoreImage: "Ch13_Types_Songs.jpg",
 							audioFile: "Ch13Types_Songs",
 							largePlayer: true
@@ -126,7 +126,7 @@ btt.cc.model.chapter.chapters.push(
 						{
 							title: "Ambient Music",
 							text: "Ambient music, usually a familiar piece, is used to support the tone & feel of a scene. For example Also Sprach Zarathustra in the movie 2001: A Space Odyssey.",
-							scoreImage: "Ch13_Types_Ambient.png",
+							scoreImage: "Ch13_Types_Ambient.jpg",
 							audioFile: "Ch13_TypesofMusic_3Ambient",
 							largePlayer: true
 						}

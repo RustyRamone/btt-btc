@@ -23,7 +23,7 @@ btt.cc.model.chapter.chapters.push(
 					breadcrumb:"Introduction",
 					title: "Chapter 15:",
 					subtitle:"Be A Songwriter",
-					synopsis:"In this lesson, you’ll be writing a song. Songs are like stories and you’ll be learning how to tell a story through song using five key ingredients. You’ll discover how to get inspired, how to get your lyric ideas on paper, how to get a melody going and what chords to use; all within one of the tried and true structures that have served memorable songs so well over time. So let’s get going on this exciting journey. Review the lessons, view the composition model video and have fun coming up with your own song.",
+					synopsis:"In this lesson, you’ll be writing a song. Songs are like stories and you’ll be learning how to tell a story through song using five key ingredients. Discover how to get inspired, how to get your lyric ideas on paper, how to get a melody going and what chords to use; all within one of the tried and true song structures.",
 					audioFile: "Ch15_Introv2 2"
 				},
 				{
