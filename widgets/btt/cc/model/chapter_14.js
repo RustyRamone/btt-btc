@@ -13,7 +13,7 @@ btt.cc.model.chapter.chapters.push(
 			{
 				title: "Lesson",
 				synopsis: "Lesson Activities",
-				synopsisExtra: "<ol><li data-target='intro'>Introduction</li><li data-target='what-is-a-jingle'>What is a Jingle?</li><li data-target='what-makes-a-good-jingle'>What Makes a Good Jingle?</li><li data-target='form-supports-repetition'>Form Supports Repetition</li><li data-target='barry-manilow-jingle-writer'>Barry Manilow – Jingle Writer</li><li data-target='theory-link'>Theory Link</li></ol>"
+				synopsisExtra: "<ol><li data-target='intro'>Introduction</li><li data-target='what-is-a-jingle'>What is a Jingle?</li><li data-target='what-makes-a-good-jingle'>What Makes a Good Jingle?</li><li data-target='form-supports-repetition'>Form Supports Repetition</li><li data-target='the-jingle-writer'>Barry Manilow – Jingle Writer</li><li data-target='rhyming-schemes'>Theory Link</li></ol>"
 			},
 			pages:
 			[
@@ -47,23 +47,25 @@ btt.cc.model.chapter.chapters.push(
 					subtitle: "",
 					cards:
 					[
-						{
-							title: "",
-							text: "",
-							scoreImage: "Ch14MainMessage.png",
-							isIntroCard: true,
-							largePlayer: true
-						},
+						// {
+						// 	title: "AKJhkjhkjhjkhk",
+						// 	text: "",
+						// 	scoreImage: "Ch14MainMessage.png",
+						// 	isIntroCard: true,
+						// 	largePlayer: true
+						// },
 						{
 							title: "Main Message",
 							text: "A clever tagline linked to the brand has to be prominent.",
 							scoreImage: "Ch14MainMessage.png",
+							audioFile: "Ch14_WellCraftedMainMessg",
 							largePlayer: true
 						},
 						{
 							title: "Repetition",
 							text: "Repetition is key to remembering the brand.",
 							scoreImage: "Ch14Repetition.png",
+							audioFile: "Ch14_WellCraftedMainMessg",
 							largePlayer: true
 						},
 						{
