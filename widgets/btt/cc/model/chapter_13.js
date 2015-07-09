@@ -13,7 +13,7 @@ btt.cc.model.chapter.chapters.push(
 			{
 				title: "Lesson",
 				synopsis: "Lesson Activities",
-				synopsisExtra: "<ol><li data-target='intro'>Introduction</li><li data-target='importance-of-music-in-movies'>The Importance of Music in Movies</li><li data-target='matching-music-to a-scene'>Matching Music to a Scene</li><li data-target='different-types-of-movie-music'>Different Types of Movie Music</li><li data-target='focus-on-film-scoring-using-percussion'>Focus on Film Scoring: Using Percussion</li><li data-target='silent-movies-where-it-all-started'>Silent Movies: Where It All Started</li><li data-target='theory-link'>Theory Link</li></ol>"
+				synopsisExtra: "<ol><li data-target='intro'>Introduction</li><li data-target='the-importance-of-music-in-movies'>The Importance of Music in Movies</li><li data-target='matching-music-to-a-scene'>Matching Music to a Scene</li><li data-target='types-of-music-used-in-movies'>Different Types of Movie Music</li><li data-target='film-scoring-with-percussion'>Focus on Film Scoring: Using Percussion</li><li data-target='where-it-all-started'>Silent Movies: Where It All Started</li><li data-target='common-time-cut-time'>Theory Link</li></ol>"
 			},
 			pages:
 			[
@@ -421,11 +421,11 @@ btt.cc.model.chapter.chapters.push(
 						"If possible, import movie into notation software. Match tempo & tweak to fit action (120-126 bpm) <em style=\"color:#e22f5b\">(Finale or Sibelius Users)</em>",
 						"Export your music as an audio file."
 					],
-					finaleTemplateFile: "Chapter12_CompTemplate.mus",
-					sibeliusTemplateFile: "Chapter12_CompTemplate.sib",
-					compModelFile: "pdf/CC_12_MyBlues[2]",
-					finaleTipsFile: "pdf/Ch12FinaleTips",
-					sibeliusTipsFile: "pdf/Ch12SibeliusTips",
+					finaleTemplateFile: "Ch13_CompTemplate2.mus",
+					sibeliusTemplateFile: "Ch13_CompTemplate2.sib",
+					compModelFile: "pdf/Chapt13_CompModel[2]",
+					finaleTipsFile: "pdf/Ch13FinaleTips",
+					sibeliusTipsFile: "pdf/Ch13SibeliusTips",
 					playPad:
 					{
 						description: "<em style='color:#e22f5b'>Working with Percussion:</em> Come up with ideas for percussion parts in your film score using these instruments.",
@@ -518,7 +518,7 @@ btt.cc.model.chapter.chapters.push(
 						[
 							{
 								type: "video",
-								title: "See How",
+								title: "See How (coming soon)",
 								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/mI7Vm4q0tWI?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
