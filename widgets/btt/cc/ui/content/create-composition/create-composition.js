@@ -65,7 +65,7 @@ var widget =
 		
 		$$(".tips-info .noteflight").click(function()
 		{
-			btt.cc.ui.iframePop.popUrl("http://www.noteflight.com/info/help");
+			btt.cc.ui.iframePop.popUrl("https://www.noteflight.com/guide");
 		});
 		
 		$$(".tips-info .finale").click(function()
