@@ -47,13 +47,13 @@ btt.cc.model.chapter.chapters.push(
 					subtitle: "",
 					cards:
 					[
-						// {
-						// 	title: "AKJhkjhkjhjkhk",
-						// 	text: "",
-						// 	scoreImage: "Ch14MainMessage.png",
-						// 	isIntroCard: true,
-						// 	largePlayer: true
-						// },
+						{
+							title: "",
+							text: "What Makes a Good Jingle?",
+							scoreImage: "Ch14MainMessage.png",
+							isIntroCard: true,
+							largePlayer: true
+						},
 						{
 							title: "Main Message",
 							text: "A clever tagline linked to the brand has to be prominent.",
@@ -65,25 +65,28 @@ btt.cc.model.chapter.chapters.push(
 							title: "Repetition",
 							text: "Repetition is key to remembering the brand.",
 							scoreImage: "Ch14Repetition.png",
-							audioFile: "Ch14_WellCraftedMainMessg",
+							audioFile: "Ch14_WellCraftedRepetit",
 							largePlayer: true
 						},
 						{
 							title: "Rhyming",
 							text: "Rhymes help to make the jingle memorable.",
 							scoreImage: "Ch14Rhyme.png",
+							audioFile: "Ch14_WellCraftedRhyme",
 							largePlayer: true
 						},
 						{
 							title: "Simple Sing-able Melody",
 							text: "Melodies need to be easy to remember and sing.",
 							scoreImage: "Ch14Melody.png",
+							audioFile: "Ch14_WellCraftedSimpMel",
 							largePlayer: true
 						},
 						{
 							title: "Personality",
 							text: "The music should communicate the brand’s personality.",
 							scoreImage: "Ch14Personality.png",
+							audioFile: "Ch14_WellCraft_Personality",
 							largePlayer: true
 						}
 					]
