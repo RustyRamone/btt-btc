@@ -542,8 +542,8 @@ btt.cc.model.chapter.chapters.push(
 						[
 							{
 								type: "video",
-								title: "See How",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/1KpNi4-CuAw?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								title: "See How (coming soon)",
+								code: ''
 							},
 							{
 								type: "audio",
