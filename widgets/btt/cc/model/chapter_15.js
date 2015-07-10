@@ -13,7 +13,7 @@ btt.cc.model.chapter.chapters.push(
 			{
 				title: "Lesson",
 				synopsis: "Lesson Activities",
-				synopsisExtra: "<ol><li data-target='intro'>Introduction</li><li data-target='five-key-ingredients-to-a-song'>Five Key Ingredients to a Song</li><li data-target='inspiration-structure'>Inspiration & Structure</li><li data-target='lyrics-melody'>Lyrics & Melody</li><li data-target='lennon-mccartney'>Lennon & McCartney</li><li data-target='chords'>Chords</li></ol>"
+				synopsisExtra: "<ol><li data-target='intro'>Introduction</li><li data-target='five-key-ingredients-to-a-song'>Five Key Ingredients to a Song</li><li data-target='inspiration'>Inspiration & Structure</li><li data-target='lyrics'>Lyrics & Melody</li><li data-target='lennon-mccartney'>Lennon & McCartney</li><li data-target='chords'>Chords</li></ol>"
 			},
 			pages:
 			[
@@ -470,7 +470,7 @@ btt.cc.model.chapter.chapters.push(
 			introOverlay:
 			{
 				title: "Create Your Composition",
-				synopsis: "Now use your favourite notation software to create a score of your jingle."
+				synopsis: "Now use your favourite notation software to create a score of your song."
 			},
 			pages:
 			[
@@ -512,6 +512,10 @@ btt.cc.model.chapter.chapters.push(
 							white: {},
 							black: {}
 						}
+					},
+					css:
+					{
+						".play-pad-reveal div": {position:"relative", top:"-60px"}
 					}
 				}
 			]
@@ -590,13 +594,13 @@ btt.cc.model.chapter.chapters.push(
 						[
 							{
 								type: "video",
-								title: "See How",
+								title: "See How (coming soon)",
 								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/mI7Vm4q0tWI?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>' /* NEED */
 							},
 							{
 								type: "audio",
 								title: "Hear Model",
-								audioFile: "Ch14_TOMSJingle_ExpModel"
+								audioFile: "Ch14_TOMSJingle_ExpModel" // NEED
 							}
 						]
 					}

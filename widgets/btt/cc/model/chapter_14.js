@@ -136,7 +136,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Non-Profit Jingles",
 							posterText: "",
 							text: "Jingles aren’t always commercial in nature. They can be used in a very positive way to promote social causes or to make the world a better place for others.",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/A6kCkkLo6Rw?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/_GpxE9xQDE?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -244,7 +244,7 @@ btt.cc.model.chapter.chapters.push(
 
 
 						],
-						legendItemsPerLine: 2,
+						legendItemsPerLine: 4,
 						timelineImage: "Timeline_ch14.jpg"
 					}
 				},
@@ -368,14 +368,18 @@ btt.cc.model.chapter.chapters.push(
 						// audio: "PlayPadCh9",
 						fields:
 						[
-							{label: "AA", placeholder: "Opening Line (A)"},
-							{label: "B", placeholder: "Contrasting line (B)"}
+							{label: "", placeholder: "Line 1"},
+							{label: "", placeholder: "Line 2"}
 						],
 						labels:
 						{
 							white: {},
 							black: {}
 						}
+					},
+					css:
+					{
+						".play-pad-reveal div": {position:"relative", top:"-60px"}
 					}
 				}
 			]
@@ -451,7 +455,7 @@ btt.cc.model.chapter.chapters.push(
 						[
 							{
 								type: "video",
-								title: "See How",
+								title: "See How (coming soon)",
 								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/mI7Vm4q0tWI?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>' /* NEED */
 							},
 							{
