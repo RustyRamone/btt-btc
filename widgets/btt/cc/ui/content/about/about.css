@@ -53,6 +53,15 @@
     height: auto !important;
     min-height: 100%;
   }
+
+  .omdc
+  {
+    img
+    {
+      padding: 20px;
+      background-color: #e22f5b;
+    }
+  }
 }
 
 
