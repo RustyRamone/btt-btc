@@ -246,18 +246,20 @@ var widget =
 
 			$$(".showcase-box").show();
 			$$(".choose-template").hide();
+			$$(".xml-template").hide();
 			$$(".tips-info").hide();
 			$$(".play-pad-reveal").show();
 		}
 		else if(this.view == 1 && showTemplatePage)
 		{
-			$$(".instruction label").text("Create Your Composition");
-			$$(".instruction p").text("Use notation software & select a template below");
+			$$(".instruction label").text("Choose Your Template");
+			$$(".instruction p").text("Select an appropriate notation software below");
 			
 			$$(".expand").hide();
 			$$(".download-steps").show();
 			$$(".showcase-box").hide();
 			$$(".choose-template").show();
+			$$(".xml-template").show();
 			$$(".tips-info").hide();
 			$$(".play-pad-reveal").hide();
 		}
@@ -270,6 +272,7 @@ var widget =
 			$$(".download-steps").hide();
 			$$(".showcase-box").hide();
 			$$(".choose-template").hide();
+			$$(".xml-template").hide();
 			$$(".tips-info").show();
 			$$(".play-pad-reveal").hide();
 		}

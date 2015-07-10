@@ -426,6 +426,8 @@ btt.cc.model.chapter.chapters.push(
 					compModelFile: "pdf/Chapt13_CompModel[2]",
 					finaleTipsFile: "pdf/Ch13FinaleTips",
 					sibeliusTipsFile: "pdf/Ch13SibeliusTips",
+					xmlTemplateFile: "Ch13_CompTemplate.xml",
+					xmlTemplateMovie: "CircusDanceNoSound.mp4",
 					playPad:
 					{
 						description: "<em style='color:#e22f5b'>Working with Percussion:</em> Come up with ideas for percussion parts in your film score using these instruments.",
