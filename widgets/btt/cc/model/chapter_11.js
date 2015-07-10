@@ -289,7 +289,7 @@ btt.cc.model.chapter.chapters.push(
 						{
 							title: "Instrumental Color <em style=\"color:#8a8a8a; font-size:30px\">(Images & character)</em>",
 							text: "Select instruments that will best conjure up the image you intend to portray in your prose.",
-							scoreImage: "InstrumentalColor.png",
+							scoreImage: "Instrumental-Color.png",
 							audioFile: "11N_InstColor 2",
 							largePlayer: true
 						},
