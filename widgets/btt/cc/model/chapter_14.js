@@ -136,7 +136,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Non-Profit Jingles",
 							posterText: "",
 							text: "Jingles aren’t always commercial in nature. They can be used in a very positive way to promote social causes or to make the world a better place for others.",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/_GpxE9xQDE?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/-_GpxE9xQDE?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
