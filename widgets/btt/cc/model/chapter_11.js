@@ -52,27 +52,82 @@ btt.cc.model.chapter.chapters.push(
 							isIntroCard: true,
 							title: "Varied Motifs",
 							text: "View other ways a motif can be varied.",
-							scoreImage: "ch_11/Motif.png"
+							noteData:
+							{
+								clef: "treble",
+								notes: ["f/4?annotation=Motif", ["g/4 8", "a/4 8"], "g/4", "a/4"]
+							},
+							staffParams:
+							{
+								offset: {x:0, y:40},
+								barsPerLine: 1,
+								padding: 100,
+								scale: 1
+							}
 						},
 						{
 							title: "Motif",
 							text: "It starts with a motif  - a short musical idea.",
-							scoreImage: "ch_11/Motif.png"
+							noteData:
+							{
+								clef: "treble",
+								notes: ["f/4?annotation=Motif", ["g/4 8", "a/4 8"], "g/4", "a/4"]
+							},
+							staffParams:
+							{
+								offset: {x:0, y:40},
+								barsPerLine: 1,
+								padding: 100,
+								scale: 1
+							}
 						},
 						{
 							title: "Inversion",
 							text: "A motif inverted or written upside down.",
-							scoreImage: "ch_11/Motif-Inversion.png"
+							noteData:
+							{
+								clef: "treble",
+								notes: ["f/4?annotation=Motif", ["g/4 8", "a/4 8"], "g/4", "a/4", "f/4?annotation=Inversion", ["e/4 8", "d/4 8"], "e/4", "d/4"]
+							},
+							staffParams:
+							{
+								offset: {x:0, y:40},
+								barsPerLine: 2,
+								padding: 100,
+								scale: 1
+							}
 						},
 						{
 							title: "Sequenced Inversion",
 							text: "Written upside down starting on a different pitch.",
-							scoreImage: "ch_11/Motif-Sequenced-Inversion.png"
+							noteData:
+							{
+								clef: "treble",
+								notes: ["f/4?annotation=Motif", ["g/4 8", "a/4 8"], "g/4", "a/4", "a/4?annotation=Sequenced Inversion", ["g/4 8", "f/4 8"], "g/4", "f/4"]
+							},
+							staffParams:
+							{
+								offset: {x:0, y:40},
+								barsPerLine: 2,
+								padding: 100,
+								scale: 1
+							}
 						},
 						{
 							title: "Retrograde Inversion",
 							text: "A motif written backwards.",
-							scoreImage: "ch_11/Motif-Retrograde-Inversion.png"
+							noteData:
+							{
+								clef: "treble",
+								notes: ["f/4?annotation=Motif", ["g/4 8", "a/4 8"], "g/4", "a/4", "d/4?annotation=Retrograde Inversion", "e/4", ["d/4 8", "e/4 8"], "f/4"]
+							},
+							staffParams:
+							{
+								offset: {x:0, y:40},
+								barsPerLine: 2,
+								padding: 100,
+								scale: 1
+							}
 						}
 					]
 				},
@@ -228,33 +283,33 @@ btt.cc.model.chapter.chapters.push(
 							id: "question",
 							title: "",
 							audioFile: "Ch11_ Minor1_QZ",
-							text: "Voices & Drums",
-							correctAnswers: ["Minor"],
-							incorrectAnswers: ["Major"]
+							text: "What instruments do you hear?",
+							correctAnswers: ["Voices"],
+							incorrectAnswers: ["Drums"]
 						},
 						{
 							id: "question",
 							title: "",
 							audioFile: "Ch11_ Minor2_QZ",
-							text: "Major or Minor?",
-							correctAnswers: ["Minor"],
-							incorrectAnswers: ["Major"]
+							text: "What instruments do you hear?",
+							correctAnswers: ["Flute"],
+							incorrectAnswers: ["Piano"]
 						},
 						{
 							id: "question",
 							title: "",
 							audioFile: "Ch11_ Minor3_QZ",
-							text: "Major or Minor?",
-							correctAnswers: ["Minor"],
-							incorrectAnswers: ["Major"]
+							text: "What instruments do you hear?",
+							correctAnswers: ["Brass"],
+							incorrectAnswers: ["Drums"]
 						},
 						{
 							id: "question",
 							title: "",
 							audioFile: "Ch11_ Major4_QZ",
-							text: "Major or Minor?",
-							correctAnswers: ["Major"],
-							incorrectAnswers: ["Minor"]
+							text: "What instruments do you hear?",
+							correctAnswers: ["Strings"],
+							incorrectAnswers: ["Not Strings"]
 						}
 					]
 				},
