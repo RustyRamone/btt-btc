@@ -14,7 +14,7 @@
 <div class="boxes ${this.smallAnswerBoxes ? 'small' : ''} ${this.extraSmallAnswerBoxes ? 'extra-small' : ''}">
 	{each answer in answers}
 		{if this.images}
-			<div class="img-embed" style="left:${answer.offset||0}; background:url(${btt.cc.media.mediaFileUrl(images[index])}) no-repeat"><div>?</div></div>
+			<div class="img-embed" style="left:${answer.offset||0}; background-image:url(${btt.cc.media.mediaFileUrl(images[index])})"><div>?</div></div>
 		{/if}
 		{else}
 			<div style="left:${answer.offset||0}">?</div>

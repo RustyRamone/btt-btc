@@ -341,7 +341,7 @@ btt.cc.model.chapter.chapters.push(
 						},
 						{
 							id: "q2",
-							text: "Identify the key following signatures from left to right.",
+							text: "Identify the following key signatures from left to right.",
 							images:
 							[
 								"Ch7_KeySigsBb.png", "Ch7_KeySigsF.png", "Ch7_KeySigsC.png", "Ch7_KeySigsG.png", "Ch7_KeySigsD.png"

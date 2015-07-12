@@ -441,6 +441,64 @@ btt.cc.model.chapter.chapters.push(
 							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/WyAtXBwxnSY?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
+				},
+				{
+					type: "btt.cc.ui.content.generic-selector",
+					id: "minor-key-quiz",
+					title: "Minor Key Quiz",
+					subtitle: "",
+					introOverlayText: "Test your knowledge about minor key signatures.",
+					questions:
+					[
+						{
+							id: "q1",
+							text: "Identify the following minor key signatures:",
+							images:
+							[
+								"Ch11-d-minor.png", "Ch11-a-minor.png", "Ch11-e-minor.png"
+							],
+							vertical: false,
+							smallAnswerBoxes: false,
+							answers:
+							[
+								{
+									text: "d"
+								},
+								{
+									text: "a"
+								},
+								{
+									text: "e"
+								}
+							]
+						}
+					],
+					shuffleChoices: false,
+					reuseChoices: true,
+					choices:
+					[
+						{
+							text: "a"
+						},
+						{
+							text: "b"
+						},
+						{
+							text: "c"
+						},
+						{
+							text: "d"
+						},
+						{
+							text: "e"
+						},
+						{
+							text: "f"
+						},
+						{
+							text: "g"
+						}
+					]
 				}
 			]
 		},
