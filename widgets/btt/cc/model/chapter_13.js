@@ -277,6 +277,58 @@ btt.cc.model.chapter.chapters.push(
 							question: "How did the introduction of talkies affect the movie music industry?",
 							answers: ["Film composers began to emerge", "It had no effect", "Live Musicians were hired", "Music videos were created"],
 							smallCards: false
+						},
+
+
+					],
+					didYouKnow:
+					{
+						title: "Notes on Early Silent Movies",
+						facts:
+						[
+							"The years between 1900 and 1927 saw the growth of the silent film as a form of entertainment as newly constructed movie theatres popped up both in Europe and North America. These motion pictures had moving images but no dialogue or other sound.",
+							"They were however, anything but silent. They were accompanied by live music to help tell the story. Every theatre would have either a piano player or an orchestra to accompany the action portrayed in each scene.",
+							"Eventually player pianos with automated piano rolls began to appear in theatres.  After a time, these developed into more complex instruments called Fotoplayers complete with percussion and special effects like whistles and horns.",
+							"The silent film era ended with the development of recorded sound for moving pictures in 1927. These new types of movies were referred to as talkies."
+						],
+						legendItems:
+						[
+							{color:"#fd8023", text:"The Era of the Silent Film 1895 - 1927"},
+							{redDot:true, text:"First public movie presentation in Paris 1895"},
+							{orangeDot:true, text:"First public movie presentation in New York 1896"},
+							{color:"#3d533c", text:"Development of the America Fotoplayer 1912-1925"},
+							{whiteDot:true, text:"Introduction of Talking Movies 1927"},
+							{color:"#c2123c", text:"Film Composers & recorded sound tracks began to emerge 1930s"}
+						],
+						legendItemsPerLine: 2,
+						timelineImage: "Timeline-Chapter13SilentMovies.png"
+					}
+				},
+				{
+					type: "btt.cc.ui.content.composer-music",
+					id: "where-it-all-started2",
+					title: "Where It All Started",
+					composerName: "",
+					composerYears: "",
+					composerImage: "Ch13_DidYouKnowImage1.png",
+					video:
+					{
+						code: '<iframe style="margin-top:10px" width="391" height="220" src="//www.youtube.com/embed/SF4BWllUEO0?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+					},
+					questionIntro: "<span>Listen:</span> To this fun clip of the American Fotoplayer in action.",
+					questions:
+					[
+						{
+							id: "question1",
+							question: "What part of the fotoplayer plays automatically?",
+							answers: ["The Keyboard", "The Whistle", "The Percussion Instruments", "The Horn"],
+							smallCards: false
+						},
+						{
+							id: "question2",
+							question: "What was used to play the percussion and special effects on the Fotoplayer?",
+							answers: ["Pull Ropes, Buttons & Pedals", "Mechanical Roll", "Piano Keyboard", "Buzzers"],
+							smallCards: false
 						}
 					],
 					didYouKnow:
