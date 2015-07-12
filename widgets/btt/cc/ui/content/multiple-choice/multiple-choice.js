@@ -28,6 +28,8 @@ var widget =
 							{
 								$$(".video-container").addClass("activated");
 								player.playVideo();
+								if(video.volume)
+									player.setVolume(video.volume);
 							});
 						},
 						'onStateChange': function()
