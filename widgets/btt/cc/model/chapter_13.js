@@ -526,7 +526,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "audio",
 								title: "Hear Model",
-								audioFile: "Ch12ExpAudioHwkbls"
+								audioFile: "Ch13CompModelAudio"
 							}
 						]
 					}

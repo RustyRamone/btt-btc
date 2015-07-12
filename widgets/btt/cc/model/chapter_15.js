@@ -600,7 +600,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "audio",
 								title: "Hear Model",
-								audioFile: "Ch14_TOMSJingle_ExpModel" // NEED
+								audioFile: "Ch15ExpandItAudio" // NEED
 							}
 						]
 					}
