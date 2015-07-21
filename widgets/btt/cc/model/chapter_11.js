@@ -278,11 +278,10 @@ btt.cc.model.chapter.chapters.push(
 					},
 					questions:
 					[
-						/* NEED audio files */
 						{
 							id: "question",
 							title: "",
-							audioFile: "Ch11_ Minor1_QZ",
+							audioFile: "VoicesDrums",
 							text: "What instruments do you hear?",
 							correctAnswers: ["Voices"],
 							incorrectAnswers: ["Drums"]
@@ -290,7 +289,7 @@ btt.cc.model.chapter.chapters.push(
 						{
 							id: "question",
 							title: "",
-							audioFile: "Ch11_ Minor2_QZ",
+							audioFile: "FlutePiano",
 							text: "What instruments do you hear?",
 							correctAnswers: ["Flute"],
 							incorrectAnswers: ["Piano"]
@@ -298,7 +297,7 @@ btt.cc.model.chapter.chapters.push(
 						{
 							id: "question",
 							title: "",
-							audioFile: "Ch11_ Minor3_QZ",
+							audioFile: "LoBrass",
 							text: "What instruments do you hear?",
 							correctAnswers: ["Brass"],
 							incorrectAnswers: ["Drums"]
@@ -306,7 +305,7 @@ btt.cc.model.chapter.chapters.push(
 						{
 							id: "question",
 							title: "",
-							audioFile: "Ch11_ Major4_QZ",
+							audioFile: "Strings",
 							text: "What instruments do you hear?",
 							correctAnswers: ["Strings"],
 							incorrectAnswers: ["Not Strings"]
