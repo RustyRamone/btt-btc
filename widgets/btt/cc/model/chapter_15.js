@@ -348,56 +348,66 @@ btt.cc.model.chapter.chapters.push(
 					title: "Theory Link",
 					subtitle: "Name the three(3) primary chords in each key.",
 					introOverlayText: "Select the I-IV-V chords.",
+					css:
+					{
+						".boxes": {"margin-top":"50px"}
+					},
 					questions:
 					[
 						{
 							text: "Key: E Major<br/><span style='color:#8a8a8a; font-style:normal'>Chords</span>",
-							smallAnswerBoxes: true,
 							audioPrize: "Ch15Quzi_EMaj",
 							answers:
 							[
 								{
-									text: "E"
+									text: "E",
+									content: "I<span style='color:transparent;position:absolute'>?</span>"
 								},
 								{
-									text: "A"
+									text: "A",
+									content: "IV<span style='color:transparent;position:absolute'>?</span>"
 								},
 								{
-									text: "B"
+									text: "B",
+									content: "V<span style='color:transparent;position:absolute'>?</span>"
 								}
 							]
 						},
 						{
 							text: "Key: D Major<br/><span style='color:#8a8a8a; font-style:normal'>Chords</span>",
-							smallAnswerBoxes: true,
 							audioPrize: "Ch15Quiz_DMaj",
 							answers:
 							[
 								{
-									text: "D"
+									text: "D",
+									content: "I<span style='color:transparent;position:absolute'>?</span>"
 								},
 								{
-									text: "G"
+									text: "G",
+									content: "IV<span style='color:transparent;position:absolute'>?</span>"
 								},
 								{
-									text: "A"
+									text: "A",
+									content: "V<span style='color:transparent;position:absolute'>?</span>"
 								}
 							]
 						},
 						{
 							text: "Key: G Major<br/><span style='color:#8a8a8a; font-style:normal'>Chords</span>",
-							smallAnswerBoxes: true,
 							audioPrize: "Ch15Quiz_GMaj",
 							answers:
 							[
 								{
-									text: "G"
+									text: "G",
+									content: "I<span style='color:transparent;position:absolute'>?</span>"
 								},
 								{
-									text: "C"
+									text: "C",
+									content: "IV<span style='color:transparent;position:absolute'>?</span>"
 								},
 								{
-									text: "D"
+									text: "D",
+									content: "V<span style='color:transparent;position:absolute'>?</span>"
 								}
 							]
 						}

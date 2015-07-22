@@ -74,7 +74,7 @@ var widget =
 					var i = $$(".boxes > div.answered > div").length;
 					
 					var correct = $(this).text() == _this.params.questions[_this.currentQuestion].answers[i].text;
-					
+
 					if(correct)
 					{
 						$$(".boxes > div:contains(?):first").addClass("answered");

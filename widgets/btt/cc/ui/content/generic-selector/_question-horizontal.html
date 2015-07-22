@@ -17,7 +17,7 @@
 			<div class="img-embed" style="left:${answer.offset||0}; background-image:url(${btt.cc.media.mediaFileUrl(images[index])})"><div>?</div></div>
 		{/if}
 		{else}
-			<div style="left:${answer.offset||0}">?</div>
+			<div data-answer="${index}" style="left:${answer.offset||0}">${answer.content||"?"}</div>
 		{/else}
 	{/each}
 </div>
