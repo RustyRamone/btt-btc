@@ -483,19 +483,52 @@ btt.cc.model.chapter.chapters.push(
 					playPad:
 					{
 						description: "<em style='color:#e22f5b'>Working with Percussion:</em> Come up with ideas for percussion parts in your film score using these instruments.",
+						hideKeyboard: true,
+						video:
+						{
+							type: "mp4",
+							file: "CircusDanceNoSound.mp4"
+						},
+						altKeyboard:
+						{
+							pads:
+							[
+								{
+									image: "bass_drum.png",
+									audio: "Ch13BDStroke"
+								},
+								{
+									image: "snare_drum.png",
+									audio: "Ch13SDStroke"
+								},
+								{
+									image: "sus_cymbal.png",
+									audio: "Ch13SusCymbal"
+								},
+								{
+									image: "crash_cymbals.png",
+									audio: "Ch13CrashCymb"
+								},
+								{
+									image: "tympani.png",
+									audio: "Ch13Tymp1"
+								}
+							]
+						}
+
 						// image: "Ch-9-PlayPadImage.png",
 						// audio: "PlayPadCh9",
-						fields:
-						[
-							{label: "AA", placeholder: "Opening Line (A)"},
-							{label: "B", placeholder: "Contrasting line (B)"}
-						],
-						labels:
-						{
-							style: "circle",
-							white: {"3":"1", "6":"-5", "7":"5", "10":"8"},
-							black: {"4":"-3", "5":"4", "8":"-7"}
-						}
+						// fields:
+						// [
+						// 	{label: "AA", placeholder: "Opening Line (A)"},
+						// 	{label: "B", placeholder: "Contrasting line (B)"}
+						// ],
+						// labels:
+						// {
+						// 	style: "circle",
+						// 	white: {"3":"1", "6":"-5", "7":"5", "10":"8"},
+						// 	black: {"4":"-3", "5":"4", "8":"-7"}
+						// }
 					}
 				}
 			]

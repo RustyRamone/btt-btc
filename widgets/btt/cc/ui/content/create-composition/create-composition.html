@@ -42,6 +42,13 @@
 						</div>
 					{/each}
 				{/if}
+				{if params.playPad && params.playPad.video && params.playPad.video.type == "mp4"}
+					<div class="play-pad-video-container">
+						<video width="427" height="240" autoplay="true" loop="true">
+							<source src="${btt.cc.media.mediaFileUrl(params.playPad.video.file)}" type="video/mp4"/>
+						</video>
+					</div>
+				{/if}
 			</div>
 			<div class="row-fluid play-pad-hide">
 				<div class="offset9 span2">HIDE</div>
@@ -92,6 +99,15 @@
 							</div>
 						{/each}
 					</div>
+				{/if}
+				{if params.playPad && params.playPad.altKeyboard}
+					<table class="alt-kybd">
+						<tr>
+							{each pad in params.playPad.altKeyboard.pads}
+								<td><img src="${btt.cc.media.mediaFileUrl(pad.image)}" data-audio="${pad.audio}"/></td>
+							{/each}
+						</tr>
+					</table>
 				{/if}
 				<div class="bulge-container"></div>
 			</div>

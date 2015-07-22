@@ -183,6 +183,24 @@ var widget =
 				}
 			});
 		});
+
+
+
+		if(this.params.playPad.altKeyboard)
+		{
+			var sounds = [];
+			$(this.params.playPad.altKeyboard.pads).each(function()
+			{
+				sounds.push(this.audio);
+			});
+
+			var altKeyboardPlayer = new btt.cc.media.MultiAudioPlayer(sounds);
+
+			$$(".alt-kybd img").on("mousedown", function()
+			{
+				altKeyboardPlayer.playFromStart($(this).data("audio"));
+			});
+		}
 	},
 
 	reLayout: function()

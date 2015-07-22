@@ -511,6 +511,11 @@
 				max-height: 230px;
 			}
 		}
+
+		.play-pad-video-container
+		{
+			text-align: center;
+		}
 	}
 }
 
@@ -780,6 +785,11 @@
 			{
 				visibility: hidden;
 			}
+		}
+
+		.alt-kybd
+		{
+			margin: 30px 50px;
 		}
 	}
 
