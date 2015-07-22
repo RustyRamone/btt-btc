@@ -188,11 +188,15 @@ var widget =
 
 		if(this.params.playPad.altKeyboard)
 		{
+			var buf = [];
 			var sounds = [];
 			$(this.params.playPad.altKeyboard.pads).each(function()
 			{
 				sounds.push(this.audio);
+				buf.push("<td><img src=\""+btt.cc.media.mediaFileUrl(this.image)+"\" data-audio=\""+this.audio+"\"/></td>");
 			});
+
+			$$(".alt-kybd").html("<tr>"+buf.join("")+"</tr>");
 
 			var altKeyboardPlayer = new btt.cc.media.MultiAudioPlayer(sounds);
 

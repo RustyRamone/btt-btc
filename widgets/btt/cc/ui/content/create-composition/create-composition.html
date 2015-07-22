@@ -102,11 +102,6 @@
 				{/if}
 				{if params.playPad && params.playPad.altKeyboard}
 					<table class="alt-kybd">
-						<tr>
-							{each pad in params.playPad.altKeyboard.pads}
-								<td><img ${"src"}="${btt.cc.media.mediaFileUrl(pad.image)}" data-audio="${pad.audio}"/></td>
-							{/each}
-						</tr>
 					</table>
 				{/if}
 				<div class="bulge-container"></div>
