@@ -520,7 +520,7 @@ btt.cc.model.chapter.chapters.push(
 						{
 							title: "Composition Model",
 							text: "View this movie to see how you can create and match music to prose or poetry.",
-							//poster: "Ch11N_PosterCompModel.jpg", /* NEED */
+							poster: "Ch11N_PosterCompModel.jpg",
 							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/1KpNi4-CuAw?rel=0" frameborder="0" allowfullscreen></iframe>' /* NEED */
 						}
 					]
@@ -660,7 +660,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "audio",
 								title: "Hear Model",
-								audioFile: "Ch 11N ExpAudioModel"
+								audioFile: "Ch 11N_ExpAudioSample"
 							}
 						]
 					}
