@@ -283,24 +283,24 @@ btt.cc.model.chapter.chapters.push(
 							title: "",
 							audioFile: "VoicesDrums",
 							text: "What instruments do you hear?",
-							correctAnswers: ["Voices"],
-							incorrectAnswers: ["Drums"]
+							correctAnswers: ["Voice & Drums"],
+							incorrectAnswers: ["Flute & Piano", "Brass & Drums", "Strings"]
 						},
 						{
 							id: "question",
 							title: "",
 							audioFile: "FlutePiano",
 							text: "What instruments do you hear?",
-							correctAnswers: ["Flute"],
-							incorrectAnswers: ["Piano"]
+							correctAnswers: ["Flute & Piano"],
+							incorrectAnswers: ["Voice & Drums", "Brass & Drums", "Strings"]
 						},
 						{
 							id: "question",
 							title: "",
 							audioFile: "LoBrass",
 							text: "What instruments do you hear?",
-							correctAnswers: ["Brass"],
-							incorrectAnswers: ["Drums"]
+							correctAnswers: ["Brass & Drums"],
+							incorrectAnswers: ["Voice & Drums", "Flute & Piano", "Strings"]
 						},
 						{
 							id: "question",
@@ -308,7 +308,7 @@ btt.cc.model.chapter.chapters.push(
 							audioFile: "Strings",
 							text: "What instruments do you hear?",
 							correctAnswers: ["Strings"],
-							incorrectAnswers: ["Not Strings"]
+							incorrectAnswers: ["Voice & Drums", "Flute & Piano", "Brass & Drums"]
 						}
 					]
 				},
