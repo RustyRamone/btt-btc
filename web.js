@@ -4,6 +4,10 @@ var phnq_widgets = require("phnq_widgets");
 var pkg = require("./package.json");
 var commander = require("commander");
 
+var realFs = require('fs')
+var gracefulFs = require('graceful-fs')
+gracefulFs.gracefulify(realFs)
+
 commander
   .version(pkg.version)
   .option("-p, --port [port]", "specify port (default 80)")
@@ -18,7 +22,7 @@ phnq_widgets.renderStaticWidget("btt.cc.main", rootDir, "index.html", function(e
 {
 	if(err)
 	{
-		console.log("Error rendering widget: ", type, err);
+		console.log("Error rendering widget: ", "btt.cc.main", err);
 	}
 	else
 	{
