@@ -23,7 +23,7 @@ btt.cc.model.chapter.chapters.push(
 					breadcrumb:"Introduction",
 					title: "Chapter 10:",
 					subtitle:"My Minor Theme",
-					synopsis:"In this lesson you’ll be creating a theme in a minor key. Along the way, you’ll learn how many famous melodies rise and fall to create interesting movement and shape. You’ll learn about the famous 19th century composer Frédéric Chopin and then you’ll get to experiment with these new concepts to create your own theme!",
+					synopsis:"In this lesson you’ll be creating a theme in a minor key. Along the way, you’ll learn how many famous melodies rise and fall to create interesting movement and shape. You’ll learn about the famous 19th century composer Fr&eacute;d&eacute;ric Chopin and then you’ll get to experiment with these new concepts to create your own theme!",
 					audioFile: "BTC Lesson Ch11_Intro"
 				},
 				{
