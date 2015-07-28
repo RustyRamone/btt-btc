@@ -372,9 +372,10 @@ btt.cc.model.chapter.chapters.push(
 					type: "btt.cc.ui.content.line-connect",
 					id: "common-time-cut-time",
 					title: "Common Time & Cut Time",
+					introOverlayText: "Match the time signature to the rhythms.",
 					subtitle: "",
-					srcThingName: "number",
-					destThingName: "description",
+					srcThingName: "time signature",
+					destThingName: "rhythm",
 					definitions:
 					[
 						{
@@ -463,7 +464,7 @@ btt.cc.model.chapter.chapters.push(
 					titleMain: "Your Composition Activity",
 					subtitle: "My Film Score",
                     showMotif: false,
-                    scoreImage: "Ch13_TipsGetCircusMus.png",
+                    scoreImage: "TipsToGetCircusMusic.png",
 					downloadSteps:
 					[
 						"Open the Circus Music in notation software.",
@@ -480,14 +481,14 @@ btt.cc.model.chapter.chapters.push(
 					sibeliusTipsFile: "pdf/Ch13SibeliusTips",
 					xmlTemplateFile: "Ch13_CompTemplate.xml",
 					xmlTemplateMovie: "CircusDanceNoSound.mp4",
+					noteflightLink: "https://www.noteflight.com/scores/view/f5ebba307529ee191049b2337249bbe165add8c1",
 					playPad:
 					{
 						description: "<em style='color:#e22f5b'>Working with Percussion:</em> Come up with ideas for percussion parts in your film score using these instruments.",
 						hideKeyboard: true,
 						video:
 						{
-							type: "mp4",
-							file: "CircusDanceNoSound.mp4"
+							code: "<iframe width=\"427\" height=\"240\" src=\"https://www.youtube.com/embed/RWUZWmYghcE?rel=0&amp;controls=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen></iframe>"
 						},
 						altKeyboard:
 						{
@@ -611,7 +612,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "audio",
 								title: "Hear Model",
-								audioFile: "Ch13CompModelAudio"
+								audioFile: "Ch13CircusDanceExp"
 							}
 						]
 					}

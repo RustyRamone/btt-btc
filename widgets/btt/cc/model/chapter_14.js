@@ -149,7 +149,7 @@ btt.cc.model.chapter.chapters.push(
 						id: "Dp6xU4uDezQ",
 						width: 426,
 						height: 240,
-						volume: 50
+						volume: 75
 					},
 					questions:
 					[
@@ -192,7 +192,7 @@ btt.cc.model.chapter.chapters.push(
 					composerImage: "Ch14BarryManilow.jpg",
 					video:
 					{
-						code: '<object id="otvPlayer" width="328" height="220"><param name="movie" value="http://cdn.abclocal.go.com/static/flash/embeddedPlayer/swf/otvEmLoader.swf?version=fw1000&station=&section=wcl&mediaId=8735249&parentId=&cdnRoot=http://cdn.abclocal.go.com&webRoot=http://windycitylive.com&configPath=/shared/util/&site=" ></param><param name="allowScriptAccess" value="always"></param><param name="allowNetworking" value="all"></param><param name="allowFullScreen" value="true"></param><embed id="otvPlayer" width="400" height="268" type="application/x-shockwave-flash"	allowscriptaccess="always" allownetworking="all" allowfullscreen="true"	src="http://cdn.abclocal.go.com/static/flash/embeddedPlayer/swf/otvEmLoader.swf?version=fw1000&station=&section=wcl&mediaId=8735249&parentId=&cdnRoot=http://cdn.abclocal.go.com&webRoot=http://windycitylive.com&configPath=/shared/util/&site="></embed></object>'
+						code: '<object id="otvPlayer" width="328" height="220"><param name="movie" value="http://cdn.abclocal.go.com/static/flash/embeddedPlayer/swf/otvEmLoader.swf?version=fw1000&station=&section=wcl&mediaId=8735249&parentId=&cdnRoot=http://cdn.abclocal.go.com&webRoot=http://windycitylive.com&configPath=/shared/util/&site=" ></param><param name="allowScriptAccess" value="always"></param><param name="allowNetworking" value="all"></param><param name="allowFullScreen" value="true"></param><embed id="otvPlayer" width="400" height="268" type="application/x-shockwave-flash"	allowscriptaccess="always" allownetworking="all" allowfullscreen="true"	src="http://cdn.abclocal.go.com/static/flash/embeddedPlayer/swf/otvEmLoader.swf?version=fw1000&station=&section=wcl&mediaId=8735249&parentId=&cdnRoot=http://cdn.abclocal.go.com&webRoot=http://windycitylive.com&configPath=/shared/util/&site="></embed><img style="position: absolute; left:150px; top:20px; width: 328px; height: 220px" src="/widgets/btt.cc.media/static/flash-msg.jpg"/></object>'
 					},
 					questionIntro: "<span>Listen:</span> To Barry Manilow Sing His Jingles.",
 					questions:
@@ -236,7 +236,7 @@ btt.cc.model.chapter.chapters.push(
 						[
 							{redDot:true, text:"Earliest radio broadcasts"},
 							{color:"#e66c23", text:"Radio in common use"},
-							{whiteDot:true, text:"Television in common use"},
+							{whiteDot:true, text:"Wheaties song became first jingle"},
 							{color:"#595959", text:"Television in common use"},
 							{orangeDot:true, text:"Band-Aid® brand jingle starts airing on TV 1980s"},
 							{whiteDotOrangeBorder:true, text:"Barry Manilow born 1943"},
@@ -324,7 +324,7 @@ btt.cc.model.chapter.chapters.push(
 						{
 							title: "Composition Model",
 							text: "View this movie to see how you can write a simple and sing-able jingle about a product or service that you like.",
-							poster: "Ch13_CompModPoster.jpg", /* NEED */
+							poster: "Ch14CompModelPosterImg.jpg", /* NEED */
 							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/JY0YY2m7_bw?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]

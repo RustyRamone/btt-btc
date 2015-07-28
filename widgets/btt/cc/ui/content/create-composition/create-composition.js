@@ -198,11 +198,20 @@ var widget =
 
 			$$(".alt-kybd").html("<tr>"+buf.join("")+"</tr>");
 
+			var _this = this;
+
 			var altKeyboardPlayer = new btt.cc.media.MultiAudioPlayer(sounds);
 
-			$$(".alt-kybd img").on("mousedown", function()
+			console.log("loading...");
+
+			altKeyboardPlayer.onSoundsLoaded(function()
 			{
-				altKeyboardPlayer.playFromStart($(this).data("audio"));
+				console.log("loaded.");
+
+				$$(".alt-kybd img").on("click", function()
+				{
+					altKeyboardPlayer.playFromStart($(this).data("audio"));
+				});
 			});
 		}
 	},

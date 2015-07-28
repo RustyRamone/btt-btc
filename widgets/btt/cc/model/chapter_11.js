@@ -310,7 +310,11 @@ btt.cc.model.chapter.chapters.push(
 							correctAnswers: ["Strings"],
 							incorrectAnswers: ["Voice & Drums", "Flute & Piano", "Brass & Drums"]
 						}
-					]
+					],
+					css:
+					{
+						".audio-player": {right:"15%"}
+					}
 				},
 				{
 					type: "btt.cc.ui.content.staff-player",

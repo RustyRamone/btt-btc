@@ -364,6 +364,19 @@
 	background: #fff url(static/sibelius.png) no-repeat center;
 }
 
+.__CLASS__ .xml-template .xml-score
+{
+	display: block;
+	.box-shadow(0, 0, 5px);
+	height: 70px;
+	margin: 20px;
+	margin-top: 40px;
+	line-height: 70px;
+	font-size: 20px;
+	color: #777;
+	text-decoration: none;
+}
+
 .__CLASS__ .tips-info
 {
 	color: #8a8a8a;

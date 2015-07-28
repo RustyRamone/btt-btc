@@ -608,6 +608,11 @@ btt.cc.model.chapter.chapters.push(
 								code: '' /* NEED */
 							},
 							{
+								type: "video",
+								title: "Video Model",
+								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/-x5a20S_Zq8?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+							},
+							{
 								type: "audio",
 								title: "Hear Model",
 								audioFile: "Ch15ExpandItAudio" // NEED

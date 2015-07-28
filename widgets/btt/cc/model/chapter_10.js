@@ -446,7 +446,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "View this movie to see how you come up with a musical theme like Chopin's in a minor key.",
 							poster: "Ch10CompPoster.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/S4bSu4Ud3a4?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/4Bqafak3NMg?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},

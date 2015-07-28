@@ -28,7 +28,7 @@
 {
 	position: relative;
 	padding: 20px 0;
-	height: 380px;
+	min-height: 380px;
 	.box-shadow(0, 0, 2px);
 }
 
