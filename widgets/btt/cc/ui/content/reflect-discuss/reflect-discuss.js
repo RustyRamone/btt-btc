@@ -116,8 +116,8 @@ var widget =
 			},100);
 		});
 		
-		btt.cc.ui.login.requireLogin(function()
-		{
+		// btt.cc.ui.login.requireLogin(function()
+		// {
 			// load answers if they exist
 			btt.cc.model.student.getCurrent(function(student)
 			{
@@ -137,7 +137,7 @@ var widget =
 					}
 				});
 			});
-		});
+		// });
 		// var wphSel = "#"+$$().attr("id")+" .wph";
 		// phnq_widgets.scan({wphSelector:wphSel});
 	}
