@@ -428,7 +428,7 @@ btt.cc.model.chapter.chapters.push(
 			introOverlay:
 			{
 				title: "Reflect & Discuss",
-				synopsis: "Enter your name and answer the questions on the following slides as you reflect on your composition. Then submit it to your teacher."
+				synopsis: "Answer the questions on the following slides as you reflect on your composition. Then submit it to your teacher."
 			},
 			pages:
 			[
