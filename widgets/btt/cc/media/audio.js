@@ -1,5 +1,7 @@
 var audioContext = null;
 
+var audioFileExt = null;
+
 if("webkitAudioContext" in window)
 {
 	audioContext = new webkitAudioContext();
@@ -27,6 +29,11 @@ var WebAudioFile = phnq_core.clazz(
 {
 	init: function(url)
 	{
+		if(url.indexOf("."+audioFileExt) == -1)
+		{
+			url = btt.cc.media.mediaFileUrl(url + "." + audioFileExt);
+		}
+
 		this.url = url;
 		this.gain = 1;
 	},
@@ -144,6 +151,11 @@ var AudioTagFile = phnq_core.clazz(
 {
 	init: function(url)
 	{
+		if(url.indexOf("."+audioFileExt) == -1)
+		{
+			url = btt.cc.media.mediaFileUrl(url + "." + audioFileExt);
+		}
+
 		this.url = url;
 		this.gain = 1; // TODO: use this value
 	},
@@ -241,6 +253,18 @@ var MultiSoundPlayer = phnq_core.clazz(
 {
 	init: function(keyedUrls)
 	{
+		if(keyedUrls instanceof Array)
+		{
+			var urls = keyedUrls;
+			keyedUrls = {};
+			for(var i=0; i<urls.length; i++)
+			{
+				keyedUrls[urls[i]] = urls[i];
+			}
+		}
+
+		console.log("keyedUrls: ", keyedUrls);
+
 		this.keyedUrls = keyedUrls;
 		this.audioFiles = {};
 		this.keys = [];
@@ -305,22 +329,23 @@ $(function()
 {
 	var audio = new Audio();
 
-	var ext = null;
 	if(audio.canPlayType("audio/mpeg"))
 	{
-		ext = "mp3";
+		audioFileExt = "mp3";
 	}
 	else if(audio.canPlayType("audio/ogg"))
 	{
-		ext = "ogg";
+		audioFileExt = "ogg";
 	}
 	else
 	{
 		throw "No Audio: must support either mp3 or ogg.";
 	}
+
+	btt.cc.audio.MultiSoundPlayer = MultiSoundPlayer;
 	
-	btt.cc.audio.piano = new MultiSoundPlayer(btt.cc.media.getPianoKeyUrls(ext));
+	btt.cc.audio.piano = new MultiSoundPlayer(btt.cc.media.getPianoKeyUrls(audioFileExt));
 	btt.cc.audio.piano.setGain(3);
 	
-	btt.cc.audio.sfx = new MultiSoundPlayer(btt.cc.media.getSfxUrls(ext));
+	btt.cc.audio.sfx = new MultiSoundPlayer(btt.cc.media.getSfxUrls(audioFileExt));
 });

@@ -200,17 +200,25 @@ var widget =
 
 			var _this = this;
 
-			var altKeyboardPlayer = new btt.cc.media.MultiAudioPlayer(sounds);
+			var altKeyboardPlayer = new btt.cc.audio.MultiSoundPlayer(sounds);
 
 			console.log("loading...");
 
-			altKeyboardPlayer.onSoundsLoaded(function()
+			altKeyboardPlayer.load(function()
 			{
 				console.log("loaded.");
 
-				$$(".alt-kybd img").on("click", function()
+				var downEvt = "mousedown";
+				var upEvt = "mouseup";
+				if(btt.cc.main.respondsToTouch)
 				{
-					altKeyboardPlayer.playFromStart($(this).data("audio"));
+					downEvt = "touchstart";
+					upEvt = "touchend";
+				}
+
+				$$(".alt-kybd img").on(downEvt, function()
+				{
+					altKeyboardPlayer.play($(this).data("audio"));
 				});
 			});
 		}
