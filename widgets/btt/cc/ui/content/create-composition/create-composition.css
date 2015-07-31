@@ -471,6 +471,14 @@
 	}
 }
 
+.__CLASS__
+{
+	.play-pad-video-container
+	{
+		visibility: hidden
+	}
+}
+
 .__CLASS__.show-play-pad
 {
 	.card
@@ -528,6 +536,7 @@
 		.play-pad-video-container
 		{
 			text-align: center;
+			visibility: visible;
 		}
 	}
 }
