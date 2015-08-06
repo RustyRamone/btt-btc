@@ -224,8 +224,13 @@ var widget =
 
 				$$(".alt-kybd img").on(downEvt, function(evt)
 				{
-					var x = evt.offsetX / $(this).width();
-					var y = evt.offsetY / $(this).height();
+					var offset = $(this).offset();
+
+					var pageX = evt.pageX || evt.originalEvent.touches[0].pageX;
+					var pageY = evt.pageY || evt.originalEvent.touches[0].pageY;
+
+					var x = (pageX - offset.left) / $(this).width();
+					var y = (pageY - offset.top) / $(this).height();
 
 					var pad = _this.params.playPad.altKeyboard.pads[parseInt($(this).data("index"), 10)];
 
