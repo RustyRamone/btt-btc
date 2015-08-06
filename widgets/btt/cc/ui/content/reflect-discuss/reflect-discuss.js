@@ -41,10 +41,7 @@ var widget =
 		{
 			var index = $(this).attr("data-index");
 
-			btt.cc.ui.login.requireLogin(function()
-			{
-				$(".reflection-pop[data-index="+index+"]").modal();
-			});
+			$(".reflection-pop[data-index="+index+"]").modal();
 		});
 
 		$(".reflection-pop").on("show", function()
