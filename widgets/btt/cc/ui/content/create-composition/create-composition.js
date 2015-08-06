@@ -190,10 +190,20 @@ var widget =
 		{
 			var buf = [];
 			var sounds = [];
-			$(this.params.playPad.altKeyboard.pads).each(function()
+			$(this.params.playPad.altKeyboard.pads).each(function(i)
 			{
-				sounds.push(this.audio);
-				buf.push("<td><img src=\""+btt.cc.media.mediaFileUrl(this.image)+"\" data-audio=\""+this.audio+"\"/></td>");
+				if(this.audio instanceof Array)
+				{
+					$(this.audio).each(function(i, a)
+					{
+						sounds.push(a);
+					});
+				}
+				else
+				{
+					sounds.push(this.audio);
+				}
+				buf.push("<td><img src=\""+btt.cc.media.mediaFileUrl(this.image)+"\" data-index=\""+i+"\" data-audio=\""+this.audio+"\"/></td>");
 			});
 
 			$$(".alt-kybd").html("<tr>"+buf.join("")+"</tr>");
@@ -202,12 +212,8 @@ var widget =
 
 			var altKeyboardPlayer = new btt.cc.audio.MultiSoundPlayer(sounds);
 
-			console.log("loading...");
-
 			altKeyboardPlayer.load(function()
 			{
-				console.log("loaded.");
-
 				var downEvt = "mousedown";
 				var upEvt = "mouseup";
 				if(btt.cc.main.respondsToTouch)
@@ -216,9 +222,33 @@ var widget =
 					upEvt = "touchend";
 				}
 
-				$$(".alt-kybd img").on(downEvt, function()
+				$$(".alt-kybd img").on(downEvt, function(evt)
 				{
-					altKeyboardPlayer.play($(this).data("audio"));
+					var x = evt.offsetX / $(this).width();
+					var y = evt.offsetY / $(this).height();
+
+					var pad = _this.params.playPad.altKeyboard.pads[parseInt($(this).data("index"), 10)];
+
+					if(pad.audio instanceof Array)
+					{
+						$(pad.rects).each(function(i, rect)
+						{
+							var coords = rect.split(",");
+							var minX = parseFloat(coords[0]);
+							var minY = parseFloat(coords[1]);
+							var maxX = parseFloat(coords[2]);
+							var maxY = parseFloat(coords[3]);
+
+							if(x >= minX && x <= maxX && y >= minY && y <= maxY)
+							{
+								altKeyboardPlayer.play(pad.audio[i]);
+							}
+						});
+					}
+					else
+					{
+						altKeyboardPlayer.play(pad.audio);
+					}
 				});
 			});
 		}

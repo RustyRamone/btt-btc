@@ -512,33 +512,11 @@ btt.cc.model.chapter.chapters.push(
 								},
 								{
 									image: "tympani.png",
-									audio: "Ch13Tymp1"
+									audio: ["Ch13Tymp3","Ch13Tymp2","Ch13Tymp1"],
+									rects: ["0.132,0.024,0.557,0.224", "0.467,0.176,0.892,0.376", "0.16,0.324,0.57,0.524"]
 								}
 							]
 						}
-
-
-// <img src="url/to/your/image.jpg" alt="" usemap="#Map" />
-// <map name="Map" id="Map">
-//     <area alt="" title="" href="#" shape="poly" coords="66,45,99,76,146,83,199,83,257,70,276,45,248,17,189,9,139,11,93,17" />
-//     <area alt="" title="" href="#" shape="poly" coords="80,159,109,191,143,197,187,200,239,194,272,184,287,172,284,158,260,133,216,127,167,129,125,131,97,140" />
-//     <area alt="" title="" href="#" shape="poly" coords="238,102,252,122,282,129,322,135,368,134,400,129,431,124,444,106,427,79,378,71,328,69,286,74,257,80" />
-//     [...]
-// </map>						
-
-						// image: "Ch-9-PlayPadImage.png",
-						// audio: "PlayPadCh9",
-						// fields:
-						// [
-						// 	{label: "AA", placeholder: "Opening Line (A)"},
-						// 	{label: "B", placeholder: "Contrasting line (B)"}
-						// ],
-						// labels:
-						// {
-						// 	style: "circle",
-						// 	white: {"3":"1", "6":"-5", "7":"5", "10":"8"},
-						// 	black: {"4":"-3", "5":"4", "8":"-7"}
-						// }
 					}
 				}
 			]

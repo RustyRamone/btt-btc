@@ -263,8 +263,6 @@ var MultiSoundPlayer = phnq_core.clazz(
 			}
 		}
 
-		console.log("keyedUrls: ", keyedUrls);
-
 		this.keyedUrls = keyedUrls;
 		this.audioFiles = {};
 		this.keys = [];
