@@ -192,7 +192,13 @@ btt.cc.model.chapter.chapters.push(
 					composerImage: "Ch14BarryManilow.jpg",
 					video:
 					{
-						code: '<object id="otvPlayer" width="328" height="220"><param name="movie" value="http://cdn.abclocal.go.com/static/flash/embeddedPlayer/swf/otvEmLoader.swf?version=fw1000&station=&section=wcl&mediaId=8735249&parentId=&cdnRoot=http://cdn.abclocal.go.com&webRoot=http://windycitylive.com&configPath=/shared/util/&site=" ></param><param name="allowScriptAccess" value="always"></param><param name="allowNetworking" value="all"></param><param name="allowFullScreen" value="true"></param><embed id="otvPlayer" width="400" height="268" type="application/x-shockwave-flash"	allowscriptaccess="always" allownetworking="all" allowfullscreen="true"	src="http://cdn.abclocal.go.com/static/flash/embeddedPlayer/swf/otvEmLoader.swf?version=fw1000&station=&section=wcl&mediaId=8735249&parentId=&cdnRoot=http://cdn.abclocal.go.com&webRoot=http://windycitylive.com&configPath=/shared/util/&site="></embed><img style="position: absolute; left:150px; top:20px; width: 328px; height: 220px" src="'+btt.cc.media.mediaFileUrl("flash-msg.jpg")+'"/></object>'
+						code: '<object id="otvPlayer" width="328" height="220" style="margin-top:10px; display:inline-block; background-image:url('+btt.cc.media.mediaFileUrl("flash-msg.jpg")+')">'
+							+ '    <param name="movie" value="http://cdn.abclocal.go.com/static/flash/embeddedPlayer/swf/otvEmLoader.swf?version=fw1000&station=&section=wcl&mediaId=8735249&parentId=&cdnRoot=http://cdn.abclocal.go.com&webRoot=http://windycitylive.com&configPath=/shared/util/&site=" ></param>'
+							+ '    <param name="allowScriptAccess" value="always"></param>'
+							+ '    <param name="allowNetworking" value="all"></param>'
+							+ '    <param name="allowFullScreen" value="true"></param>'
+							+ '    <embed id="otvPlayer" width="328" height="220" type="application/x-shockwave-flash" allowscriptaccess="always" allownetworking="all" allowfullscreen="true" src="http://cdn.abclocal.go.com/static/flash/embeddedPlayer/swf/otvEmLoader.swf?version=fw1000&station=&section=wcl&mediaId=8735249&parentId=&cdnRoot=http://cdn.abclocal.go.com&webRoot=http://windycitylive.com&configPath=/shared/util/&site="></embed>'
+							+ '</object>'
 					},
 					questionIntro: "<span>Listen:</span> To Barry Manilow Sing His Jingles.",
 					questions:
