@@ -2,7 +2,6 @@ require("ext.jquery-cookie");
 
 var COOKIE_NAME = "cc_student2";
 var LOGIN_REDIRECT_COOKIE_NAME = "btt_login_redirect";
-var currentStudentLoginInfo = {classID:"default", firstName:"default", lastName:"default"};
 var currentStudent = null;
 
 btt.cc.model.student =
@@ -36,7 +35,12 @@ btt.cc.model.student =
 
 $.getJSON("/service_studentInfo.php", {}, function(data)
 {
-	currentStudentLoginInfo = data;
+	btt.cc.model.student.getCurrent(function(curStud)
+	{
+		curStud.firstName = data.firstName;
+		curStud.lastName = data.lastName;
+		curStud.classId = data.classID;
+	});
 });
 
 window.LOG_STUDENT = function()
@@ -102,9 +106,9 @@ var Student = phnq_core.clazz(
 		var params =
 		{
 			chapterID: chId,
-			firstName: currentStudentLoginInfo.firstName,
-			lastName: currentStudentLoginInfo.lastName,
-			className: currentStudentLoginInfo.classID,
+			firstName: this.firstName,
+			lastName: this.lastName,
+			className: this.classId,
 			ref_1: reflections[0],
 			ref_2: reflections[1],
 			ref_3: reflections[2]
@@ -134,9 +138,9 @@ var Student = phnq_core.clazz(
 		var params =
 		{
 			chapterID: chId,
-			firstName: currentStudentLoginInfo.firstName,
-			lastName: currentStudentLoginInfo.lastName,
-			className: currentStudentLoginInfo.classID
+			firstName: this.firstName,
+			lastName: this.lastName,
+			className: this.classId
 		};
 		
 		$.getJSON("service_getReflections.php", params, function(data)
