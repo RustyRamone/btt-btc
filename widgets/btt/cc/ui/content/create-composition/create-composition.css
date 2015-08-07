@@ -812,6 +812,11 @@
 		.alt-kybd
 		{
 			margin: 30px 50px;
+
+			img
+			{
+				width: 100%;
+			}
 		}
 	}
 
