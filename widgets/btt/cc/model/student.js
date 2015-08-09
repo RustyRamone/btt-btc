@@ -40,6 +40,7 @@ $.getJSON("/service_studentInfo.php", {}, function(data)
 		curStud.firstName = data.firstName;
 		curStud.lastName = data.lastName;
 		curStud.classId = data.classID;
+		phnq.notify.post("student-info-set");
 	});
 });
 
