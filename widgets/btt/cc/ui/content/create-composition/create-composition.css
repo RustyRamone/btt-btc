@@ -475,7 +475,7 @@
 {
 	.play-pad-video-container
 	{
-		visibility: hidden
+		display: none;
 	}
 }
 
@@ -536,7 +536,6 @@
 		.play-pad-video-container
 		{
 			text-align: center;
-			visibility: visible;
 		}
 	}
 }
@@ -570,6 +569,16 @@
 	}
 
 }
+
+
+.__CLASS__.reveal-play-pad
+{
+	.play-pad-video-container
+	{
+		display: block;
+	}
+}
+
 
 /*.no-csstransforms
 {
