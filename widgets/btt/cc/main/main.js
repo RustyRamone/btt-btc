@@ -100,19 +100,22 @@ var widget =
 			_this.handleOrientationChange();
 		});
 
-		if(btt.cc.main.isIPad && !window.navigator.standalone)
+		if(!window.navigator.standalone)
 		{
-			this.scaleViewport(0.94);
-		}
-		else if(btt.cc.main.isIPhone && !window.navigator.standalone)
-		{
-			this.scaleViewport(1);
-			this.scaleViewport($(window).height() / 750);
-		}
-		else
-		{
-			this.scaleViewport(1);
-			this.scaleViewport($(window).height() / 750);
+			if(btt.cc.main.isIPad)
+			{
+				this.scaleViewport(0.94);
+			}
+			else if(btt.cc.main.isIPhone)
+			{
+				this.scaleViewport(1);
+				this.scaleViewport($(window).height() / 750);
+			}
+			else
+			{
+				this.scaleViewport(1);
+				this.scaleViewport($(window).height() / 750);
+			}
 		}
 
 		_this.handleOrientationChange();
