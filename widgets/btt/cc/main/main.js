@@ -6,6 +6,7 @@ require("btt.cc.model");
 require("phnq.notify");
 
 btt.cc.main.isIPad = !!navigator.userAgent.match(/iPad/i);
+btt.cc.main.isIPhone = !!navigator.userAgent.match(/iPhone/i);
 btt.cc.main.isIOS = !!navigator.userAgent.match(/(iPad|iPhone|iPod)/g);
 btt.cc.main.isIE = !!navigator.userAgent.match(/MSIE/i);
 btt.cc.main.isMac = !!navigator.appVersion.match(/Mac/i);
@@ -99,20 +100,23 @@ var widget =
 			_this.handleOrientationChange();
 		});
 
-		// $$().disableSelection();
-
-		_this.handleOrientationChange();
-
 		if(btt.cc.main.isIPad && !window.navigator.standalone)
 		{
 			this.scaleViewport(0.94);
+		}
+		else if(btt.cc.main.isIPhone && !window.navigator.standalone)
+		{
+			this.scaleViewport(1);
+			this.scaleViewport($(window).height() / 750);
 		}
 		else
 		{
 			this.scaleViewport(1);
 			this.scaleViewport($(window).height() / 750);
 		}
-		
+
+		_this.handleOrientationChange();
+
 		setTimeout(function()
 		{
 			$$().addClass("page-loaded");
@@ -145,14 +149,26 @@ var widget =
 		{
 			btt.cc.ui.browserWarning.show();	
 		}
+
+		if(btt.cc.main.isIPhone)
+		{
+			setInterval(function()
+			{
+				window.scrollTo(0, 0);
+			}, 1000);
+		}
 	},
 
-	scaleViewport: function(scale)
+	scaleViewport: function(initScale, minScale, maxScale)
 	{
-		if(scale <= 1)
+		minScale = minScale || initScale;
+		maxScale = maxScale || initScale;
+		if(initScale <= 1)
 		{
-			scale = Math.round(scale * 100) / 100;
-			var viewportContent = $("meta[name=viewport]").attr("content")+",initial-scale="+scale+",maximum-scale="+scale+",minimum-scale="+scale;
+			initScale = Math.round(initScale * 100) / 100;
+			minScale = Math.round(minScale * 100) / 100;
+			maxScale = Math.round(maxScale * 100) / 100;
+			var viewportContent = "user-scalable=no,initial-scale="+initScale+",maximum-scale="+maxScale+",minimum-scale="+minScale;
 			$("meta[name=viewport]").attr("content", viewportContent);
 		}
 	},
