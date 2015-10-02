@@ -95,10 +95,20 @@ var widget =
 			$$().addClass("isIE");
 		}
 		
-		$$().on("orientationchange", function()
+		if(!!('orientationchange' in window))
 		{
-			_this.handleOrientationChange();
-		});
+			$$().on("orientationchange", function()
+			{
+				_this.handleOrientationChange();
+			});
+		}
+		else
+		{
+			setInterval(function()
+			{
+				_this.handleOrientationChange();
+			}, 1000);
+		}
 
 		_this.handleOrientationChange();
 		
@@ -161,9 +171,16 @@ var widget =
 	handleOrientationChange: function()
 	{
 		var $$ = this.get$$();
-		
+
+		var isPortrait = ($(window).height() / $(window).width()) > 1;
+
+		if(isPortrait == this.isPortrait)
+			return;
+
+		this.isPortrait = isPortrait;
+
 		// Portrait
-		if(window.orientation == 0 || window.orientation == 180)
+		if(isPortrait)
 		{
 			if(btt.cc.main.isIPad)
 			{
