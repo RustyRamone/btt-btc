@@ -102,12 +102,9 @@ var widget =
 		// $$().disableSelection();
 
 		_this.handleOrientationChange();
-
-		if(btt.cc.main.isIPad && !window.navigator.standalone)
-		{
-			this.scaleViewport(0.94);
-		}
-		else
+		
+		// General approach to viewport scaling -- do nothing for iPad in standalone mode though.
+		if(!btt.cc.main.isIPad || !window.navigator.standalone)
 		{
 			this.scaleViewport(1);
 			this.scaleViewport($(window).height() / 750);
