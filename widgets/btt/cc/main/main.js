@@ -6,10 +6,12 @@ require("btt.cc.model");
 require("phnq.notify");
 
 btt.cc.main.isIPad = !!navigator.userAgent.match(/iPad/i);
+btt.cc.main.isIPhone = !!navigator.userAgent.match(/iPhone/i);
 btt.cc.main.isIOS = !!navigator.userAgent.match(/(iPad|iPhone|iPod)/g);
 btt.cc.main.isIE = !!navigator.userAgent.match(/MSIE/i);
 btt.cc.main.isMac = !!navigator.appVersion.match(/Mac/i);
 btt.cc.main.isWin = !!navigator.appVersion.match(/Win/i);
+btt.cc.main.isAndroid = !!navigator.userAgent.match(/Android/i);
 
 // For now, only allow touch events on iOS devices. Chrome on Windows may lie about its ability to support touch events.
 var respondsToTouch = btt.cc.main.respondsToTouch = btt.cc.main.isIOS && !!('ontouchstart' in window)
@@ -98,14 +100,14 @@ var widget =
 			_this.handleOrientationChange();
 		});
 
-		// $$().disableSelection();
-
 		_this.handleOrientationChange();
 		
-		if(btt.cc.main.isIPad && !window.navigator.standalone)
+		if(btt.cc.main.isIPhone)
 		{
-			var viewportContent = $("meta[name=viewport]").attr("content")+",initial-scale=0.94,maximum-scale=0.94,minimum-scale=0.94";
-			$("meta[name=viewport]").attr("content", viewportContent);
+			setInterval(function()
+			{
+				window.scrollTo(0, 0);
+			}, 1000);
 		}
 		
 		setTimeout(function()
@@ -142,22 +144,50 @@ var widget =
 		}
 	},
 	
+	scaleViewport: function(initScale, minScale, maxScale)
+	{
+		minScale = minScale || initScale;
+		maxScale = maxScale || initScale;
+		if(initScale <= 1)
+		{
+			initScale = Math.round(initScale * 100) / 100;
+			minScale = Math.round(minScale * 100) / 100;
+			maxScale = Math.round(maxScale * 100) / 100;
+			var viewportContent = "user-scalable=no,initial-scale="+initScale+",maximum-scale="+maxScale+",minimum-scale="+minScale;
+			$("meta[name=viewport]").attr("content", viewportContent);
+		}
+	},
+
 	handleOrientationChange: function()
 	{
-		if(!btt.cc.main.isIPad)
-		{
-			return;
-		}
-    
 		var $$ = this.get$$();
 		
+		// Portrait
 		if(window.orientation == 0 || window.orientation == 180)
 		{
-			$$().addClass("skinny");
+			if(btt.cc.main.isIPad)
+			{
+				$$().addClass("skinny");
+			}
+
+			$("meta[name=viewport]").attr("content", "user-scalable=no");
 		}
-		else
+		else // Landscape
 		{
-			$$().removeClass("skinny");
+			if(btt.cc.main.isIPad)
+			{
+				$$().removeClass("skinny");
+			}
+
+			if(btt.cc.main.isIPad && !window.navigator.standalone)
+			{
+				this.scaleViewport(0.94);
+			}
+			else
+			{
+				this.scaleViewport(1);
+				this.scaleViewport($(window).height() / 750);
+			}
 		}
 	},
 	
