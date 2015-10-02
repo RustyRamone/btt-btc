@@ -10,7 +10,6 @@ btt.cc.main.isIOS = !!navigator.userAgent.match(/(iPad|iPhone|iPod)/g);
 btt.cc.main.isIE = !!navigator.userAgent.match(/MSIE/i);
 btt.cc.main.isMac = !!navigator.appVersion.match(/Mac/i);
 btt.cc.main.isWin = !!navigator.appVersion.match(/Win/i);
-btt.cc.main.isAndroid = !!navigator.userAgent.match(/Android/i);
 
 // For now, only allow touch events on iOS devices. Chrome on Windows may lie about its ability to support touch events.
 var respondsToTouch = btt.cc.main.respondsToTouch = btt.cc.main.isIOS && !!('ontouchstart' in window)
@@ -103,11 +102,10 @@ var widget =
 
 		_this.handleOrientationChange();
 		
-		// General approach to viewport scaling -- do nothing for iPad in standalone mode though.
-		if(!btt.cc.main.isIPad || !window.navigator.standalone)
+		if(btt.cc.main.isIPad && !window.navigator.standalone)
 		{
-			this.scaleViewport(1);
-			this.scaleViewport($(window).height() / 750);
+			var viewportContent = $("meta[name=viewport]").attr("content")+",initial-scale=0.94,maximum-scale=0.94,minimum-scale=0.94";
+			$("meta[name=viewport]").attr("content", viewportContent);
 		}
 		
 		setTimeout(function()
@@ -141,16 +139,6 @@ var widget =
 		if(!btt.cc.main.isSupportedBrowser())
 		{
 			btt.cc.ui.browserWarning.show();	
-		}
-	},
-
-	scaleViewport: function(scale)
-	{
-		if(scale <= 1)
-		{
-			scale = Math.round(scale * 100) / 100;
-			var viewportContent = $("meta[name=viewport]").attr("content")+",initial-scale="+scale+",maximum-scale="+scale+",minimum-scale="+scale;
-			$("meta[name=viewport]").attr("content", viewportContent);
 		}
 	},
 	
