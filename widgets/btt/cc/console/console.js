@@ -16,6 +16,8 @@ var widget =
 	ready: function($$)
 	{
 		conWidget = this;
+
+		this.append("CONSOLE: ", navigator.userAgent);
 	},
 
 	append: function()

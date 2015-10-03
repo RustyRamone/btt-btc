@@ -41,9 +41,7 @@ var widget =
 				$$(".chapter-items").on("touchmove", function(evt)
 				{
 					dTouchX = evt.originalEvent.targetTouches[0].pageX - touchX0;
-
 					$$(".chapter-items").css({transform:"translateX("+(dTouchX-scrollPos)+"px)"});
-
 				});
 
 				$$(".chapter-items").on("touchend", function(evt)

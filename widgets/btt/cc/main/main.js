@@ -14,18 +14,7 @@ btt.cc.main.isWin = !!navigator.appVersion.match(/Win/i);
 btt.cc.main.isAndroid = !!navigator.userAgent.match(/Android/i);
 
 // For now, only allow touch events on iOS devices. Chrome on Windows may lie about its ability to support touch events.
-var respondsToTouch = false;// btt.cc.main.respondsToTouch = btt.cc.main.isIOS && !!('ontouchstart' in window)
-
-if(respondsToTouch)
-{
-	$("body").on("touchmove", function(evt)
-	{
-		if($(evt.target).closest(".allow-touch-move").length == 0)
-		{
-			evt.preventDefault();
-		}
-	});
-}
+var respondsToTouch = btt.cc.main.respondsToTouch = (btt.cc.main.isAndroid || btt.cc.main.isIOS) && !!('ontouchstart' in window)
 
 btt.cc.main.isInNavMode = function()
 {
