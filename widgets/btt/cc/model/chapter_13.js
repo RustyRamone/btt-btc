@@ -500,11 +500,15 @@ btt.cc.model.chapter.chapters.push(
 								},
 								{
 									image: "snare_drum.png",
-									audio: "Ch13SDStroke"
+									audio: ["Ch13SDRoll 2", "Ch13SDStroke"],
+									rects: ["0,0,0.5,1", "0.5,0,1,1"],
+									choke: [true, false]
 								},
 								{
 									image: "sus_cymbal.png",
-									audio: "Ch13SusCymbal"
+									audio: ["Ch13CymbalRoll", "Ch13SusCymbal"],
+									rects: ["0,0,0.5,1", "0.5,0,1,1"],
+									choke: [true, false]
 								},
 								{
 									image: "crash_cymbals.png",

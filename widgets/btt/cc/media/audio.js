@@ -131,6 +131,7 @@ var WebAudioFile = phnq_core.clazz(
 
 			sourceWrapper.stop = function(minDur)
 			{
+				minDur = minDur || 0;
 				var noteOffTime = Math.max(noteOnTime+minDur, audioContext.currentTime);
 				stopAudio(noteOffTime);
 			};

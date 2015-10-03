@@ -224,6 +224,7 @@ var widget =
 
 				$$(".alt-kybd img").on(downEvt, function(evt)
 				{
+					var imgElmnt = this;
 					var offset = $(this).offset();
 
 					var pageX = evt.pageX || evt.originalEvent.touches[0].pageX;
@@ -246,13 +247,38 @@ var widget =
 
 							if(x >= minX && x <= maxX && y >= minY && y <= maxY)
 							{
-								altKeyboardPlayer.play(pad.audio[i]);
+								var stopper = altKeyboardPlayer.play(pad.audio[i]);
+								if(pad.choke && pad.choke[i])
+								{
+									$(imgElmnt).data("stopper", stopper);
+								}
+								else
+								{
+									$(imgElmnt).data("stopper", null);
+								}
 							}
 						});
 					}
 					else
 					{
-						altKeyboardPlayer.play(pad.audio);
+						var stopper = altKeyboardPlayer.play(pad.audio);
+						if(pad.choke)
+						{
+							$(this).data("stopper", stopper);
+						}
+						else
+						{
+							$(this).data("stopper", null);
+						}
+					}
+				});
+
+				$$(".alt-kybd img").on(upEvt, function(evt)
+				{
+					var stopper = $(this).data("stopper");
+					if(stopper && stopper.stop)
+					{
+						stopper.stop();
 					}
 				});
 			});
