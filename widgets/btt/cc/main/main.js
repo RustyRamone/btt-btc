@@ -14,7 +14,7 @@ btt.cc.main.isWin = !!navigator.appVersion.match(/Win/i);
 btt.cc.main.isAndroid = !!navigator.userAgent.match(/Android/i);
 
 // For now, only allow touch events on iOS devices. Chrome on Windows may lie about its ability to support touch events.
-var respondsToTouch = btt.cc.main.respondsToTouch = btt.cc.main.isIOS && !!('ontouchstart' in window)
+var respondsToTouch = false;// btt.cc.main.respondsToTouch = btt.cc.main.isIOS && !!('ontouchstart' in window)
 
 if(respondsToTouch)
 {
@@ -90,12 +90,16 @@ var widget =
 
 		var _this = this;
 
+		this.isPortrait = null;
+		this.viewportWidth = 0;
+		this.viewportHeight = 0;
+
 		if(btt.cc.main.isIE)
 		{
 			$$().addClass("isIE");
 		}
 		
-		if(!!('orientationchange' in window))
+		if(!!('onorientationchange' in window))
 		{
 			$$().on("orientationchange", function()
 			{
@@ -107,18 +111,18 @@ var widget =
 			setInterval(function()
 			{
 				_this.handleOrientationChange();
-			}, 1000);
+			}, 5000);
 		}
 
 		_this.handleOrientationChange();
 		
-		if(btt.cc.main.isIPhone)
-		{
-			setInterval(function()
-			{
-				window.scrollTo(0, 0);
-			}, 1000);
-		}
+		// if(btt.cc.main.isIPhone)
+		// {
+		// 	setInterval(function()
+		// 	{
+		// 		window.scrollTo(0, 0);
+		// 	}, 1000);
+		// }
 		
 		setTimeout(function()
 		{
@@ -154,58 +158,18 @@ var widget =
 		}
 	},
 	
-	scaleViewport: function(initScale, minScale, maxScale)
-	{
-		minScale = minScale || initScale;
-		maxScale = maxScale || initScale;
-		if(initScale <= 1)
-		{
-			initScale = Math.round(initScale * 100) / 100;
-			minScale = Math.round(minScale * 100) / 100;
-			maxScale = Math.round(maxScale * 100) / 100;
-			var viewportContent = "user-scalable=no,initial-scale="+initScale+",maximum-scale="+maxScale+",minimum-scale="+minScale;
-			$("meta[name=viewport]").attr("content", viewportContent);
-		}
-	},
-
 	handleOrientationChange: function()
 	{
 		var $$ = this.get$$();
 
-		var isPortrait = ($(window).height() / $(window).width()) > 1;
+		var width = 1024;
 
-		if(isPortrait == this.isPortrait)
-			return;
-
-		this.isPortrait = isPortrait;
-
-		// Portrait
-		if(isPortrait)
+		if($(window).height() < 768)
 		{
-			if(btt.cc.main.isIPad)
-			{
-				$$().addClass("skinny");
-			}
-
-			$("meta[name=viewport]").attr("content", "user-scalable=no");
+			width = Math.ceil(1024 * 768 / $(window).height());
 		}
-		else // Landscape
-		{
-			if(btt.cc.main.isIPad)
-			{
-				$$().removeClass("skinny");
-			}
 
-			if(btt.cc.main.isIPad && !window.navigator.standalone)
-			{
-				this.scaleViewport(0.94);
-			}
-			else
-			{
-				this.scaleViewport(1);
-				this.scaleViewport($(window).height() / 750);
-			}
-		}
+		$("meta[name=viewport]").attr("content", "width="+width);
 	},
 	
 	switchToNavModeIfNeeded: function($$)
@@ -216,6 +180,10 @@ var widget =
 			$$().removeClass("show-content");
 			$$().addClass("hide-content");
 			phnq.notify.post("switched-to-nav-mode");
+			setTimeout(function()
+			{
+				$$().addClass("collapse-content");
+			}, 500);
 		}
 	},
 
@@ -224,6 +192,7 @@ var widget =
 		if($$().hasClass("hide-content"))
 		{
 			btt.cc.audio.sfx.play("reveal");
+			$$().removeClass("collapse-content");
 			$$().removeClass("hide-content");
 			$$().addClass("show-content");
 			phnq.notify.post("switched-to-content-mode");

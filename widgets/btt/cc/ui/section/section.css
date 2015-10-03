@@ -9,6 +9,11 @@
 	max-height: 100%;
 }
 
+.__CLASS__.no-content
+{
+	display: none;
+}
+
 .__CLASS__ > header
 {
 	position: relative;

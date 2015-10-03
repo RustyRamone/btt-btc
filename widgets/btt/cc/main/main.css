@@ -1,7 +1,7 @@
 html, body
 {
 	height: 100%;
-	overflow: hidden;
+	min-height: 768px;
 	-webkit-user-select: none;  
 	-moz-user-select: none;    
 	-ms-user-select: none;      
@@ -47,8 +47,8 @@ html, body
 .__CLASS__ > div
 {
 	padding: 0;
-	min-height: 100%;
-	max-height: 100%;
+	min-height: 768px;
+	max-height: 768px;
 }
 
 .__CLASS__ .content-mode
@@ -57,6 +57,27 @@ html, body
 	position: absolute;
 	width: 100%;
 	background: @cc_bg_pink;
+}
+
+.__CLASS__ .content-mode .container-content
+{
+	/*.animate(opacity, 0.5s);*/
+	height: 768px;
+}
+
+.__CLASS__.hide-content.collapse-content .content-mode
+{
+	min-height: 60px;
+}
+
+.__CLASS__.hide-content.collapse-content .content-mode .container-content
+{
+	height: 0;
+	overflow: hidden;
+}
+
+.__CLASS__.hide-content .content-mode .container-content
+{
 }
 
 .csstransforms
@@ -68,7 +89,7 @@ html, body
 
 	.__CLASS__ .content-mode
 	{
-		.transform(translateY(100%));
+		.transform(translateY(768px));
 	}
 
 	.__CLASS__.show-content .content-mode
@@ -120,5 +141,5 @@ html, body
 {
 	width: 0;
 	height: 0;
+	min-height: 0;
 }
-
