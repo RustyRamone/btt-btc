@@ -36,7 +36,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "What is Swing?",
 							posterText: "",
 							text: "Swing is a predominant style found in jazz music, characterized by a unique rhythmic feel.",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/qDQpZT3GhDg?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/qDQpZT3GhDg?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -139,7 +139,7 @@ btt.cc.model.chapter.chapters.push(
 							video:
 							{
 								// NEED: correct vido link
-								code: '<iframe width="640" height="340" src="http://www.youtube.com/embed/tMS0-8VHgKU?rel=0" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="340" src="//www.youtube-nocookie.com/embed/tMS0-8VHgKU?rel=0" frameborder="0" allowfullscreen></iframe>'
 							}
 						},
 						{
@@ -214,7 +214,7 @@ btt.cc.model.chapter.chapters.push(
 					composerImage: "glenn-miller.png",
 					video:
 					{
-						code: '<iframe style="margin-top:10px" id="jaws_clip" width="80%" height="220" src="//www.youtube.com/embed/RzMHMWjVZc0?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+						code: '<iframe style="margin-top:10px" id="jaws_clip" width="80%" height="220" src="//www.youtube-nocookie.com/embed/RzMHMWjVZc0?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 					},
 					questionIntro: "<span>Listen:</span> To Glenn Miller’s SWING version of Little Brown Jug.",
 					questions:
@@ -416,7 +416,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "View this movie and learn how to create a swing melody from a regular folk song.",
 							poster: "Ch7_Poster_CompModel.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/kQk1WGLK0nU?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/kQk1WGLK0nU?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -549,7 +549,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "video",
 								title: "See How",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/sVPF30HIe5o?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/sVPF30HIe5o?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
 								type: "audio",

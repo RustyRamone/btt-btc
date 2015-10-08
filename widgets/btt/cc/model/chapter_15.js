@@ -66,7 +66,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Inspirational Example",
 							posterText: "",
 							text: "Meghan Trainor was inspired to write It’s All About That Bass with the message of self-love and acceptance of one’s body.",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/ofxGAXSope8?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/ofxGAXSope8?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -103,7 +103,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Structure Example",
 							posterText: "",
 							text: "See if you can identify the various parts of ‘Happy’: Verse, Chorus, Bridge",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/ZbZSe6N_BXs?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/ZbZSe6N_BXs?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -202,7 +202,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Lyrics",
 							posterText: "",
 							text: "The third ingredient is your lyrics. View this to learn about the different lyric essentials.",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/gm9U3mUEXEE?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/gm9U3mUEXEE?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -257,7 +257,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Melody",
 							posterText: "",
 							text: "View this video to learn about the process of creating your melody.",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/yBbLqS1uEhg?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/yBbLqS1uEhg?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -270,7 +270,7 @@ btt.cc.model.chapter.chapters.push(
 					composerImage: "Guitar2.png",
 					video:
 					{
-						code: '<iframe style="margin-top:10px" id="jaws_clip" width="80%" height="220" src="//www.youtube.com/embed/ipADNlW7yBM?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+						code: '<iframe style="margin-top:10px" id="jaws_clip" width="80%" height="220" src="//www.youtube-nocookie.com/embed/ipADNlW7yBM?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 					},
 					questionIntro: "<span>Listen:</span> I Want to Hold Your Hand",
 					questions:
@@ -338,7 +338,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Chords",
 							posterText: "",
 							text: "Chords provide the background harmony for songs.",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/VBiXXlor4nk?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/VBiXXlor4nk?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -468,7 +468,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "View this movie to get started writing your own song!",
 							poster: "CH15_CompModelPosterImage.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/rnjg91rrXJE?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/rnjg91rrXJE?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -610,7 +610,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "video",
 								title: "Video Model",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/ogLitSu2nyE?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/ogLitSu2nyE?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
 								type: "audio",

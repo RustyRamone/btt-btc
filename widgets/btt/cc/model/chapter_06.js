@@ -366,7 +366,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "View this movie to see how you can create a round and add an ostinato bass line.",
 							poster: "PosterImagesCh_6.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/89f8prvQDsQ?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/89f8prvQDsQ?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -491,7 +491,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "video",
 								title: "See How",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/WELqlRixs74?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/WELqlRixs74?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
 								type: "audio",

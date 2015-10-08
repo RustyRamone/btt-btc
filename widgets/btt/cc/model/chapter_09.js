@@ -194,7 +194,7 @@ btt.cc.model.chapter.chapters.push(
 					composerImage: "stella-sisters.jpg",
 					video:
 					{
-						code: '<iframe style="margin-top:10px" width="340" height="220" src="//www.youtube.com/embed/n-lLlEtoAS8?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+						code: '<iframe style="margin-top:10px" width="340" height="220" src="//www.youtube-nocookie.com/embed/n-lLlEtoAS8?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 					},
 					questionIntro: "<span>Listen:</span> To Lennon & Maisy’s version of ‘Ho Hey’ by the Lumineers",
 					questions:
@@ -410,7 +410,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "View this movie to see how you can add a harmony part to a melody.",
 							poster: "Ch9_Poster_CompModel.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/6rpKpFi-eeQ?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/6rpKpFi-eeQ?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -541,7 +541,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "video",
 								title: "See How",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/o8V3-whfOaU?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/o8V3-whfOaU?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
 								type: "audio",

@@ -316,7 +316,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Major & Minor",
 							text: "Major and minor melodies have a very distinct sound. One sounds brighter and the other sounds darker.",
 							poster: "MajMinVideoPosterImage.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/4Bqafak3NMg?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/4Bqafak3NMg?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -446,7 +446,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "View this movie to see how you come up with a musical theme like Chopin's in a minor key.",
 							poster: "Ch10CompPoster.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/4Bqafak3NMg?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/4Bqafak3NMg?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -580,7 +580,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "video",
 								title: "See How",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/r-AWe0rJtoM?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/r-AWe0rJtoM?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
 								type: "audio",

@@ -234,7 +234,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "View the movie to see how to take your new motif and turn it into a melody!",
 							poster: "Ch 1_CC_CompModel.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/6z8ViaGW4IM?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/6z8ViaGW4IM?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -371,7 +371,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "video",
 								title: "See How",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/XH9qJVv0kW0?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/XH9qJVv0kW0?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
 								type: "audio",

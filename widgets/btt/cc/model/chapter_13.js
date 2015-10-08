@@ -35,7 +35,7 @@ btt.cc.model.chapter.chapters.push(
 						{
 							title: "View a movie three (3) different ways.",
 							text: "Music creates an emotional response in the moviegoer and its presence (or absence) in a scene helps to set the tone and tell the story.",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/9nL2Q9-prYQ?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/9nL2Q9-prYQ?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -243,7 +243,7 @@ btt.cc.model.chapter.chapters.push(
 					composerImage: "Ch13_DidYouKnowImage1.png",
 					video:
 					{
-						code: '<iframe style="margin-top:10px" width="391" height="220" src="//www.youtube.com/embed/6CZTEdl9H58?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+						code: '<iframe style="margin-top:10px" width="391" height="220" src="//www.youtube-nocookie.com/embed/6CZTEdl9H58?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 					},
 					questionIntro: "<span>Listen:</span> To where Movie Music all started in silent films.",
 					questions:
@@ -313,7 +313,7 @@ btt.cc.model.chapter.chapters.push(
 					composerImage: "Ch13_DidYouKnowImage1.png",
 					video:
 					{
-						code: '<iframe style="margin-top:10px" width="391" height="220" src="//www.youtube.com/embed/SF4BWllUEO0?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+						code: '<iframe style="margin-top:10px" width="391" height="220" src="//www.youtube-nocookie.com/embed/SF4BWllUEO0?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 					},
 					questionIntro: "<span>Listen:</span> To this fun clip of the American Fotoplayer in action.",
 					questions:
@@ -364,7 +364,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Common Time and Cut Time",
 							text: "Learn the difference between Cut Time and Common Time",
 							poster: "Ch13_PosterimageThryLnk.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/jy5qITssEtU?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/jy5qITssEtU?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -442,7 +442,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "View this movie to see how you can write percussion music to support the action in a movie.",
 							poster: "Ch13_CompModPoster.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/YzID3X8BdMM?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/YzID3X8BdMM?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -488,7 +488,7 @@ btt.cc.model.chapter.chapters.push(
 						hideKeyboard: true,
 						video:
 						{
-							code: "<iframe width=\"427\" height=\"240\" src=\"https://www.youtube.com/embed/RWUZWmYghcE?rel=0&amp;controls=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen></iframe>"
+							code: "<iframe width=\"427\" height=\"240\" src=\"//www.youtube-nocookie.com/embed/RWUZWmYghcE?rel=0&amp;controls=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen></iframe>"
 						},
 						altKeyboard:
 						{

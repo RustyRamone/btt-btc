@@ -356,7 +356,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "View this movie to see how to create a rhythmic variation of Twinkle Twinkle Little Star.",
 							poster: "PosterImagesCh_3.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/n4o9CcmK8uE?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/n4o9CcmK8uE?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -487,7 +487,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "video",
 								title: "See How",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/GPhVy0NyOAU?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/GPhVy0NyOAU?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							}
 						]
 					}

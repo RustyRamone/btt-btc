@@ -437,7 +437,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "View this movie to see how you can come up with a Spoken Chorus.",
 							poster: "PosterImagesCh_5.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/17MZQTl-J2Y?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/17MZQTl-J2Y?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -574,7 +574,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "video",
 								title: "See How",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/IZFjoEZloM8?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/IZFjoEZloM8?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
 								type: "audio",

@@ -260,7 +260,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Melodies with a Strong Tonal Center",
 							posterText: "Click to Play",
 							text: "One of the essential ingredients of a good melody is a strong tonal center. Watch this movie to see how to create this.",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/-_1f5U3xGB0?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/-_1f5U3xGB0?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -442,7 +442,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "See how to move the pitches around in Dona Nobis Pacem while following the rules about unstable scale tones.",
 							poster: "PosterImagesCh_8.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/FRsjSAe7pII?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/FRsjSAe7pII?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},

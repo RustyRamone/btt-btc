@@ -213,7 +213,7 @@ btt.cc.model.chapter.chapters.push(
 					composerImage: "WTLeveeBreaksPic.png",
 					video:
 					{
-						code: '<iframe style="margin-top:10px" width="391" height="220" src="//www.youtube.com/embed/THBkRlATdGI?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+						code: '<iframe style="margin-top:10px" width="391" height="220" src="//www.youtube-nocookie.com/embed/THBkRlATdGI?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 					},
 					questionIntro: "<span>Listen:</span> To ‘When the Levee Breaks’ recorded in 1928 and follow the words.",
 					questions:
@@ -435,7 +435,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "View this movie to see how you come up with your own unique blues song!",
 							poster: "Ch12_Poster_CompModel.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/isYmDgyAUIM?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/isYmDgyAUIM?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -575,7 +575,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "video",
 								title: "See How",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/mI7Vm4q0tWI?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/mI7Vm4q0tWI?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
 								type: "audio",

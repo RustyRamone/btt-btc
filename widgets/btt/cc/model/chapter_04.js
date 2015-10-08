@@ -198,7 +198,7 @@ btt.cc.model.chapter.chapters.push(
 					composerImage: "composers/williams/head-shot.png",
 					video:
 					{
-						code: '<iframe style="margin-top:10px" id="jaws_clip" width="80%" height="220" src="//www.youtube.com/embed/O01-SVrJEeo?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+						code: '<iframe style="margin-top:10px" id="jaws_clip" width="80%" height="220" src="//www.youtube-nocookie.com/embed/O01-SVrJEeo?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 					},
 					questionIntro: "<span>Listen:</span> To how John Williams’ creates a spooky mood for the movie “Jaws”.",
 					questionIntro2: "<span>Listen:</span> To how the motif develops into a melody using a flurry of sequences",
@@ -239,7 +239,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Half Step VS Whole Step:",
 							text: "The piano keyboard is a helpful way to show the differences between a half step and whole step.",
 							poster: "PosterImagesWholeHalf.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/cpEepxsdgUs?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/cpEepxsdgUs?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -368,7 +368,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "View this movie to see how to create your Call & Response melody, while making it sound spooky!",
 							poster: "PosterImagesCh_4.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/UVckF8C-C3o?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/UVckF8C-C3o?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -507,7 +507,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "video",
 								title: "See How",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/nic4WQ3iQ_0?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/nic4WQ3iQ_0?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							}
 						]
 					}

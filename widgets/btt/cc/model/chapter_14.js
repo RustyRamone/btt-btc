@@ -36,7 +36,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "What is a Jingle?",
 							posterText: "",
 							text: "A jingle is a short catchy song linked to a brand and its unique benefit. Originally designed to fill a commercial spot on radio or TV, jingles are typically only 30 seconds long. <u style=\"color:#e22f5b\">Listen to this example</u>.",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/KGXpNpS9aTY?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/KGXpNpS9aTY?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -136,7 +136,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Non-Profit Jingles",
 							posterText: "",
 							text: "Jingles aren’t always commercial in nature. They can be used in a very positive way to promote social causes or to make the world a better place for others.",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/-_GpxE9xQDE?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/-_GpxE9xQDE?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -192,7 +192,7 @@ btt.cc.model.chapter.chapters.push(
 					composerImage: "Ch14BarryManilow.jpg",
 					video:
 					{
-						code: '<iframe style="margin-top:10px" width="391" height="220" src="http://www.youtube.com/embed/SRuG4cfTKtY?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+						code: '<iframe style="margin-top:10px" width="391" height="220" src="//www.youtube-nocookie.com/embed/SRuG4cfTKtY?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 
 						// code: '<object id="otvPlayer" width="328" height="220" style="margin-top:10px; display:inline-block; background-image:url('+btt.cc.media.mediaFileUrl("flash-msg.jpg")+')">'
 						// 	+ '    <param name="movie" value="http://cdn.abclocal.go.com/static/flash/embeddedPlayer/swf/otvEmLoader.swf?version=fw1000&station=&section=wcl&mediaId=8735249&parentId=&cdnRoot=http://cdn.abclocal.go.com&webRoot=http://windycitylive.com&configPath=/shared/util/&site=" ></param>'
@@ -267,7 +267,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Rhyming Schemes",
 							text: "Learn about rhymes and how they are used to write lyrics.",
 							poster: "Ch14RhymesPosterImg.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/t_NySBstIAM?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/t_NySBstIAM?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -333,7 +333,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "View this movie to see how you can write a simple and sing-able jingle about a product or service that you like.",
 							poster: "Ch14CompModelPosterImg.jpg", /* NEED */
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/JY0YY2m7_bw?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/JY0YY2m7_bw?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -465,12 +465,12 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "video",
 								title: "See How",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/B4TLezsKtg4?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/B4TLezsKtg4?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
 								type: "video",
 								title: "Video Model",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/-tqtnGIjQBA?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/-tqtnGIjQBA?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
 								type: "audio",

@@ -258,7 +258,7 @@ btt.cc.model.chapter.chapters.push(
 							width: "700px",
 							video:
 							{
-								code: '<iframe width="640" height="340" src="http://www.youtube.com/embed/oan19f5kWE8?rel=0" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="340" src="//www.youtube-nocookie.com/embed/oan19f5kWE8?rel=0" frameborder="0" allowfullscreen></iframe>'
 							}
 						}
 					]
@@ -376,7 +376,7 @@ btt.cc.model.chapter.chapters.push(
 					composerImage: "SergeiProkofiev.jpg",
 					video:
 					{
-						code: '<iframe style="margin-top:10px" width="340" height="220" src="//www.youtube.com/embed/iuLFdGvIuVg?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+						code: '<iframe style="margin-top:10px" width="340" height="220" src="//www.youtube-nocookie.com/embed/iuLFdGvIuVg?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 					},
 					questionIntro: "<span>Listen:</span> to how Prokofiev depicts the characters and action in Peter & the Wolf.",
 					questions:
@@ -441,7 +441,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Minor Keys & Scales",
 							text: "Minor keys and scales have a unique sound. View this video to learn more about minor keys.",
 							// poster: "MajMinVideoPosterImage.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/WyAtXBwxnSY?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/WyAtXBwxnSY?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -525,7 +525,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "View this movie to see how you can create and match music to prose or poetry.",
 							poster: "Ch11N_PosterCompModel.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/1KpNi4-CuAw?rel=0" frameborder="0" allowfullscreen></iframe>' /* NEED */
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/1KpNi4-CuAw?rel=0" frameborder="0" allowfullscreen></iframe>' /* NEED */
 						}
 					]
 				},
@@ -659,7 +659,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "video",
 								title: "See How",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/PI2Ayn7PBgk?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/PI2Ayn7PBgk?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
 								type: "audio",

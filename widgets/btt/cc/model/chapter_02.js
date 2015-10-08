@@ -188,7 +188,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Composition Model",
 							text: "View this movie to see how to add rhythm to your<br/>Chapter 1 melody.",
 							poster: "Ch 2_CC_CompModel.jpg",
-							code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/r-KrAa54XeY?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/r-KrAa54XeY?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
@@ -296,7 +296,7 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "video",
 								title: "See How",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/EVg-Qw2sl18?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/EVg-Qw2sl18?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
 								type: "audio",
@@ -309,12 +309,12 @@ btt.cc.model.chapter.chapters.push(
 							{
 								type: "video",
 								title: "For iPad",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/CFBczy4L6xM?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/CFBczy4L6xM?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
 								type: "video",
 								title: "For Computer",
-								code: '<iframe width="640" height="360" src="http://www.youtube.com/embed/5xgXoVu3muU?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/5xgXoVu3muU?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							}
 						]
 					}
