@@ -1,4 +1,4 @@
-require("//www.youtube-nocookie.com/iframe_api");
+require("http://www.youtube.com/iframe_api");
 
 var youTubeApiWaiters = [];
 
