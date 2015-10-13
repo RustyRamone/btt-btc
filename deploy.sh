@@ -7,6 +7,8 @@ if [ ! -d $DEPLOY_DEST ]; then
 	exit
 fi
 
+find . -name ".DS_Store" | xargs rm
+
 echo "Gererating static files..."
 rm -rf rendered
 node web.js -g
