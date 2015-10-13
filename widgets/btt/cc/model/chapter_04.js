@@ -198,7 +198,7 @@ btt.cc.model.chapter.chapters.push(
 					composerImage: "composers/williams/head-shot.png",
 					video:
 					{
-						code: '<iframe style="margin-top:10px" id="jaws_clip" width="80%" height="220" src="//www.youtube-nocookie.com/embed/O01-SVrJEeo?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+						code: '<iframe style="margin-top:10px" id="jaws_clip" height="220" src="//www.youtube-nocookie.com/embed/9TKrIwEclAw?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 					},
 					questionIntro: "<span>Listen:</span> To how John Williams’ creates a spooky mood for the movie “Jaws”.",
 					questionIntro2: "<span>Listen:</span> To how the motif develops into a melody using a flurry of sequences",
