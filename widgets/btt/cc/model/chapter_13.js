@@ -597,8 +597,13 @@ btt.cc.model.chapter.chapters.push(
 						[
 							{
 								type: "video",
-								title: "See How (coming soon)",
-								code: ''
+								title: "For Computer",
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/v2TeH0K_O8c?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
+							},
+							{
+								type: "video",
+								title: "For iPad",
+								code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/22jwTc0QQ6E?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
 							},
 							{
 								type: "audio",
