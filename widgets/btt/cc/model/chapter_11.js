@@ -238,7 +238,7 @@ btt.cc.model.chapter.chapters.push(
 						{
 							title: "The Extended Run",
 							text: "Hidden in the flurry of activity, this run contains snippets of the original motif. This one is written in a sequenced pattern while ascending.",
-							scoreImage: "Extended-Run2-2.png",
+							scoreImage: "Motivic-Run.png",
 							audioFile: "Ch11N MelodicDeviceRUn",
 							largePlayer: true
 						}
