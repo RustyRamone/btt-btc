@@ -316,7 +316,7 @@ btt.cc.model.chapter.chapters.push(
 							title: "Major & Minor",
 							text: "Major and minor melodies have a very distinct sound. One sounds brighter and the other sounds darker.",
 							poster: "MajMinVideoPosterImage.jpg",
-							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/4Bqafak3NMg?rel=0" frameborder="0" allowfullscreen></iframe>'
+							code: '<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/4LDm-TmcSBc?rel=0" frameborder="0" allowfullscreen></iframe>'
 						}
 					]
 				},
