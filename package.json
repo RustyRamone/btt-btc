@@ -3,28 +3,24 @@
     "description": "Breezin' Thru Composing",
     "author": "Patrick Gostovic <patrick.gostovic@osaaru.com>",
     "version": "1.0.5",
-    "repository":
-    {
+    "repository": {
         "type": "git",
         "url": "git://github.com/pgostovic/btt-btc.git"
     },
-    "dependencies":
-	{
-        "phnq_widgets": "1.0.46",
+    "dependencies": {
+        "commander": "1.1.x",
         "connect": "2.7.x",
-		"commander": "1.1.x",
-        "zombie": "1.4.1",
         "graceful-fs": "4.1.x",
-        "mocha": "1.6.x"
+        "mocha": "1.6.x",
+        "phnq_widgets": "^1.0.47",
+        "zombie": "^6.1.4"
     },
-    "scripts":
-	{
+    "scripts": {
         "test": "mocha -t 60000 -R spec",
-		"start": "node web"
+        "start": "node web"
     },
-    "engines":
-	{
-      "node": "0.10.x",
-      "npm": "1.4.x"
+    "engines": {
+        "node": "0.10.x",
+        "npm": "1.4.x"
     }
 }
