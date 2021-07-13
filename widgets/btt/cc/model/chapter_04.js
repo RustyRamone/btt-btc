@@ -96,39 +96,39 @@ btt.cc.model.chapter.chapters.push(
 				},
 				{
 					type: "btt.cc.ui.content.generic-selector",
-					id: "camptown-races-quiz",
-					title: "Camptown Races Quiz",
-					subtitle: "Camptown Races has very identifiable call and response phrases.",
+					id: "maple-syrups-running-quiz",
+					title: "Maple Syrup’s Running Quiz",
+					subtitle: "Maple Syrup’s Running has very identifiable call and response phrases.",
 					introOverlayText: "Listen to & label each call and response phrase.",
 					questions:
 					[
 						{
-							text: "Select “Call” or “Response” to label<br/>the phrases from Camptown Races.",
-							audioPrize: "Camptownraces",
+							text: "Select “Call” or “Response” to label<br/>the phrases from Maple Syrup’s Running.",
+							audioPrize: "MapleSyrup",
 							vertical: true,
 							smallAnswerBoxes: true,
 							wideAnswerBoxes: true,
 							images:
 							[
-								"Camptown_1.png", "Camptown_2.png", "Camptown_3.png", "Camptown_4.png"
+								"MapleSyrup_1.png", "MapleSyrup_2.png", "MapleSyrup_3.png", "MapleSyrup_4.png"
 							],
 							answers:
 							[
 								{
 									text: "Call",
-									audio: "Camptown_1"
+									audio: "MapleSyrup_1"
 								},
 								{
 									text: "Response",
-									audio: "Camptown_2"
+									audio: "MapleSyrup_2"
 								},
 								{
 									text: "Call",
-									audio: "Camptown_3"
+									audio: "MapleSyrup_3"
 								},
 								{
 									text: "Response",
-									audio: "Camptown_4"
+									audio: "MapleSyrup_4"
 								}
 							]
 						}
