@@ -1,4 +1,4 @@
-require("http://www.youtube.com/iframe_api");
+require("https://www.youtube.com/iframe_api");
 
 var youTubeApiWaiters = [];
 

@@ -80,7 +80,7 @@ btt.cc.media =
 	
 		rewind: function()
 		{
-			if(this.audio.readyState == 4)
+			if(this.audio && this.audio.readyState == 4)
 			{
 				this.audio.currentTime = 0;
 			}
@@ -88,7 +88,7 @@ btt.cc.media =
 	
 		play: function()
 		{
-			this.audio.play();
+			this.audio && this.audio.play();
 		},
 
 		playFromStart: function(dur)
@@ -130,7 +130,7 @@ btt.cc.media =
 			
 			fn.___called = false;
 			
-			if(this.audio.readyState == 4)
+			if(this.audio && this.audio.readyState == 4)
 			{
 				if(!fn.___called)
 				{

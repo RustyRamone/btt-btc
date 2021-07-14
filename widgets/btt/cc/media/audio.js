@@ -198,7 +198,7 @@ var AudioTagFile = phnq_core.clazz(
 			clearTimeout(this.pausePid);
 		}
 		
-		if(this.audio.readyState == 4)
+		if(this.audio && this.audio.readyState == 4)
 		{
 			this.audio.currentTime = 0;
 		}
