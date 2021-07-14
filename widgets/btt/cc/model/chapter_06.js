@@ -335,7 +335,7 @@ btt.cc.model.chapter.chapters.push(
 					title: "Creating a Strong Ostinato Bass Line",
 					subtitle: "These rules will help you build an ostinato bass line & give your composition a strong tonal centre.",
                     showMotif: false,
-                    scoreImage: "Ch6_StrongOBL.jpg",
+                    scoreImage: "Ch6_StrongOBL.png",
 					downloadSteps:
 					[
 						"Start with the tonic (1).",
