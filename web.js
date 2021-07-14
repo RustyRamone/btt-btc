@@ -14,7 +14,7 @@ commander
   .option("-g, --generate", "generate only -- do not start server")
   .parse(process.argv);
 
-var port = commander.port || process.env.PORT || 8080;
+var port = commander.port || process.env.PORT || 8088;
 var rootDir = path.resolve(".");
 var renderedDir = path.resolve("./rendered");
 
